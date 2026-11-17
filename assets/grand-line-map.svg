@@ -1,134 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="roadmap-title roadmap-desc">
+  <title id="roadmap-title">Partha Sarathi Sarkar — Grand Line Engineering Roadmap</title>
+  <desc id="roadmap-desc">Charted technical destinations: AI &amp; Machine Learning, Data Science, AI Agents, Full-Stack, Cybersecurity, and Open-Source.</desc>
   <defs>
     <style>
       /* <![CDATA[ */
-      .impact-font { font-family: 'Impact', 'Arial Black', sans-serif; }
-      .mono-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      .impact { font-family: 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
+      .mono { font-family: 'JetBrains Mono', 'Consolas', 'Fira Code', monospace; font-weight: 700; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
       /* ]]> */
     </style>
   </defs>
 
-  <!-- Hard Offset Shadow -->
-  <rect x="10" y="10" width="860" height="480" rx="10" fill="#171717"/>
+  <!-- Hard Offset Drop Shadow -->
+  <rect x="16" y="16" width="1168" height="648" rx="16" fill="#171717"/>
 
-  <!-- Main Canvas -->
-  <rect x="0" y="0" width="860" height="480" rx="10" fill="#F4EBDD" stroke="#171717" stroke-width="4"/>
+  <!-- Main Canvas: Old Parchment (#F4EBDD) with solid 4.5px Black Outline -->
+  <rect x="0" y="0" width="1168" height="648" rx="16" fill="#F4EBDD" stroke="#171717" stroke-width="4.5"/>
 
-  <!-- Top Ribbon -->
-  <g transform="translate(20, 18)">
-    <rect x="4" y="4" width="840" height="42" rx="6" fill="#171717"/>
-    <rect x="0" y="0" width="840" height="42" rx="6" fill="#8BCB88" stroke="#171717" stroke-width="3"/>
-    <circle cx="22" cy="21" r="7" fill="#171717"/>
-    <text x="38" y="27" fill="#171717" font-size="14.5" font-weight="900" letter-spacing="1" class="impact-font">
-      SECTION 09 // THE NEXT ISLAND — GRAND LINE ENGINEERING ROADMAP
+  <!-- Top Header Ribbon -->
+  <g transform="translate(32, 28)">
+    <rect x="6" y="6" width="1104" height="48" rx="8" fill="#171717"/>
+    <rect x="0" y="0" width="1104" height="48" rx="8" fill="#8BCB88" stroke="#171717" stroke-width="3"/>
+    <circle cx="24" cy="24" r="7" fill="#171717"/>
+    <text x="42" y="31" fill="#171717" font-size="14.5" class="impact" letter-spacing="1">
+      06 // THE NEXT ISLAND — GRAND LINE ENGINEERING ROADMAP
     </text>
-    <text x="820" y="26" text-anchor="end" fill="#171717" font-size="11" font-weight="900" class="mono-font">
+    <text x="1080" y="30" text-anchor="end" fill="#171717" font-size="12" class="mono">
       CHARTED DESTINATIONS: 06
     </text>
   </g>
 
   <!-- 6 Engineering Destinations -->
   
-    <!-- Quest 1 -->
-    <g transform="translate(20, 72)">
-      <rect x="4" y="4" width="840" height="58" rx="6" fill="#171717"/>
-      <rect x="0" y="0" width="840" height="58" rx="6" fill="#FFFDF9" stroke="#171717" stroke-width="2.5"/>
-      <rect x="0" y="0" width="10" height="58" rx="3" fill="#FF654F"/>
+    <!-- Destination 01 -->
+    <g transform="translate(32, 100)">
+      <rect x="6" y="6" width="1104" height="76" rx="8" fill="#171717"/>
+      <rect x="0" y="0" width="1104" height="76" rx="8" fill="#FFFDF9" stroke="#171717" stroke-width="3"/>
+      <rect x="0" y="0" width="12" height="76" rx="3" fill="#FF654F"/>
 
-      <!-- Category Tag & Title -->
-      <text x="22" y="20" fill="#FF654F" font-size="9.5" font-weight="900" font-family="'Fira Code', monospace">DESTINATION 01 // CORE VOYAGE</text>
-      <text x="22" y="42" fill="#171717" font-size="14.5" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">AI &amp; MACHINE LEARNING</text>
+      <!-- Category Tag & Title Column (Left) -->
+      <text x="26" y="27" fill="#FF654F" font-size="11" font-weight="900" font-family="'JetBrains Mono', 'Fira Code', monospace" letter-spacing="1">DESTINATION 01 // CORE VOYAGE</text>
+      <text x="26" y="53" fill="#171717" font-size="18" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.8">AI &amp; MACHINE LEARNING</text>
 
-      <!-- Description -->
-      <text x="330" y="34" fill="#333333" font-size="11.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Machine learning algorithms, neural network design, model evaluation &amp; practical AI applications.</text>
+      <!-- Description Column (Middle: X=310, safe gap before X=940) -->
+      <text x="310" y="44" fill="#444444" font-size="13" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Machine learning algorithms, neural network design, model evaluation &amp; practical AI applications.</text>
 
-      <!-- Status Pill -->
-      <rect x="715" y="15" width="110" height="28" rx="4" fill="#F4EBDD" stroke="#171717" stroke-width="2"/>
-      <text x="770" y="33" text-anchor="middle" fill="#171717" font-size="10" font-weight="900" font-family="'Fira Code', monospace">CORE FOCUS</text>
+      <!-- Status Pill (Right: X=940, completely clear of text) -->
+      <rect x="944" y="20" width="136" height="36" rx="6" fill="#F4EBDD" stroke="#171717" stroke-width="2.5"/>
+      <text x="1012" y="43" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">CORE FOCUS</text>
     </g>
-    <!-- Quest 2 -->
-    <g transform="translate(20, 142)">
-      <rect x="4" y="4" width="840" height="58" rx="6" fill="#171717"/>
-      <rect x="0" y="0" width="840" height="58" rx="6" fill="#FFFDF9" stroke="#171717" stroke-width="2.5"/>
-      <rect x="0" y="0" width="10" height="58" rx="3" fill="#F5D547"/>
+    <!-- Destination 02 -->
+    <g transform="translate(32, 190)">
+      <rect x="6" y="6" width="1104" height="76" rx="8" fill="#171717"/>
+      <rect x="0" y="0" width="1104" height="76" rx="8" fill="#FFFDF9" stroke="#171717" stroke-width="3"/>
+      <rect x="0" y="0" width="12" height="76" rx="3" fill="#F5D547"/>
 
-      <!-- Category Tag & Title -->
-      <text x="22" y="20" fill="#F5D547" font-size="9.5" font-weight="900" font-family="'Fira Code', monospace">DESTINATION 02 // ANALYTICAL EXPEDITION</text>
-      <text x="22" y="42" fill="#171717" font-size="14.5" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">DATA SCIENCE &amp; ANALYTICS</text>
+      <!-- Category Tag & Title Column (Left) -->
+      <text x="26" y="27" fill="#F5D547" font-size="11" font-weight="900" font-family="'JetBrains Mono', 'Fira Code', monospace" letter-spacing="1">DESTINATION 02 // ANALYTICAL EXPEDITION</text>
+      <text x="26" y="53" fill="#171717" font-size="18" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.8">DATA SCIENCE &amp; ANALYTICS</text>
 
-      <!-- Description -->
-      <text x="330" y="34" fill="#333333" font-size="11.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Python-based data analysis, Pandas, automated cleaning, exploratory data analysis &amp; visualization.</text>
+      <!-- Description Column (Middle: X=310, safe gap before X=940) -->
+      <text x="310" y="44" fill="#444444" font-size="13" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Python-based data analysis, Pandas, automated cleaning, exploratory data analysis &amp; visualization.</text>
 
-      <!-- Status Pill -->
-      <rect x="715" y="15" width="110" height="28" rx="4" fill="#F4EBDD" stroke="#171717" stroke-width="2"/>
-      <text x="770" y="33" text-anchor="middle" fill="#171717" font-size="10" font-weight="900" font-family="'Fira Code', monospace">ADVANCED</text>
+      <!-- Status Pill (Right: X=940, completely clear of text) -->
+      <rect x="944" y="20" width="136" height="36" rx="6" fill="#F4EBDD" stroke="#171717" stroke-width="2.5"/>
+      <text x="1012" y="43" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">ADVANCED</text>
     </g>
-    <!-- Quest 3 -->
-    <g transform="translate(20, 212)">
-      <rect x="4" y="4" width="840" height="58" rx="6" fill="#171717"/>
-      <rect x="0" y="0" width="840" height="58" rx="6" fill="#FFFDF9" stroke="#171717" stroke-width="2.5"/>
-      <rect x="0" y="0" width="10" height="58" rx="3" fill="#55C8E8"/>
+    <!-- Destination 03 -->
+    <g transform="translate(32, 280)">
+      <rect x="6" y="6" width="1104" height="76" rx="8" fill="#171717"/>
+      <rect x="0" y="0" width="1104" height="76" rx="8" fill="#FFFDF9" stroke="#171717" stroke-width="3"/>
+      <rect x="0" y="0" width="12" height="76" rx="3" fill="#55C8E8"/>
 
-      <!-- Category Tag & Title -->
-      <text x="22" y="20" fill="#55C8E8" font-size="9.5" font-weight="900" font-family="'Fira Code', monospace">DESTINATION 03 // AUTONOMOUS AGENTS</text>
-      <text x="22" y="42" fill="#171717" font-size="14.5" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">AI AGENT ENGINEERING</text>
+      <!-- Category Tag & Title Column (Left) -->
+      <text x="26" y="27" fill="#55C8E8" font-size="11" font-weight="900" font-family="'JetBrains Mono', 'Fira Code', monospace" letter-spacing="1">DESTINATION 03 // AUTONOMOUS AGENTS</text>
+      <text x="26" y="53" fill="#171717" font-size="18" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.8">AI AGENT ENGINEERING</text>
 
-      <!-- Description -->
-      <text x="330" y="34" fill="#333333" font-size="11.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Autonomous agentic frameworks, multi-agent co-authoring, REA Agents &amp; developer workflows.</text>
+      <!-- Description Column (Middle: X=310, safe gap before X=940) -->
+      <text x="310" y="44" fill="#444444" font-size="13" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Autonomous agentic frameworks, multi-agent co-authoring, REA Agents &amp; developer workflows.</text>
 
-      <!-- Status Pill -->
-      <rect x="715" y="15" width="110" height="28" rx="4" fill="#F4EBDD" stroke="#171717" stroke-width="2"/>
-      <text x="770" y="33" text-anchor="middle" fill="#171717" font-size="10" font-weight="900" font-family="'Fira Code', monospace">INNOVATING</text>
+      <!-- Status Pill (Right: X=940, completely clear of text) -->
+      <rect x="944" y="20" width="136" height="36" rx="6" fill="#F4EBDD" stroke="#171717" stroke-width="2.5"/>
+      <text x="1012" y="43" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">INNOVATING</text>
     </g>
-    <!-- Quest 4 -->
-    <g transform="translate(20, 282)">
-      <rect x="4" y="4" width="840" height="58" rx="6" fill="#171717"/>
-      <rect x="0" y="0" width="840" height="58" rx="6" fill="#FFFDF9" stroke="#171717" stroke-width="2.5"/>
-      <rect x="0" y="0" width="10" height="58" rx="3" fill="#8BCB88"/>
+    <!-- Destination 04 -->
+    <g transform="translate(32, 370)">
+      <rect x="6" y="6" width="1104" height="76" rx="8" fill="#171717"/>
+      <rect x="0" y="0" width="1104" height="76" rx="8" fill="#FFFDF9" stroke="#171717" stroke-width="3"/>
+      <rect x="0" y="0" width="12" height="76" rx="3" fill="#8BCB88"/>
 
-      <!-- Category Tag & Title -->
-      <text x="22" y="20" fill="#8BCB88" font-size="9.5" font-weight="900" font-family="'Fira Code', monospace">DESTINATION 04 // FULL-STACK SHIPBUILDING</text>
-      <text x="22" y="42" fill="#171717" font-size="14.5" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">SOFTWARE &amp; APPLICATION ENGINEERING</text>
+      <!-- Category Tag & Title Column (Left) -->
+      <text x="26" y="27" fill="#8BCB88" font-size="11" font-weight="900" font-family="'JetBrains Mono', 'Fira Code', monospace" letter-spacing="1">DESTINATION 04 // FULL-STACK SHIPBUILDING</text>
+      <text x="26" y="53" fill="#171717" font-size="18" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.8">SOFTWARE &amp; APPLICATION ENGINEERING</text>
 
-      <!-- Description -->
-      <text x="330" y="34" fill="#333333" font-size="11.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Building &amp; scaling full-stack vessels using Next.js, React, Supabase, PostgreSQL &amp; REST APIs.</text>
+      <!-- Description Column (Middle: X=310, safe gap before X=940) -->
+      <text x="310" y="44" fill="#444444" font-size="13" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Building &amp; scaling full-stack vessels using Next.js, React, Supabase, PostgreSQL &amp; REST APIs.</text>
 
-      <!-- Status Pill -->
-      <rect x="715" y="15" width="110" height="28" rx="4" fill="#F4EBDD" stroke="#171717" stroke-width="2"/>
-      <text x="770" y="33" text-anchor="middle" fill="#171717" font-size="10" font-weight="900" font-family="'Fira Code', monospace">BUILDING</text>
+      <!-- Status Pill (Right: X=940, completely clear of text) -->
+      <rect x="944" y="20" width="136" height="36" rx="6" fill="#F4EBDD" stroke="#171717" stroke-width="2.5"/>
+      <text x="1012" y="43" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">BUILDING</text>
     </g>
-    <!-- Quest 5 -->
-    <g transform="translate(20, 352)">
-      <rect x="4" y="4" width="840" height="58" rx="6" fill="#171717"/>
-      <rect x="0" y="0" width="840" height="58" rx="6" fill="#FFFDF9" stroke="#171717" stroke-width="2.5"/>
-      <rect x="0" y="0" width="10" height="58" rx="3" fill="#FF654F"/>
+    <!-- Destination 05 -->
+    <g transform="translate(32, 460)">
+      <rect x="6" y="6" width="1104" height="76" rx="8" fill="#171717"/>
+      <rect x="0" y="0" width="1104" height="76" rx="8" fill="#FFFDF9" stroke="#171717" stroke-width="3"/>
+      <rect x="0" y="0" width="12" height="76" rx="3" fill="#FF654F"/>
 
-      <!-- Category Tag & Title -->
-      <text x="22" y="20" fill="#FF654F" font-size="9.5" font-weight="900" font-family="'Fira Code', monospace">DESTINATION 05 // SYSTEM DEFENSE</text>
-      <text x="22" y="42" fill="#171717" font-size="14.5" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">CYBERSECURITY &amp; RESEARCH</text>
+      <!-- Category Tag & Title Column (Left) -->
+      <text x="26" y="27" fill="#FF654F" font-size="11" font-weight="900" font-family="'JetBrains Mono', 'Fira Code', monospace" letter-spacing="1">DESTINATION 05 // SYSTEM DEFENSE</text>
+      <text x="26" y="53" fill="#171717" font-size="18" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.8">CYBERSECURITY &amp; RESEARCH</text>
 
-      <!-- Description -->
-      <text x="330" y="34" fill="#333333" font-size="11.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Security automation, vulnerability reproduction &amp; sandboxed exploit verification (ExploitReplay).</text>
+      <!-- Description Column (Middle: X=310, safe gap before X=940) -->
+      <text x="310" y="44" fill="#444444" font-size="13" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Security automation, vulnerability reproduction &amp; sandboxed exploit verification (ExploitReplay).</text>
 
-      <!-- Status Pill -->
-      <rect x="715" y="15" width="110" height="28" rx="4" fill="#F4EBDD" stroke="#171717" stroke-width="2"/>
-      <text x="770" y="33" text-anchor="middle" fill="#171717" font-size="10" font-weight="900" font-family="'Fira Code', monospace">RESEARCHING</text>
+      <!-- Status Pill (Right: X=940, completely clear of text) -->
+      <rect x="944" y="20" width="136" height="36" rx="6" fill="#F4EBDD" stroke="#171717" stroke-width="2.5"/>
+      <text x="1012" y="43" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">RESEARCHING</text>
     </g>
-    <!-- Quest 6 -->
-    <g transform="translate(20, 422)">
-      <rect x="4" y="4" width="840" height="58" rx="6" fill="#171717"/>
-      <rect x="0" y="0" width="840" height="58" rx="6" fill="#FFFDF9" stroke="#171717" stroke-width="2.5"/>
-      <rect x="0" y="0" width="10" height="58" rx="3" fill="#55C8E8"/>
+    <!-- Destination 06 -->
+    <g transform="translate(32, 550)">
+      <rect x="6" y="6" width="1104" height="76" rx="8" fill="#171717"/>
+      <rect x="0" y="0" width="1104" height="76" rx="8" fill="#FFFDF9" stroke="#171717" stroke-width="3"/>
+      <rect x="0" y="0" width="12" height="76" rx="3" fill="#55C8E8"/>
 
-      <!-- Category Tag & Title -->
-      <text x="22" y="20" fill="#55C8E8" font-size="9.5" font-weight="900" font-family="'Fira Code', monospace">DESTINATION 06 // ENDLESS HORIZON</text>
-      <text x="22" y="42" fill="#171717" font-size="14.5" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">OPEN-SOURCE &amp; PROJECT DEVELOPMENT</text>
+      <!-- Category Tag & Title Column (Left) -->
+      <text x="26" y="27" fill="#55C8E8" font-size="11" font-weight="900" font-family="'JetBrains Mono', 'Fira Code', monospace" letter-spacing="1">DESTINATION 06 // ENDLESS HORIZON</text>
+      <text x="26" y="53" fill="#171717" font-size="18" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.8">OPEN-SOURCE &amp; PROJECT DEVELOPMENT</text>
 
-      <!-- Description -->
-      <text x="330" y="34" fill="#333333" font-size="11.5" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Continuously refining repositories, evaluating new toolchains &amp; shipping practical software.</text>
+      <!-- Description Column (Middle: X=310, safe gap before X=940) -->
+      <text x="310" y="44" fill="#444444" font-size="13" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Continuously refining repositories, evaluating new toolchains &amp; shipping practical software.</text>
 
-      <!-- Status Pill -->
-      <rect x="715" y="15" width="110" height="28" rx="4" fill="#F4EBDD" stroke="#171717" stroke-width="2"/>
-      <text x="770" y="33" text-anchor="middle" fill="#171717" font-size="10" font-weight="900" font-family="'Fira Code', monospace">ACTIVE RAIDS</text>
+      <!-- Status Pill (Right: X=940, completely clear of text) -->
+      <rect x="944" y="20" width="136" height="36" rx="6" fill="#F4EBDD" stroke="#171717" stroke-width="2.5"/>
+      <text x="1012" y="43" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" font-family="'JetBrains Mono', monospace">ACTIVE RAIDS</text>
     </g>
 </svg>
