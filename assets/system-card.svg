@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @keyframes borderPulse {
+        0%, 100% { stroke: #7c3aed; filter: drop-shadow(0 0 4px #7c3aed); }
+        50%      { stroke: #38bdf8; filter: drop-shadow(0 0 10px #38bdf8); }
+      }
+      @keyframes dotPulse {
+        0%, 100% { r: 3.5; opacity: 0.6; }
+        50%      { r: 4.8; opacity: 1; }
+      }
+      @keyframes chipPulse {
+        0%, 100% { stroke-opacity: 0.6; }
+        50%      { stroke-opacity: 1; stroke: #38bdf8; }
+      }
+      @keyframes scanH {
+        0%   { transform: translateY(0px); opacity: 0.5; }
+        100% { transform: translateY(370px); opacity: 0; }
+      }
+      .mono-font { font-family: 'Fira Code', 'Courier New', Courier, monospace; }
+      .sans-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      /* ]]> */
+    </style>
+
+    <radialGradient id="cardBg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%"   stop-color="#14002e"/>
+      <stop offset="60%"  stop-color="#080017"/>
+      <stop offset="100%" stop-color="#020007"/>
+    </radialGradient>
+
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <filter id="sysGlow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="540" height="370" rx="12" fill="url(#cardBg)"/>
+
+  <!-- Outer Animated Border -->
+  <rect x="2" y="2" width="536" height="366" rx="10" fill="none" stroke-width="1.6" style="animation: borderPulse 4s ease-in-out infinite;"/>
+
+  <!-- Inner Subtle Border -->
+  <rect x="7" y="7" width="526" height="356" rx="8" fill="none" stroke="#3b0764" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Scanline Sweep -->
+  <line x1="7" y1="0" x2="533" y2="0" stroke="#38bdf8" stroke-width="1" opacity="0.25" style="animation: scanH 4s linear infinite;"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 12 26 L 12 12 L 26 12" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 528 26 L 528 12 L 514 12" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 12 344 L 12 358 L 26 358" fill="none" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 528 344 L 528 358 L 514 358" fill="none" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- ── HEADER ── -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="3.5" fill="#38bdf8" style="animation: dotPulse 2s infinite;"/>
+    <circle cx="6" cy="6" r="7" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.5"/>
+    <text x="20" y="10" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="1" class="mono-font">
+      [ SYSTEM INITIALIZED // HUNTER DOSSIER ]
+    </text>
+
+    <!-- Rank badge pill on right -->
+    <rect x="345" y="-3" width="145" height="20" rx="4" fill="#1b003a" stroke="#a855f7" stroke-width="0.8"/>
+    <text x="417" y="11" text-anchor="middle" fill="#c084fc" font-size="9.5" font-weight="700" letter-spacing="0.5" class="mono-font">
+      LEARNING &amp; BUILDING
+    </text>
+
+    <line x1="0" y1="20" x2="492" y2="20" stroke="#4c1d95" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- ── IDENTITY FIELDS ── -->
+  <g transform="translate(28, 70)">
+    <!-- HUNTER -->
+    <text x="0" y="14" fill="#a78bfa" font-size="10.5" font-weight="700" class="mono-font">HUNTER</text>
+    <text x="110" y="14" fill="#4c1d95" font-size="10.5" class="mono-font">:</text>
+    <text x="126" y="14" fill="#38bdf8" font-size="11" font-weight="700" class="mono-font">Partha-zzz</text>
+    <text x="220" y="14" fill="#e9d5ff" font-size="11" class="sans-font">(Partha Sarathi Sarkar)</text>
+
+    <!-- CLASS -->
+    <text x="0" y="38" fill="#a78bfa" font-size="10.5" font-weight="700" class="mono-font">CLASS</text>
+    <text x="110" y="38" fill="#4c1d95" font-size="10.5" class="mono-font">:</text>
+    <text x="126" y="38" fill="#c084fc" font-size="11" font-weight="700" class="mono-font">The Architect</text>
+    <text x="240" y="38" fill="#94a3b8" font-size="10" class="mono-font">// CSE (AI &amp; ML)</text>
+
+    <!-- ORIGIN -->
+    <text x="0" y="62" fill="#a78bfa" font-size="10.5" font-weight="700" class="mono-font">ORIGIN</text>
+    <text x="110" y="62" fill="#4c1d95" font-size="10.5" class="mono-font">:</text>
+    <text x="126" y="62" fill="#e2e8f0" font-size="11" class="mono-font">Haldia, West Bengal, India</text>
+
+    <!-- SPECIALIZATION -->
+    <text x="0" y="86" fill="#a78bfa" font-size="10.5" font-weight="700" class="mono-font">SPECIALIZATION</text>
+    <text x="110" y="86" fill="#4c1d95" font-size="10.5" class="mono-font">:</text>
+    <text x="126" y="86" fill="url(#cyanGrad)" font-size="11" font-weight="700" class="mono-font">AI &amp; ML / Data Science</text>
+  </g>
+
+  <!-- Glowing Separator with Diamond -->
+  <g transform="translate(24, 180)">
+    <line x1="0" y1="0" x2="225" y2="0" stroke="#3b0764" stroke-width="0.8"/>
+    <polygon points="246,-4 250,0 246,4 242,0" fill="#38bdf8" filter="url(#sysGlow)"/>
+    <line x1="267" y1="0" x2="492" y2="0" stroke="#3b0764" stroke-width="0.8"/>
+  </g>
+
+  <!-- ── AWAKENED ABILITIES ── -->
+  <g transform="translate(28, 202)">
+    <text x="0" y="0" fill="#c084fc" font-size="10.5" font-weight="700" letter-spacing="1.2" class="mono-font">
+      ⚡ AWAKENED ABILITIES
+    </text>
+
+    <!-- Ability Chip 1: Python & Data Science -->
+    <g transform="translate(0, 12)">
+      <rect x="0" y="0" width="235" height="26" rx="5" fill="#0d0221" stroke="#4c1d95" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#38bdf8"/>
+      <text x="22" y="17" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">Python &amp; Data Science</text>
+    </g>
+
+    <!-- Ability Chip 2: Machine Learning Exploration -->
+    <g transform="translate(250, 12)">
+      <rect x="0" y="0" width="235" height="26" rx="5" fill="#0d0221" stroke="#4c1d95" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#c084fc"/>
+      <text x="22" y="17" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">Machine Learning Exploration</text>
+    </g>
+
+    <!-- Ability Chip 3: AI-Assisted Development -->
+    <g transform="translate(0, 46)">
+      <rect x="0" y="0" width="235" height="26" rx="5" fill="#0d0221" stroke="#4c1d95" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#38bdf8"/>
+      <text x="22" y="17" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">AI-Assisted Development</text>
+    </g>
+
+    <!-- Ability Chip 4: Creative Project Architecture -->
+    <g transform="translate(250, 46)">
+      <rect x="0" y="0" width="235" height="26" rx="5" fill="#0d0221" stroke="#4c1d95" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#c084fc"/>
+      <text x="22" y="17" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">Creative Architecture</text>
+    </g>
+
+    <!-- Ability Chip 5: Japanese Language Learning -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="485" height="26" rx="5" fill="#0d0221" stroke="#4c1d95" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#facc15"/>
+      <text x="22" y="17" fill="#fef08a" font-size="10" font-weight="600" class="mono-font">Japanese Language Learning (JLPT N5 Completed ✦ N4 Prep)</text>
+    </g>
+  </g>
+
+  <!-- ── BOTTOM SYSTEM COMMAND ── -->
+  <g transform="translate(24, 342)">
+    <line x1="0" y1="0" x2="492" y2="0" stroke="#3b0764" stroke-width="0.8" opacity="0.6"/>
+    <text x="246" y="14" text-anchor="middle" fill="#a78bfa" font-size="9" letter-spacing="1" class="mono-font">
+      COMMAND: "ARISE. (일어나라) — The possibilities are limitless."
+    </text>
+  </g>
+</svg>

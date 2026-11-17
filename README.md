@@ -37,50 +37,24 @@
 <!-- ══════ THE AWAKENING: ARCHITECT HERO SHOWCASE ══════ -->
 ## ⚔️ `[ THE ARCHITECT'S AWAKENING ]`
 
-<table>
+<table align="center" width="100%">
   <tr>
-    <td width="40%" align="center" valign="middle">
+    <td width="38%" align="center" valign="middle">
       <img
         src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/id.png"
         width="100%"
         alt="Partha Sarathi Sarkar - The Architect"
         style="border-radius: 12px; box-shadow: 0 0 20px #7c3aed;"
       />
-      <br/>
+      <br/><br/>
       <sub><b>Partha Sarathi Sarkar (파르타) — The Architect</b></sub>
     </td>
-    <td width="60%" valign="top">
-      <div align="center">
-        <img
-          src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/system-status.svg"
-          alt="System Status HUD"
-          width="100%"
-        />
-      </div>
-      <br/>
-
-```python
-class TheArchitect:
-    """The Developer Who Reconstructs Possibility Through AI & Data."""
-    hunter_name = "Partha Sarathi Sarkar"
-    alias       = "Partha-zzz"
-    rank        = "Awakened S-Class"
-    class_type  = "CSE (AI & ML) Undergrad & Aspiring Data Scientist"
-    mana_pool   = "Unlimited (Curiosity, AI Workflows & Clean Code)"
-    origin      = "Haldia, West Bengal, India"
-    
-    awakened_runes = [
-        "Data Science & Analytics", "Machine Learning Architecture",
-        "Pythonic Scripting", "AI-Assisted Full-Stack Prototyping",
-        "Japanese Linguistics (JLPT N5 Completed -> N4 Prep)"
-    ]
-    
-    shadow_army = ["Python", "Pandas", "Matplotlib", "Next.js", "Supabase", "Git"]
-    
-    def command(self):
-        return "ARISE. (일어나라) — The possibilities are limitless."
-```
-
+    <td width="62%" align="center" valign="middle">
+      <img
+        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/system-card.svg"
+        width="100%"
+        alt="System Profile Card"
+      />
     </td>
   </tr>
 </table>
@@ -166,18 +140,6 @@ class TheArchitect:
   />
 </p>
 
-<div align="center">
-
-| Core Component | Specialization Domain | Focus Area & Capabilities | Resonance Rank |
-|:---------------|:---------------------:|:--------------------------|:--------------:|
-| 🐍 **Python 3** | Scripting & Algorithmic Core | Object-oriented design, workflow automation & data manipulation | ⚡ **PRIMARY CORE** |
-| 🐼 **Pandas** | High-Dimensional Matrix | DataFrame operations, data cleaning, aggregation & feature engineering | 📊 **VECTOR MASTER** |
-| 📈 **Matplotlib** | Perceptual Analytics | Quantitative visualizations, distribution curves & scientific insights | 👁️ **VISUAL OPTICS** |
-| 📓 **Jupyter Notebook** | Experimental Sandbox | Exploratory Data Analysis (EDA), model experimentation & iterative research | 🔬 **RESEARCH LAB** |
-| 🤖 **AI Co-Pilots** | Agentic Development | Antigravity, Claude, Stitch, Codex — rapid prototyping co-pilots | 🌌 **ACCELERATOR** |
-
-</div>
-
 <br/>
 
 ---
@@ -185,18 +147,14 @@ class TheArchitect:
 <!-- ══════ HUNTER ATTRIBUTE MATRIX ══════ -->
 ## 📜 `[ HUNTER ATTRIBUTE MATRIX — S-RANK ARCHITECT ]`
 
-<div align="center">
-
-| Attribute | Level / Value | Assigned Domain & Capability | Combat Rating |
-|:----------|:-------------:|:-----------------------------|:-------------:|
-| **INT (Architectural Intellect)** | `99 / 100` | CSE (AI & ML) foundation, mathematical intuition, model evaluation | `S-TIER MAX` |
-| **CREA (Creation & Innovation)** | `98 / 100` | Designing novel applications from blank canvases into tangible software | `S-TIER` |
-| **AI (Agentic Symbiosis)** | `99 / 100` | Orchestrating state-of-the-art AI coding tools to accelerate production | `S-TIER MAX` |
-| **DATA (Quantitative Perception)** | `96 / 100` | Uncovering insights across structured datasets via Pandas & Matplotlib | `S-TIER` |
-| **DEV (Full-Stack Building)** | `94 / 100` | Crafting modern Next.js, Tailwind, Supabase apps via assisted workflows | `A-TIER ELITE` |
-| **LANG (Cultural Horizon)** | `95 / 100` | Multilingual versatility & active progression toward Japanese JLPT N4 | `S-TIER` |
-
-</div>
+<!-- Custom Holographic Attribute Dashboard -->
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/hunter-attributes.svg"
+    alt="Hunter Attribute Matrix"
+    width="100%"
+  />
+</p>
 
 <br/>
 
@@ -207,51 +165,13 @@ class TheArchitect:
 
 <p align="center"><i>Each technology is an awakened soldier bound to my engineering command</i></p>
 
-### 👑 S-Class Primary Soul Weapon (Data Science & Core Programming)
+<!-- Custom Themed Technology Armory Container -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=06000f" alt="Python 3" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&labelColor=06000f" alt="Pandas" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white&labelColor=06000f" alt="Matplotlib" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white&labelColor=06000f" alt="Jupyter Notebook" />
-</p>
-
-### 🤖 AI-Assisted Development & Agentic Co-Pilots
-<p align="center">
-  <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white&labelColor=06000f" alt="Google Antigravity" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Google_Stitch-00C49F?style=for-the-badge&logo=googlecloud&logoColor=white&labelColor=06000f" alt="Google Stitch" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Claude_3.7-D97706?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=06000f" alt="Claude" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/OpenAI_Codex-10A37F?style=for-the-badge&logo=openai&logoColor=white&labelColor=06000f" alt="Codex" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Google_Gemini-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white&labelColor=06000f" alt="Gemini" />
-</p>
-
-### 🌐 Illusion Spellcraft (Modern Frontend & Reactive Frameworks)
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,threejs,nodejs,html,css,js&theme=dark&perline=8" alt="Frontend" />
-</p>
-
-### 🏰 Storage Vaults & Deployment Infrastructure
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=supabase,postgres,sqlite,vercel&theme=dark&perline=6" alt="Databases and Cloud" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black&labelColor=06000f" alt="Render" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white&labelColor=06000f" alt="Railway" />
-</p>
-
-### 🛡️ Hunter Toolchain & CLI Media Utilities
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,deno,vscode&theme=dark&perline=6" alt="Tools" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white&labelColor=06000f" alt="FFmpeg" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/yt--dlp-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=06000f" alt="yt-dlp" />
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/tech-arsenal.svg"
+    alt="The Shadow Army Arsenal"
+    width="100%"
+  />
 </p>
 
 > ℹ️ **Transparency Note**: AI-assisted development is leveraged as an engineering workflow to co-author, prototype, and build comprehensive web applications and tools. Core independent technical proficiency centers on Python, Data Science analytics, and Machine Learning.
@@ -263,15 +183,38 @@ class TheArchitect:
 <!-- ══════ THE MONARCH'S PROJECT ARCHIVES ══════ -->
 ## 🏆 `[ THE MONARCH'S CONQUERED DUNGEONS — PROJECT ARCHIVES ]`
 
-<div align="center">
+<!-- Project 01: NASA Space Apps -->
+<p align="center">
+  <a href="https://nasa-forgotten-legacy.vercel.app/" target="_blank">
+    <img
+      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/project-card-1.svg"
+      alt="NASA Space Apps: Forgotten Legacy"
+      width="100%"
+    />
+  </a>
+</p>
 
-| Project Vault | Description & Architecture | Weapons / Tech Stack | Access Gate |
-|:--------------|:---------------------------|:---------------------|:-----------:|
-| 🌌 **NASA Space Apps: Forgotten Legacy** | Immersive cosmos web application commemorating unsung aerospace pioneers through interactive 3D visualizations. | `Next.js` • `Three.js` • `Tailwind CSS` | [🚀 **LIVE PORTAL**](https://nasa-forgotten-legacy.vercel.app/) |
-| 🛡️ **ExploitReplay** | Automated cybersecurity vulnerability reproduction framework executing sandboxed exploit verification. | `Python` • `Security Research` • `Automation` | [⚔️ **SOURCE CODE**](https://github.com/Partha-zzz/ExploitReplay) |
-| 🚑 **ResQAI (Disaster Management)** | AI-driven emergency response orchestration system providing automated triage coordination and route optimization. | `Next.js` • `AI Workflows` • `Supabase` | [🌐 **LIVE PORTAL**](https://res-q-ai-blond.vercel.app/) |
+<!-- Project 02: ExploitReplay -->
+<p align="center">
+  <a href="https://github.com/Partha-zzz/ExploitReplay" target="_blank">
+    <img
+      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/project-card-2.svg"
+      alt="ExploitReplay"
+      width="100%"
+    />
+  </a>
+</p>
 
-</div>
+<!-- Project 03: ResQAI -->
+<p align="center">
+  <a href="https://res-q-ai-blond.vercel.app/" target="_blank">
+    <img
+      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/project-card-3.svg"
+      alt="ResQAI"
+      width="100%"
+    />
+  </a>
+</p>
 
 <br/>
 
@@ -280,25 +223,21 @@ class TheArchitect:
 <!-- ══════ MONARCH POWER LEVEL & COMBAT RECORDS ══════ -->
 ## 📊 `[ MONARCH POWER LEVEL & COMBAT RECORDS ]`
 
+<!-- Verified Custom GitHub Telemetry HUD -->
 <p align="center">
   <img
-    src="https://github-readme-stats-eight-theta.vercel.app/api?username=Partha-zzz&show_icons=true&theme=tokyonight&hide_border=true&bg_color=06000f&title_color=a855f7&icon_color=c084fc&text_color=e9d5ff&ring_color=7c3aed&include_all_commits=true&count_private=true"
-    height="175"
-    alt="GitHub Stats"
-  />
-  &nbsp;
-  <img
-    src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Partha-zzz&layout=compact&theme=tokyonight&hide_border=true&bg_color=06000f&title_color=a855f7&text_color=e9d5ff&langs_count=8&card_width=320"
-    height="175"
-    alt="Top Languages"
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/github-stats.svg"
+    alt="GitHub Stats Telemetry"
+    width="100%"
   />
 </p>
 
+<!-- Verified Live Streak Stats -->
 <p align="center">
   <img
     src="https://streak-stats.demolab.com/?user=Partha-zzz&theme=tokyonight&hide_border=true&background=06000f&ring=9333ea&fire=c084fc&currStreakLabel=a855f7&sideLabels=e9d5ff&sideNums=c084fc&currStreakNum=e9d5ff&dates=6d28d9&stroke=3b0764"
     alt="Streak Stats"
-    width="620"
+    width="640"
   />
 </p>
 
@@ -310,21 +249,15 @@ class TheArchitect:
 ## 🐍 `[ SHADOW SERPENT DEVOURING COMMITS ]`
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/output/github-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/output/github-snake.svg"/>
-    <img
-      alt="Shadow Serpent eating contributions"
-      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/output/github-snake-dark.svg"
-      width="100%"
-    />
-  </picture>
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/github-snake-dark.svg"
+    alt="Shadow Serpent eating contributions"
+    width="100%"
+  />
 </p>
 
 <p align="center">
-  <sub>⚔️ <i>Powered by GitHub Actions — tracking every contribution conquered on GitHub.</i></sub>
+  <sub>⚔️ <i>Powered by automated contribution tracking — devouring every conquered node on GitHub.</i></sub>
 </p>
 
 <br/>
@@ -334,17 +267,14 @@ class TheArchitect:
 <!-- ══════ ACTIVE DUNGEON QUESTS ══════ -->
 ## 🗡️ `[ ACTIVE DUNGEON QUEST LOG ]`
 
-<div align="center">
-
-| Dungeon Quest | Rank | Status | EXP Reward |
-|:--------------|:----:|:------:|-----------:|
-| **Computer Science & Engineering (AI & ML) Degree** | `S-Rank Main` | `⚔️ IN PROGRESS` | `+10,000 XP` |
-| **Advanced Data Science & Machine Learning Mastery** | `S-Rank Main` | `⚔️ IN PROGRESS` | `+5,000 XP` |
-| **Japanese JLPT N4 Language Awakening** (Kanji & Grammar) | `A-Rank Quest` | `📖 ACTIVE STUDY` | `+2,500 XP` |
-| **Autonomous AI Agent Orchestration & Application Building** | `S-Rank Raid` | `⚔️ IN PROGRESS` | `+4,000 XP` |
-| **Daily Algorithm, Exploration & Open Source Raids** | `Daily Quest` | `🔄 NEVER ENDING` | `+∞ XP` |
-
-</div>
+<!-- Custom Holographic Quest Registry Dashboard -->
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/active-quests.svg"
+    alt="Active Dungeon Quest Log"
+    width="100%"
+  />
+</p>
 
 <br/>
 

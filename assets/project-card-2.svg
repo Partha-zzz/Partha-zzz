@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 135" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @keyframes cardGlow {
+        0%, 100% { stroke: #7c3aed; filter: drop-shadow(0 0 4px #7c3aed); }
+        50%      { stroke: #a855f7; filter: drop-shadow(0 0 10px #a855f7); }
+      }
+      @keyframes pulseDot {
+        0%, 100% { r: 3; opacity: 0.6; }
+        50%      { r: 4.5; opacity: 1; }
+      }
+      .mono-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      .sans-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      /* ]]> */
+    </style>
+    <radialGradient id="cardBg" cx="30%" cy="50%" r="85%">
+      <stop offset="0%"   stop-color="#140130"/>
+      <stop offset="60%"  stop-color="#080017"/>
+      <stop offset="100%" stop-color="#03000a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Card Base -->
+  <rect width="880" height="135" rx="10" fill="url(#cardBg)"/>
+  <rect x="1.5" y="1.5" width="877" height="132" rx="9" fill="none" stroke-width="1.4" style="animation: cardGlow 4s ease-in-out infinite;"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 10 22 L 10 10 L 22 10" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <path d="M 870 22 L 870 10 L 858 10" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <path d="M 10 113 L 10 125 L 22 125" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <path d="M 870 113 L 870 125 L 858 125" fill="none" stroke="#a855f7" stroke-width="2"/>
+
+  <!-- Left Content Column -->
+  <g transform="translate(28, 24)">
+    <!-- Vault & Num -->
+    <text x="0" y="0" fill="#a855f7" font-size="10.5" font-weight="700" letter-spacing="1.5" class="mono-font">
+      VAULT 02 // OFFENSIVE SECURITY &amp; SANDBOX VERIFICATION
+    </text>
+
+    <!-- Project Title -->
+    <text x="0" y="24" fill="#ffffff" font-size="17" font-weight="800" letter-spacing="0.8" class="sans-font">
+      EXPLOITREPLAY — CYBER REPRODUCTION
+    </text>
+
+    <!-- Description -->
+    <text x="0" y="46" fill="#cbd5e1" font-size="11.5" class="sans-font">
+      Automated cybersecurity vulnerability reproduction framework executing sandboxed exploit simulation and analysis.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(0, 62)">
+      
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="80.0" height="20" rx="4" fill="#120228" stroke="#4c1d95" stroke-width="0.8"/>
+          <text x="40.0" y="13.5" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="600" font-family="'Fira Code', monospace">Python 3</text>
+        </g>
+        <g transform="translate(88.0, 0)">
+          <rect x="0" y="0" width="110.0" height="20" rx="4" fill="#120228" stroke="#4c1d95" stroke-width="0.8"/>
+          <text x="55.0" y="13.5" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="600" font-family="'Fira Code', monospace">Security CLI</text>
+        </g>
+        <g transform="translate(206.0, 0)">
+          <rect x="0" y="0" width="147.5" height="20" rx="4" fill="#120228" stroke="#4c1d95" stroke-width="0.8"/>
+          <text x="73.75" y="13.5" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="600" font-family="'Fira Code', monospace">Automated Sandbox</text>
+        </g>
+        <g transform="translate(361.5, 0)">
+          <rect x="0" y="0" width="57.5" height="20" rx="4" fill="#120228" stroke="#4c1d95" stroke-width="0.8"/>
+          <text x="28.75" y="13.5" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="600" font-family="'Fira Code', monospace">Linux</text>
+        </g>
+    </g>
+  </g>
+
+  <!-- Right Action / Telemetry Column -->
+  <g transform="translate(680, 30)">
+    <!-- Status Pill -->
+    <rect x="0" y="0" width="168" height="24" rx="4" fill="#0c021f" stroke="#4c1d95" stroke-width="0.8"/>
+    <circle cx="14" cy="12" r="3" fill="#a855f7" style="animation: pulseDot 2s infinite;"/>
+    <text x="26" y="15.5" fill="#e2e8f0" font-size="9.5" font-weight="600" class="mono-font">STATUS: OPEN SOURCE</text>
+
+    <!-- Action Button -->
+    <rect x="0" y="38" width="168" height="34" rx="6" fill="#1b003a" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="84" y="59.5" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700" letter-spacing="0.5" class="mono-font">
+      ⚔️ INSPECT REPO
+    </text>
+  </g>
+</svg>

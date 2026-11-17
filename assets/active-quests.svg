@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 375" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @keyframes borderPulse {
+        0%, 100% { stroke: #7c3aed; filter: drop-shadow(0 0 4px #7c3aed); }
+        50%      { stroke: #38bdf8; filter: drop-shadow(0 0 10px #38bdf8); }
+      }
+      @keyframes dotPulse {
+        0%, 100% { r: 3; opacity: 0.6; }
+        50%      { r: 4.5; opacity: 1; }
+      }
+      .mono-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      /* ]]> */
+    </style>
+    <radialGradient id="questBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%"   stop-color="#14002e"/>
+      <stop offset="60%"  stop-color="#080017"/>
+      <stop offset="100%" stop-color="#020007"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="880" height="375" rx="12" fill="url(#questBg)"/>
+  <rect x="1.5" y="1.5" width="877" height="372" rx="10" fill="none" stroke-width="1.6" style="animation: borderPulse 4s ease-in-out infinite;"/>
+
+  <!-- Top Header -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="3.5" fill="#38bdf8" style="animation: dotPulse 2s infinite;"/>
+    <circle cx="6" cy="6" r="7" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.5"/>
+    <text x="22" y="10" fill="#38bdf8" font-size="11.5" font-weight="700" letter-spacing="1" class="mono-font">
+      [ ACTIVE QUEST LOG // ARCHITECT CAMPAIGN REGISTRY ]
+    </text>
+    <text x="832" y="10" text-anchor="end" fill="#a855f7" font-size="10.5" font-weight="600" class="mono-font">
+      CAMPAIGN: IN PROGRESS
+    </text>
+    <line x1="0" y1="18" x2="832" y2="18" stroke="#4c1d95" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- 5 Quest Panels -->
+  
+    <!-- Row 1 -->
+    <g transform="translate(24, 52)">
+      <rect x="0" y="0" width="832" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      
+      <!-- Left indicator notch -->
+      <line x1="0" y1="8" x2="0" y2="44" stroke="#a855f7" stroke-width="3"/>
+
+      <!-- Tag & Title -->
+      <text x="14" y="18" fill="#a855f7" font-size="9" font-weight="700" letter-spacing="1" font-family="'Fira Code', monospace">QUEST 01 // ACADEMIC FOUNDATION</text>
+      <text x="14" y="38" fill="#ffffff" font-size="12" font-weight="800" font-family="'Fira Code', monospace">CSE (AI &amp; ML) UNDERGRAD DEGREE</text>
+      
+      <!-- Description -->
+      <text x="310" y="36" fill="#94a3b8" font-size="10.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Core algorithms, neural computation, probability &amp; system engineering at Haldia.</text>
+
+      <!-- Category Pill -->
+      <rect x="610" y="15" width="95" height="22" rx="3" fill="#1b003a" stroke="#a855f7" stroke-width="0.8"/>
+      <text x="657.5" y="29.5" text-anchor="middle" fill="#a855f7" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">MAIN QUEST</text>
+
+      <!-- Status Pill -->
+      <rect x="715" y="15" width="105" height="22" rx="3" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="767.5" y="29.5" text-anchor="middle" fill="#38bdf8" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">⚔️ IN PROGRESS</text>
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(24, 114)">
+      <rect x="0" y="0" width="832" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      
+      <!-- Left indicator notch -->
+      <line x1="0" y1="8" x2="0" y2="44" stroke="#38bdf8" stroke-width="3"/>
+
+      <!-- Tag & Title -->
+      <text x="14" y="18" fill="#38bdf8" font-size="9" font-weight="700" letter-spacing="1" font-family="'Fira Code', monospace">QUEST 02 // ANALYTICAL MASTERY</text>
+      <text x="14" y="38" fill="#ffffff" font-size="12" font-weight="800" font-family="'Fira Code', monospace">DATA SCIENCE &amp; MACHINE LEARNING</text>
+      
+      <!-- Description -->
+      <text x="310" y="36" fill="#94a3b8" font-size="10.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">High-dimensional data wrangling, exploratory analysis &amp; modeling via Python &amp; Pandas.</text>
+
+      <!-- Category Pill -->
+      <rect x="610" y="15" width="95" height="22" rx="3" fill="#1b003a" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="657.5" y="29.5" text-anchor="middle" fill="#38bdf8" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">SPECIALIZATION</text>
+
+      <!-- Status Pill -->
+      <rect x="715" y="15" width="105" height="22" rx="3" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="767.5" y="29.5" text-anchor="middle" fill="#38bdf8" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">⚡ ACTIVE PRACTICE</text>
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(24, 176)">
+      <rect x="0" y="0" width="832" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      
+      <!-- Left indicator notch -->
+      <line x1="0" y1="8" x2="0" y2="44" stroke="#c084fc" stroke-width="3"/>
+
+      <!-- Tag & Title -->
+      <text x="14" y="18" fill="#c084fc" font-size="9" font-weight="700" letter-spacing="1" font-family="'Fira Code', monospace">QUEST 03 // FULL-STACK ARCHITECTURE</text>
+      <text x="14" y="38" fill="#ffffff" font-size="12" font-weight="800" font-family="'Fira Code', monospace">AI-ASSISTED APPLICATION BUILDING</text>
+      
+      <!-- Description -->
+      <text x="310" y="36" fill="#94a3b8" font-size="10.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Co-authoring modern web systems &amp; tools with agentic co-pilots (Next.js, Supabase).</text>
+
+      <!-- Category Pill -->
+      <rect x="610" y="15" width="95" height="22" rx="3" fill="#1b003a" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="657.5" y="29.5" text-anchor="middle" fill="#c084fc" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">SYSTEM QUEST</text>
+
+      <!-- Status Pill -->
+      <rect x="715" y="15" width="105" height="22" rx="3" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="767.5" y="29.5" text-anchor="middle" fill="#38bdf8" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">🛠️ BUILDING</text>
+    </g>
+    <!-- Row 4 -->
+    <g transform="translate(24, 238)">
+      <rect x="0" y="0" width="832" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      
+      <!-- Left indicator notch -->
+      <line x1="0" y1="8" x2="0" y2="44" stroke="#facc15" stroke-width="3"/>
+
+      <!-- Tag & Title -->
+      <text x="14" y="18" fill="#facc15" font-size="9" font-weight="700" letter-spacing="1" font-family="'Fira Code', monospace">QUEST 04 // LINGUISTIC AWAKENING</text>
+      <text x="14" y="38" fill="#ffffff" font-size="12" font-weight="800" font-family="'Fira Code', monospace">JAPANESE JLPT N4 IMMERSION</text>
+      
+      <!-- Description -->
+      <text x="310" y="36" fill="#94a3b8" font-size="10.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Mastering kanji radicals, sentence patterns &amp; cultural discourse (JLPT N5 completed).</text>
+
+      <!-- Category Pill -->
+      <rect x="610" y="15" width="95" height="22" rx="3" fill="#1b003a" stroke="#facc15" stroke-width="0.8"/>
+      <text x="657.5" y="29.5" text-anchor="middle" fill="#facc15" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">CULTURAL QUEST</text>
+
+      <!-- Status Pill -->
+      <rect x="715" y="15" width="105" height="22" rx="3" fill="#082f49" stroke="#facc15" stroke-width="0.8"/>
+      <text x="767.5" y="29.5" text-anchor="middle" fill="#facc15" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">📖 ACTIVE STUDY</text>
+    </g>
+    <!-- Row 5 -->
+    <g transform="translate(24, 300)">
+      <rect x="0" y="0" width="832" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      
+      <!-- Left indicator notch -->
+      <line x1="0" y1="8" x2="0" y2="44" stroke="#4ade80" stroke-width="3"/>
+
+      <!-- Tag & Title -->
+      <text x="14" y="18" fill="#4ade80" font-size="9" font-weight="700" letter-spacing="1" font-family="'Fira Code', monospace">QUEST 05 // UNBROKEN EVOLUTION</text>
+      <text x="14" y="38" fill="#ffffff" font-size="12" font-weight="800" font-family="'Fira Code', monospace">CONTINUOUS PROJECT DEVELOPMENT</text>
+      
+      <!-- Description -->
+      <text x="310" y="36" fill="#94a3b8" font-size="10.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Designing and shipping open-source utilities, creative platforms &amp; innovative tools.</text>
+
+      <!-- Category Pill -->
+      <rect x="610" y="15" width="95" height="22" rx="3" fill="#1b003a" stroke="#4ade80" stroke-width="0.8"/>
+      <text x="657.5" y="29.5" text-anchor="middle" fill="#4ade80" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">DAILY QUEST</text>
+
+      <!-- Status Pill -->
+      <rect x="715" y="15" width="105" height="22" rx="3" fill="#082f49" stroke="#4ade80" stroke-width="0.8"/>
+      <text x="767.5" y="29.5" text-anchor="middle" fill="#4ade80" font-size="8.5" font-weight="700" font-family="'Fira Code', monospace">🔄 CONTINUOUS</text>
+    </g>
+</svg>

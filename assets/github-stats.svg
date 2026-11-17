@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @keyframes borderPulse {
+        0%, 100% { stroke: #7c3aed; filter: drop-shadow(0 0 4px #7c3aed); }
+        50%      { stroke: #38bdf8; filter: drop-shadow(0 0 10px #38bdf8); }
+      }}
+      @keyframes dotPulse {
+        0%, 100% { r: 3.5; opacity: 0.6; }
+        50%      { r: 4.5; opacity: 1; }
+      }}
+      .mono-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      .sans-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      /* ]]> */
+    </style>
+    <radialGradient id="statBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%"   stop-color="#14002e"/>
+      <stop offset="60%"  stop-color="#080017"/>
+      <stop offset="100%" stop-color="#020007"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="880" height="200" rx="12" fill="url(#statBg)"/>
+  <rect x="1.5" y="1.5" width="877" height="197" rx="10" fill="none" stroke-width="1.6" style="animation: borderPulse 4s ease-in-out infinite;"/>
+
+  <!-- Top Header -->
+  <g transform="translate(24, 28)">
+    <circle cx="6" cy="6" r="3.5" fill="#38bdf8" style="animation: dotPulse 2s infinite;"/>
+    <circle cx="6" cy="6" r="7" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.5"/>
+    <text x="22" y="10" fill="#38bdf8" font-size="11.5" font-weight="700" letter-spacing="1" class="mono-font">
+      [ MONARCH POWER LEVEL // GITHUB BATTLEFIELD TELEMETRY ]
+    </text>
+    <text x="832" y="10" text-anchor="end" fill="#a855f7" font-size="10.5" font-weight="600" class="mono-font">
+      IDENTIFIER: Partha-zzz
+    </text>
+    <line x1="0" y1="18" x2="832" y2="18" stroke="#4c1d95" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- Left Column: Core Stats Cards -->
+  <g transform="translate(24, 60)">
+    <!-- Box 1: Contributions -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="195" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      <text x="14" y="20" fill="#a78bfa" font-size="9" font-weight="600" class="mono-font">TOTAL CONTRIBUTIONS</text>
+      <text x="14" y="42" fill="#38bdf8" font-size="20" font-weight="800" class="mono-font">352+</text>
+      <text x="80" y="40" fill="#94a3b8" font-size="9" class="mono-font">(Jan 17 – Present)</text>
+    </g>
+
+    <!-- Box 2: Public Repos -->
+    <g transform="translate(210, 0)">
+      <rect x="0" y="0" width="195" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      <text x="14" y="20" fill="#a78bfa" font-size="9" font-weight="600" class="mono-font">PUBLIC REPOSITORIES</text>
+      <text x="14" y="42" fill="#c084fc" font-size="20" font-weight="800" class="mono-font">11</text>
+      <text x="50" y="40" fill="#94a3b8" font-size="9" class="mono-font">Projects Conquered</text>
+    </g>
+
+    <!-- Box 3: Followers -->
+    <g transform="translate(0, 62)">
+      <rect x="0" y="0" width="195" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      <text x="14" y="20" fill="#a78bfa" font-size="9" font-weight="600" class="mono-font">FOLLOWERS</text>
+      <text x="14" y="42" fill="#38bdf8" font-size="20" font-weight="800" class="mono-font">6</text>
+      <text x="40" y="40" fill="#94a3b8" font-size="9" class="mono-font">Hunters Connected</text>
+    </g>
+
+    <!-- Box 4: Account Tier -->
+    <g transform="translate(210, 62)">
+      <rect x="0" y="0" width="195" height="52" rx="6" fill="#0d0221" stroke="#3b0764" stroke-width="0.8"/>
+      <text x="14" y="20" fill="#a78bfa" font-size="9" font-weight="600" class="mono-font">HUNTER CLASSIFICATION</text>
+      <text x="14" y="42" fill="#facc15" font-size="16" font-weight="800" class="mono-font">S-RANK ARCHITECT</text>
+    </g>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="445" y1="58" x2="445" y2="182" stroke="#3b0764" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Right Column: Top Languages -->
+  <g transform="translate(465, 58)">
+    <text x="0" y="10" fill="#c084fc" font-size="10.5" font-weight="700" letter-spacing="1" class="mono-font">
+      TOP PROGRAMMING LANGUAGES
+    </text>
+
+    <!-- Python -->
+    <g transform="translate(0, 22)">
+      <text x="0" y="11" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">Python</text>
+      <text x="390" y="11" text-anchor="end" fill="#38bdf8" font-size="10" font-weight="700" class="mono-font">33.3%</text>
+      <rect x="0" y="16" width="390" height="6" rx="3" fill="#1e1138"/>
+      <rect x="0" y="16" width="130" height="6" rx="3" fill="#3572A5"/>
+    </g>
+
+    <!-- Jupyter Notebook -->
+    <g transform="translate(0, 50)">
+      <text x="0" y="11" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">Jupyter Notebook</text>
+      <text x="390" y="11" text-anchor="end" fill="#c084fc" font-size="10" font-weight="700" class="mono-font">33.3%</text>
+      <rect x="0" y="16" width="390" height="6" rx="3" fill="#1e1138"/>
+      <rect x="0" y="16" width="130" height="6" rx="3" fill="#DA5B0B"/>
+    </g>
+
+    <!-- TypeScript / Web -->
+    <g transform="translate(0, 78)">
+      <text x="0" y="11" fill="#e2e8f0" font-size="10" font-weight="600" class="mono-font">TypeScript &amp; Web Frameworks</text>
+      <text x="390" y="11" text-anchor="end" fill="#facc15" font-size="10" font-weight="700" class="mono-font">33.4%</text>
+      <rect x="0" y="16" width="390" height="6" rx="3" fill="#1e1138"/>
+      <rect x="0" y="16" width="130" height="6" rx="3" fill="#3178C6"/>
+    </g>
+  </g>
+</svg>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partha-zzz // The Architect of Possibilities Preview</title>
+  <title>Partha-zzz // The Architect of Possibilities — Solo Leveling Redesign</title>
   <style>
     body {
       background-color: #05000c;
@@ -30,8 +30,8 @@
       font-weight: bold;
       border-bottom: 1px solid #3b0764;
       padding-bottom: 8px;
-      margin-top: 32px;
-      margin-bottom: 16px;
+      margin-top: 36px;
+      margin-bottom: 20px;
     }
     img {
       max-width: 100%;
@@ -57,29 +57,19 @@
       background: #0c001a;
       color: #e9d5ff;
     }
-    code {
-      background: #17002e;
-      color: #38bdf8;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: 'Courier New', Courier, monospace;
-    }
-    pre {
-      background: #0d011d;
-      border: 1px solid #3b0764;
-      padding: 16px;
-      border-radius: 8px;
-      overflow-x: auto;
-      color: #e9d5ff;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 13px;
-    }
     .badge-bar {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 8px;
       margin-bottom: 20px;
+    }
+    .project-card-wrapper {
+      margin-bottom: 14px;
+      transition: transform 0.2s ease;
+    }
+    .project-card-wrapper:hover {
+      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -96,75 +86,65 @@
     <!-- Cinematic Banner -->
     <img src="assets/solo-leveling-banner.svg" alt="Solo Leveling Banner" />
 
-    <!-- Hero Showcase -->
+    <!-- 01. Hero Awakening -->
     <div class="section-title">⚔️ [ THE ARCHITECT'S AWAKENING ]</div>
-    <table>
-      <tr>
-        <td style="width: 40%; text-align: center; vertical-align: middle;">
-          <img src="assets/id.png" alt="Partha Sarathi Sarkar" style="border-radius: 12px; box-shadow: 0 0 20px #7c3aed; max-width: 240px;" />
+    <table style="border: none;">
+      <tr style="border: none;">
+        <td style="width: 38%; text-align: center; vertical-align: middle; border: none; background: transparent;">
+          <img src="assets/id.png" alt="Partha Sarathi Sarkar" style="border-radius: 12px; box-shadow: 0 0 20px #7c3aed; max-width: 250px;" />
           <br>
-          <small><b>Partha Sarathi Sarkar (파르타) — The Architect</b></small>
+          <small style="color: #c084fc;"><b>Partha Sarathi Sarkar (파르타) — The Architect</b></small>
         </td>
-        <td style="width: 60%; vertical-align: top;">
-          <img src="assets/system-status.svg" alt="System Status HUD" style="margin-bottom: 12px;" />
-          <pre>class TheArchitect:
-    hunter_name = "Partha Sarathi Sarkar"
-    alias       = "Partha-zzz"
-    rank        = "Awakened S-Class"
-    class_type  = "CSE (AI & ML) Undergrad"
-    origin      = "Haldia, West Bengal, India"
-    
-    awakened_runes = [
-        "Data Science & Analytics",
-        "Machine Learning Architecture",
-        "Pythonic Systems",
-        "AI-Assisted Full-Stack Prototyping",
-        "Japanese Linguistics (JLPT N5 -> N4 Prep)"
-    ]
-    def command(self):
-        return "ARISE. (일어나라)"</pre>
+        <td style="width: 62%; vertical-align: middle; border: none; background: transparent;">
+          <img src="assets/system-card.svg" alt="System Profile Card" />
         </td>
       </tr>
     </table>
 
-    <!-- Primary Weapon -->
+    <!-- 02. Primary Weapon -->
     <div class="section-title">🐍 [ PRIMARY SOUL WEAPON — PYTHON & DATA SCIENCE REACTOR ]</div>
     <img src="assets/python-core.svg" alt="Python Core HUD" />
 
-    <!-- Quests -->
-    <div class="section-title">🗡️ [ ACTIVE DUNGEON QUEST LOG ]</div>
-    <table>
-      <thead>
-        <tr>
-          <th>Dungeon Quest</th>
-          <th>Rank</th>
-          <th>Status</th>
-          <th>EXP Reward</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><b>Computer Science & Engineering (AI & ML) Degree</b></td>
-          <td><code>S-Rank Main</code></td>
-          <td>⚔️ IN PROGRESS</td>
-          <td>+10,000 XP</td>
-        </tr>
-        <tr>
-          <td><b>Advanced Data Science & Machine Learning Mastery</b></td>
-          <td><code>S-Rank Main</code></td>
-          <td>⚔️ IN PROGRESS</td>
-          <td>+5,000 XP</td>
-        </tr>
-        <tr>
-          <td><b>Japanese JLPT N4 Language Awakening</b></td>
-          <td><code>A-Rank Quest</code></td>
-          <td>📖 ACTIVE STUDY</td>
-          <td>+2,500 XP</td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- 03. Hunter Attribute Matrix -->
+    <div class="section-title">📜 [ HUNTER ATTRIBUTE MATRIX — S-RANK ARCHITECT ]</div>
+    <img src="assets/hunter-attributes.svg" alt="Hunter Attribute Matrix" />
 
-    <!-- Marching Footer -->
+    <!-- 04. Shadow Army Arsenal -->
+    <div class="section-title">💀 [ THE SHADOW ARMY ARSENAL — RUNES & SKILLS ]</div>
+    <img src="assets/tech-arsenal.svg" alt="The Shadow Army Arsenal" />
+
+    <!-- 05. Project Archives -->
+    <div class="section-title">🏆 [ THE MONARCH'S CONQUERED DUNGEONS — PROJECT ARCHIVES ]</div>
+    <div class="project-card-wrapper">
+      <a href="https://nasa-forgotten-legacy.vercel.app/" target="_blank">
+        <img src="assets/project-card-1.svg" alt="NASA Forgotten Legacy" />
+      </a>
+    </div>
+    <div class="project-card-wrapper">
+      <a href="https://github.com/Partha-zzz/ExploitReplay" target="_blank">
+        <img src="assets/project-card-2.svg" alt="ExploitReplay" />
+      </a>
+    </div>
+    <div class="project-card-wrapper">
+      <a href="https://res-q-ai-blond.vercel.app/" target="_blank">
+        <img src="assets/project-card-3.svg" alt="ResQAI" />
+      </a>
+    </div>
+
+    <!-- 06. Monarch Power Level -->
+    <div class="section-title">📊 [ MONARCH POWER LEVEL & COMBAT RECORDS ]</div>
+    <img src="assets/github-stats.svg" alt="GitHub Stats" style="margin-bottom: 14px;" />
+    <img src="https://streak-stats.demolab.com/?user=Partha-zzz&theme=tokyonight&hide_border=true&background=06000f&ring=9333ea&fire=c084fc&currStreakLabel=a855f7&sideLabels=e9d5ff&sideNums=c084fc&currStreakNum=e9d5ff&dates=6d28d9&stroke=3b0764" alt="Streak Stats" width="640" />
+
+    <!-- 07. Shadow Serpent -->
+    <div class="section-title">🐍 [ SHADOW SERPENT DEVOURING COMMITS ]</div>
+    <img src="assets/github-snake-dark.svg" alt="Shadow Serpent" />
+
+    <!-- 08. Active Quests -->
+    <div class="section-title">🗡️ [ ACTIVE DUNGEON QUEST LOG ]</div>
+    <img src="assets/active-quests.svg" alt="Active Quests" />
+
+    <!-- 09. Footer -->
     <div class="section-title">✦ [ THE SHADOW REALM FOOTER ] ✦</div>
     <img src="assets/solo-leveling-footer.svg" alt="Shadow Army Footer" />
   </div>
