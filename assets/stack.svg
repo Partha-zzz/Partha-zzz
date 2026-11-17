@@ -5,6 +5,7 @@
          JetBrains Mono: SIL Open Font License 1.1 (https://github.com/JetBrains/JetBrainsMono)
     -->
     <style>
+      /* <![CDATA[ */
       @font-face {
         font-family: 'Plus Jakarta Sans';
         font-style: normal;
@@ -25,48 +26,61 @@
       .st-mono { font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace; }
       .st-sans { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
 
-      /* Orbital Animations */
+      /* Core and Orbital Motion */
       .st-pulse-core {
-        animation: stCorePulse 4s ease-in-out infinite alternate;
+        animation: stCorePulse 3.5s ease-in-out infinite alternate;
       }
-      .st-orbit-1 {
-        animation: stOrbit1 30s linear infinite;
-        transform-origin: 430px 145px;
+      .st-orbit-dash-1 {
+        animation: dashFlow1 20s linear infinite;
       }
-      .st-orbit-2 {
-        animation: stOrbit2 45s linear infinite;
-        transform-origin: 430px 145px;
+      .st-orbit-dash-2 {
+        animation: dashFlow2 25s linear infinite;
       }
-      .st-orbit-3 {
-        animation: stOrbit3 60s linear infinite;
-        transform-origin: 430px 145px;
+      .st-orbit-dash-3 {
+        animation: dashFlow3 30s linear infinite;
       }
+
+      /* Node Floating Harmonics (Subtle, strictly in bounds) */
+      .st-float-a { animation: floatA 4s ease-in-out infinite alternate; }
+      .st-float-b { animation: floatB 4.5s ease-in-out infinite alternate; }
+      .st-float-c { animation: floatC 5s ease-in-out infinite alternate; }
 
       @keyframes stCorePulse {
-        0% { transform: scale(0.96); opacity: 0.8; }
-        100% { transform: scale(1.05); opacity: 1; }
+        0% { transform: scale(0.96); opacity: 0.85; }
+        100% { transform: scale(1.04); opacity: 1; }
       }
 
-      @keyframes stOrbit1 {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+      @keyframes dashFlow1 {
+        to { stroke-dashoffset: -40; }
+      }
+      @keyframes dashFlow2 {
+        to { stroke-dashoffset: 40; }
+      }
+      @keyframes dashFlow3 {
+        to { stroke-dashoffset: -40; }
       }
 
-      @keyframes stOrbit2 {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(-360deg); }
+      @keyframes floatA {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-3px); }
       }
-
-      @keyframes stOrbit3 {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+      @keyframes floatB {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(3px); }
+      }
+      @keyframes floatC {
+        0% { transform: translateY(-2px); }
+        100% { transform: translateY(2px); }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        .st-orbit-1, .st-orbit-2, .st-orbit-3, .st-pulse-core {
+        .st-pulse-core, .st-orbit-dash-1, .st-orbit-dash-2, .st-orbit-dash-3,
+        .st-float-a, .st-float-b, .st-float-c {
           animation: none !important;
+          transform: none !important;
         }
       }
+      /* ]]> */
     </style>
 
     <linearGradient id="st-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -82,7 +96,7 @@
       <stop offset="100%" stop-color="#070b16" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="st-bg-glow" cx="50%" cy="25%" r="50%">
+    <radialGradient id="st-bg-glow" cx="50%" cy="20%" r="55%">
       <stop offset="0%" stop-color="#247bff" stop-opacity="0.1" />
       <stop offset="100%" stop-color="#070b16" stop-opacity="0" />
     </radialGradient>
@@ -97,219 +111,222 @@
   <rect x="2" y="2" width="856" height="616" rx="20" class="st-bg" stroke="url(#st-border-grad)" stroke-width="1.5" />
   <rect x="2" y="2" width="856" height="616" rx="20" fill="url(#st-bg-glow)" />
 
-  <!-- Section Header -->
-  <g transform="translate(45, 36)">
-    <rect x="0" y="0" width="135" height="26" rx="6" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
+  <!-- ==================== HEADER (Dedicated region, zero orbital interference) ==================== -->
+  <g transform="translate(45, 30)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="145" height="26" rx="6" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.4" />
     <circle cx="14" cy="13" r="3.5" fill="#247bff" />
-    <text x="26" y="17" fill="#247bff" font-size="11" class="st-mono" font-weight="700" letter-spacing="1.5">// 02. TECH STACK</text>
+    <text x="25" y="17" fill="#247bff" font-size="11" class="st-mono" font-weight="700" letter-spacing="1.2">// 02. TECH STACK</text>
     
-    <text x="150" y="18" fill="#f5f5f5" font-size="18" class="st-display" letter-spacing="0.5">COMPUTATIONAL TOOLING &amp; WORKFLOWS</text>
+    <!-- Heading with clean 20px gap -->
+    <text x="165" y="18" fill="#f5f5f5" font-size="16" class="st-display" letter-spacing="0.5">COMPUTATIONAL TOOLING &amp; WORKFLOWS</text>
   </g>
 
-  <!-- ==================== ORBITAL VISUALIZATION (Y=70 to Y=230) ==================== -->
-  <g id="st-orbital-system">
-    <!-- Center Core Glow -->
-    <circle cx="430" cy="145" r="46" fill="url(#st-sun-glow)" filter="url(#st-glow)" class="st-pulse-core" />
-    <circle cx="430" cy="145" r="22" fill="#0d1527" stroke="#247bff" stroke-width="1.5" />
-    <text x="430" y="142" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-display">PYTHON</text>
-    <text x="430" y="154" text-anchor="middle" fill="#247bff" font-size="8.5" class="st-mono">&amp; AI</text>
-
-    <!-- ORBIT 1: Core Data Science (Inner, tilted -14 deg) -->
-    <g transform="rotate(-14, 430, 145)">
-      <ellipse cx="430" cy="145" rx="160" ry="52" fill="none" stroke="#247bff" stroke-width="1.2" stroke-dasharray="4,5" stroke-opacity="0.4" />
-      <g class="st-orbit-1">
-        <!-- Node 1: Pandas -->
-        <g transform="translate(275, 137)">
-          <rect x="-30" y="-10" width="60" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="9" class="st-mono">Pandas</text>
-        </g>
-        <!-- Node 2: Matplotlib -->
-        <g transform="translate(585, 137)">
-          <rect x="-34" y="-10" width="68" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="9" class="st-mono">Matplotlib</text>
-        </g>
-        <!-- Node 3: Jupyter -->
-        <g transform="translate(430, 93)">
-          <rect x="-30" y="-10" width="60" height="20" rx="10" fill="#0b1120" stroke="#ff354f" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#ff354f" font-size="9" class="st-mono">Jupyter</text>
-        </g>
-      </g>
+  <!-- ==================== ORBITAL SYSTEM (Strictly bounded: Y=68 to Y=226) ==================== -->
+  <g id="st-orbital-canvas">
+    <!-- Orbital Rings -->
+    <!-- Orbit 1 (Inner, tilt -10 deg) -->
+    <g transform="rotate(-10, 430, 146)">
+      <ellipse cx="430" cy="146" rx="140" ry="38" fill="none" stroke="#247bff" stroke-width="1.2" stroke-dasharray="4,5" stroke-opacity="0.4" class="st-orbit-dash-1" />
     </g>
 
-    <!-- ORBIT 2: AI-Assisted Workflow (Middle, tilted +12 deg) -->
-    <g transform="rotate(12, 430, 145)">
-      <ellipse cx="430" cy="145" rx="255" ry="76" fill="none" stroke="#ff354f" stroke-width="1.2" stroke-dasharray="3,6" stroke-opacity="0.35" />
-      <g class="st-orbit-2">
-        <!-- Node 1: Antigravity -->
-        <g transform="translate(180, 137)">
-          <rect x="-42" y="-10" width="84" height="20" rx="10" fill="#0b1120" stroke="#ff354f" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#ff354f" font-size="9" class="st-mono">Antigravity</text>
-        </g>
-        <!-- Node 2: Claude -->
-        <g transform="translate(680, 137)">
-          <rect x="-28" y="-10" width="56" height="20" rx="10" fill="#0b1120" stroke="#ff354f" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="9" class="st-mono">Claude</text>
-        </g>
-        <!-- Node 3: Stitch & Gemini -->
-        <g transform="translate(430, 69)">
-          <rect x="-35" y="-10" width="70" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#247bff" font-size="9" class="st-mono">Stitch/Gemini</text>
-        </g>
-        <!-- Node 4: Codex & Flow -->
-        <g transform="translate(430, 221)">
-          <rect x="-35" y="-10" width="70" height="20" rx="10" fill="#0b1120" stroke="#38bdf8" stroke-width="1" />
-          <text x="0" y="4" text-anchor="middle" fill="#38bdf8" font-size="9" class="st-mono">Codex/Flow</text>
-        </g>
-      </g>
+    <!-- Orbit 2 (Middle, tilt +8 deg) -->
+    <g transform="rotate(8, 430, 146)">
+      <ellipse cx="430" cy="146" rx="240" ry="50" fill="none" stroke="#ff354f" stroke-width="1.2" stroke-dasharray="3,6" stroke-opacity="0.35" class="st-orbit-dash-2" />
     </g>
 
-    <!-- ORBIT 3: Frameworks & Deploy (Outer, tilted -5 deg) -->
-    <g transform="rotate(-5, 430, 145)">
-      <ellipse cx="430" cy="145" rx="355" ry="98" fill="none" stroke="#247bff" stroke-width="1" stroke-dasharray="2,6" stroke-opacity="0.25" />
-      <g class="st-orbit-3">
-        <!-- Node 1: Next.js -->
-        <g transform="translate(85, 137)">
-          <rect x="-26" y="-10" width="52" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="0.8" />
-          <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="8.5" class="st-mono">Next.js</text>
-        </g>
-        <!-- Node 2: Three.js -->
-        <g transform="translate(775, 137)">
-          <rect x="-28" y="-10" width="56" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="0.8" />
-          <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="8.5" class="st-mono">Three.js</text>
-        </g>
-        <!-- Node 3: Supabase & Vercel -->
-        <g transform="translate(430, 47)">
-          <rect x="-38" y="-10" width="76" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="0.8" />
-          <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="8.5" class="st-mono">Supabase/Vercel</text>
-        </g>
-      </g>
+    <!-- Orbit 3 (Outer, tilt -4 deg) -->
+    <g transform="rotate(-4, 430, 146)">
+      <ellipse cx="430" cy="146" rx="340" ry="60" fill="none" stroke="#247bff" stroke-width="1.2" stroke-dasharray="2,6" stroke-opacity="0.25" class="st-orbit-dash-3" />
+    </g>
+
+    <!-- Central Glowing Core -->
+    <g transform="translate(430, 146)">
+      <circle cx="0" cy="0" r="38" fill="url(#st-sun-glow)" filter="url(#st-glow)" class="st-pulse-core" />
+      <circle cx="0" cy="0" r="22" fill="#0d1527" stroke="#247bff" stroke-width="1.5" />
+      <text x="0" y="-3" text-anchor="middle" fill="#f5f5f5" font-size="9.5" class="st-display">PYTHON</text>
+      <text x="0" y="9" text-anchor="middle" fill="#247bff" font-size="8.5" class="st-mono">&amp; AI</text>
+    </g>
+
+    <!-- Orbit 1 Nodes (Inner, Data Science) -->
+    <g class="st-float-a" transform="translate(295, 142)">
+      <rect x="-26" y="-10" width="52" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="9" class="st-mono">Pandas</text>
+    </g>
+
+    <g class="st-float-b" transform="translate(565, 150)">
+      <rect x="-32" y="-10" width="64" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="9" class="st-mono">Matplotlib</text>
+    </g>
+
+    <g class="st-float-c" transform="translate(430, 108)">
+      <rect x="-26" y="-10" width="52" height="20" rx="10" fill="#0b1120" stroke="#ff354f" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#ff354f" font-size="9" class="st-mono">Jupyter</text>
+    </g>
+
+    <!-- Orbit 2 Nodes (Middle, AI-Assisted Workflows) -->
+    <g class="st-float-b" transform="translate(195, 138)">
+      <rect x="-26" y="-10" width="52" height="20" rx="10" fill="#0b1120" stroke="#ff354f" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="9" class="st-mono">Claude</text>
+    </g>
+
+    <g class="st-float-a" transform="translate(665, 154)">
+      <rect x="-38" y="-10" width="76" height="20" rx="10" fill="#0b1120" stroke="#ff354f" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#ff354f" font-size="9" class="st-mono">Antigravity</text>
+    </g>
+
+    <g class="st-float-c" transform="translate(430, 92)">
+      <rect x="-42" y="-10" width="84" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#247bff" font-size="8.5" class="st-mono">Stitch / Gemini</text>
+    </g>
+
+    <g class="st-float-a" transform="translate(430, 200)">
+      <rect x="-40" y="-10" width="80" height="20" rx="10" fill="#0b1120" stroke="#38bdf8" stroke-width="1" />
+      <text x="0" y="4" text-anchor="middle" fill="#38bdf8" font-size="8.5" class="st-mono">Codex / Flow</text>
+    </g>
+
+    <!-- Orbit 3 Nodes (Outer, Frameworks & Infra) -->
+    <g class="st-float-c" transform="translate(100, 146)">
+      <rect x="-26" y="-10" width="52" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="0.8" />
+      <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="8.5" class="st-mono">Next.js</text>
+    </g>
+
+    <g class="st-float-b" transform="translate(760, 146)">
+      <rect x="-28" y="-10" width="56" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="0.8" />
+      <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="8.5" class="st-mono">Three.js</text>
+    </g>
+
+    <g class="st-float-a" transform="translate(430, 78)">
+      <rect x="-46" y="-10" width="92" height="20" rx="10" fill="#0b1120" stroke="#247bff" stroke-width="0.8" />
+      <text x="0" y="4" text-anchor="middle" fill="#f5f5f5" font-size="8.5" class="st-mono">Supabase / Vercel</text>
     </g>
   </g>
 
-  <!-- ==================== CATEGORIZED CHIPS SECTION (Y=260 to Y=550) ==================== -->
+  <!-- ==================== CATEGORIZED CHIPS SECTION (Y=236 to Y=530) ==================== -->
   
   <!-- ROW 1: Programming & Data Science (Left) + AI-Assisted Development (Right) -->
-  <g transform="translate(45, 260)">
+  <g transform="translate(45, 236)">
     <!-- CATEGORY 1: Programming & Data Science -->
     <g>
-      <rect x="0" y="0" width="375" height="85" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
-      <!-- Header -->
+      <rect x="0" y="0" width="375" height="92" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
       <text x="14" y="20" fill="#247bff" font-size="10.5" class="st-mono" font-weight="700">PROGRAMMING &amp; DATA SCIENCE</text>
-      <rect x="270" y="10" width="92" height="15" rx="7.5" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
-      <text x="316" y="21" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">CORE SKILLS</text>
+      <rect x="270" y="9" width="92" height="16" rx="8" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
+      <text x="316" y="20.5" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">CORE SKILLS</text>
 
       <!-- Chips -->
       <g transform="translate(14, 34)">
         <rect x="0" y="0" width="65" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="32" y="17" text-anchor="middle" fill="#f5f5f5" font-size="11" class="st-mono">Python</text>
+        <text x="32" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10.5" class="st-mono">Python</text>
 
         <rect x="73" y="0" width="68" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="107" y="17" text-anchor="middle" fill="#f5f5f5" font-size="11" class="st-mono">Pandas</text>
+        <text x="107" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10.5" class="st-mono">Pandas</text>
 
         <rect x="149" y="0" width="82" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="190" y="17" text-anchor="middle" fill="#f5f5f5" font-size="11" class="st-mono">Matplotlib</text>
+        <text x="190" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10.5" class="st-mono">Matplotlib</text>
 
         <rect x="239" y="0" width="105" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="291" y="17" text-anchor="middle" fill="#f5f5f5" font-size="11" class="st-mono">Jupyter Notebook</text>
+        <text x="291" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10.5" class="st-mono">Jupyter</text>
       </g>
+      <text x="14" y="78" fill="#64748b" font-size="9.5" class="st-mono">Core analytical, scientific &amp; numerical modeling toolchain</text>
     </g>
 
     <!-- CATEGORY 2: AI-Assisted Development & Design -->
     <g transform="translate(395, 0)">
-      <rect x="0" y="0" width="375" height="85" rx="10" fill="#0d1527" stroke="#ff354f" stroke-width="1" stroke-opacity="0.35" />
-      <!-- Header -->
-      <text x="14" y="20" fill="#ff354f" font-size="10.5" class="st-mono" font-weight="700">AI-ASSISTED DEVELOPMENT &amp; DESIGN</text>
-      <rect x="245" y="10" width="118" height="15" rx="7.5" fill="#070b16" stroke="#ff354f" stroke-width="0.7" />
-      <text x="304" y="21" text-anchor="middle" fill="#ff354f" font-size="8" class="st-mono">AGENTIC WORKFLOW</text>
+      <rect x="0" y="0" width="375" height="92" rx="10" fill="#0d1527" stroke="#ff354f" stroke-width="1" stroke-opacity="0.35" />
+      <text x="14" y="20" fill="#ff354f" font-size="10.5" class="st-mono" font-weight="700">AI-ASSISTED DEV &amp; DESIGN</text>
+      <rect x="245" y="9" width="118" height="16" rx="8" fill="#070b16" stroke="#ff354f" stroke-width="0.7" />
+      <text x="304" y="20.5" text-anchor="middle" fill="#ff354f" font-size="8" class="st-mono">AGENTIC WORKFLOW</text>
 
       <!-- Chips -->
       <g transform="translate(14, 34)">
-        <rect x="0" y="0" width="84" height="22" rx="4" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
-        <text x="42" y="15" text-anchor="middle" fill="#f5f5f5" font-size="9.5" class="st-mono">Antigravity</text>
+        <rect x="0" y="0" width="82" height="26" rx="6" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
+        <text x="41" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Antigravity</text>
 
-        <rect x="90" y="0" width="56" height="22" rx="4" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
-        <text x="118" y="15" text-anchor="middle" fill="#f5f5f5" font-size="9.5" class="st-mono">Stitch</text>
+        <rect x="88" y="0" width="56" height="26" rx="6" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
+        <text x="116" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Stitch</text>
 
-        <rect x="152" y="0" width="54" height="22" rx="4" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
-        <text x="179" y="15" text-anchor="middle" fill="#f5f5f5" font-size="9.5" class="st-mono">Claude</text>
+        <rect x="150" y="0" width="56" height="26" rx="6" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
+        <text x="178" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Claude</text>
 
-        <rect x="212" y="0" width="52" height="22" rx="4" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
-        <text x="238" y="15" text-anchor="middle" fill="#f5f5f5" font-size="9.5" class="st-mono">Codex</text>
+        <rect x="212" y="0" width="54" height="26" rx="6" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
+        <text x="239" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Codex</text>
 
-        <rect x="270" y="0" width="76" height="22" rx="4" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
-        <text x="308" y="15" text-anchor="middle" fill="#f5f5f5" font-size="9.5" class="st-mono">Flow/Gemini</text>
+        <rect x="272" y="0" width="76" height="26" rx="6" fill="#070b16" stroke="#ff354f" stroke-width="0.8" />
+        <text x="310" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Flow/Gemini</text>
       </g>
-      <text x="14" y="73" fill="#94a3b8" font-size="9.5" class="st-mono">Used for co-authoring, rapid prototyping &amp; full-stack app build</text>
+      <text x="14" y="78" fill="#64748b" font-size="9.5" class="st-mono">Used for co-authoring, rapid prototyping &amp; full-stack build</text>
     </g>
   </g>
 
   <!-- ROW 2: Development Frameworks (Left) + Backend & Deployment (Right) -->
-  <g transform="translate(45, 355)">
+  <g transform="translate(45, 338)">
     <!-- CATEGORY 3: Development Frameworks & Technologies -->
     <g>
-      <rect x="0" y="0" width="375" height="85" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
+      <rect x="0" y="0" width="375" height="92" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
       <text x="14" y="20" fill="#247bff" font-size="10.5" class="st-mono" font-weight="700">FRAMEWORKS &amp; TECHNOLOGIES</text>
-      <rect x="250" y="10" width="112" height="15" rx="7.5" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
-      <text x="306" y="21" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">APP ARCHITECTURE</text>
+      <rect x="250" y="9" width="112" height="16" rx="8" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
+      <text x="306" y="20.5" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">APP ARCHITECTURE</text>
 
       <!-- Chips -->
-      <g transform="translate(14, 36)">
-        <rect x="0" y="0" width="62" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="31" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Next.js</text>
+      <g transform="translate(14, 34)">
+        <rect x="0" y="0" width="62" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="31" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Next.js</text>
 
-        <rect x="68" y="0" width="82" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="109" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Tailwind CSS</text>
+        <rect x="68" y="0" width="82" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="109" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Tailwind CSS</text>
 
-        <rect x="156" y="0" width="66" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="189" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Three.js</text>
+        <rect x="156" y="0" width="66" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="189" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Three.js</text>
 
-        <rect x="228" y="0" width="68" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="262" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">shadcn/ui</text>
+        <rect x="228" y="0" width="68" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="262" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">shadcn/ui</text>
 
-        <rect x="302" y="0" width="58" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="331" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Node.js</text>
+        <rect x="302" y="0" width="58" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="331" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Node.js</text>
       </g>
+      <text x="14" y="78" fill="#64748b" font-size="9.5" class="st-mono">Modern responsive UI, interactive 3D, and web stacks</text>
     </g>
 
     <!-- CATEGORY 4: Backend, Database & Deployment -->
     <g transform="translate(395, 0)">
-      <rect x="0" y="0" width="375" height="85" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
-      <text x="14" y="20" fill="#247bff" font-size="10.5" class="st-mono" font-weight="700">BACKEND, DATABASE &amp; DEPLOY</text>
-      <rect x="265" y="10" width="98" height="15" rx="7.5" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
-      <text x="314" y="21" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">CLOUD &amp; DATA</text>
+      <rect x="0" y="0" width="375" height="92" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
+      <text x="14" y="20" fill="#247bff" font-size="10.5" class="st-mono" font-weight="700">BACKEND &amp; DEPLOYMENT</text>
+      <rect x="265" y="9" width="98" height="16" rx="8" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
+      <text x="314" y="20.5" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">CLOUD &amp; DATA</text>
 
       <!-- Chips -->
-      <g transform="translate(14, 36)">
-        <rect x="0" y="0" width="66" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="33" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Supabase</text>
+      <g transform="translate(14, 34)">
+        <rect x="0" y="0" width="64" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="32" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Supabase</text>
 
-        <rect x="72" y="0" width="76" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="110" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">PostgreSQL</text>
+        <rect x="70" y="0" width="76" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="108" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">PostgreSQL</text>
 
-        <rect x="154" y="0" width="54" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="181" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">SQLite</text>
+        <rect x="152" y="0" width="54" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="179" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">SQLite</text>
 
-        <rect x="214" y="0" width="52" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="240" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Vercel</text>
+        <rect x="212" y="0" width="50" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="237" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Vercel</text>
 
-        <rect x="272" y="0" width="46" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="295" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Render</text>
+        <rect x="268" y="0" width="48" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="292" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Render</text>
 
-        <rect x="324" y="0" width="44" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
-        <text x="346" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Railway</text>
+        <rect x="322" y="0" width="44" height="26" rx="6" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
+        <text x="344" y="17" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Railway</text>
       </g>
+      <text x="14" y="78" fill="#64748b" font-size="9.5" class="st-mono">Cloud databases, edge hosting, and production servers</text>
     </g>
   </g>
 
   <!-- ROW 3: Technical Utilities (Full Width Card) -->
-  <g transform="translate(45, 450)">
-    <rect x="0" y="0" width="770" height="74" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
-    <text x="14" y="19" fill="#247bff" font-size="10.5" class="st-mono" font-weight="700">DEVELOPMENT &amp; TECHNICAL UTILITIES</text>
-    <rect x="650" y="9" width="108" height="15" rx="7.5" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
-    <text x="704" y="20" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">CLI &amp; MEDIA TOOLS</text>
+  <g transform="translate(45, 440)">
+    <rect x="0" y="0" width="770" height="80" rx="10" fill="#0d1527" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
+    <text x="14" y="20" fill="#247bff" font-size="10.5" class="st-mono" font-weight="700">DEVELOPMENT &amp; TECHNICAL UTILITIES</text>
+    <rect x="638" y="9" width="118" height="16" rx="8" fill="#070b16" stroke="#247bff" stroke-width="0.7" />
+    <text x="697" y="20.5" text-anchor="middle" fill="#247bff" font-size="8" class="st-mono">CLI &amp; MEDIA TOOLS</text>
 
     <!-- Chips -->
-    <g transform="translate(14, 32)">
+    <g transform="translate(14, 34)">
       <rect x="0" y="0" width="48" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
       <text x="24" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">Git</text>
 
@@ -328,16 +345,16 @@
       <rect x="330" y="0" width="68" height="24" rx="5" fill="#070b16" stroke="#247bff" stroke-width="0.8" />
       <text x="364" y="16" text-anchor="middle" fill="#f5f5f5" font-size="10" class="st-mono">EasyGIF</text>
 
-      <line x1="415" y1="2" x2="415" y2="24" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
-      <text x="430" y="16" fill="#94a3b8" font-size="10" class="st-mono">Essential toolchain for CLI automation &amp; multimedia processing</text>
+      <line x1="412" y1="2" x2="412" y2="22" stroke="#247bff" stroke-width="1" stroke-opacity="0.3" />
+      <text x="424" y="16" fill="#94a3b8" font-size="9.5" class="st-mono">Essential CLI automation, versioning &amp; multimedia processing</text>
     </g>
   </g>
 
-  <!-- Bottom Transparency / Workflow Statement -->
-  <g transform="translate(45, 545)">
-    <rect x="0" y="0" width="770" height="42" rx="8" fill="#070b16" stroke="#247bff" stroke-width="0.8" stroke-opacity="0.2" />
-    <text x="14" y="18" fill="#38bdf8" font-size="10" class="st-mono" font-weight="700">TRANSPARENCY NOTE:</text>
-    <text x="145" y="18" fill="#94a3b8" font-size="10" class="st-mono">AI-assisted full-stack development is utilized to design, build, and explore complete applications.</text>
-    <text x="14" y="32" fill="#64748b" font-size="9.5" class="st-mono">Core independent programming proficiency centers on Python &amp; Data Science analytics.</text>
+  <!-- Bottom Transparency Note (Y=530, dedicated container) -->
+  <g transform="translate(45, 530)">
+    <rect x="0" y="0" width="770" height="46" rx="8" fill="#070b16" stroke="#247bff" stroke-width="0.8" stroke-opacity="0.25" />
+    <text x="14" y="19" fill="#38bdf8" font-size="9.5" class="st-mono" font-weight="700">TRANSPARENCY NOTE:</text>
+    <text x="135" y="19" fill="#94a3b8" font-size="9.5" class="st-mono">AI-assisted full-stack development is utilized to design, build, and explore complete applications.</text>
+    <text x="14" y="34" fill="#64748b" font-size="9" class="st-mono">Core independent programming proficiency centers on Python &amp; Data Science analytics.</text>
   </g>
 </svg>
