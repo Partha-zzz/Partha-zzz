@@ -22,7 +22,7 @@
 <!-- ══════ HERO COMPOSITION: FULL-WIDTH CINEMATIC SVG ══════ -->
 <p align="center">
   <img
-    src="./assets/hero.svg"
+    src="./assets/hero.svg?v=1794939529"
     alt="Partha Sarathi Sarkar — The Architect of Possibilities | CSE (AI &amp; ML) at Haldia. One Piece × Neo-Brutalist Developer Portfolio."
     width="100%"
   />
@@ -36,7 +36,7 @@
 <!-- ══════ ABOUT & ENGINEERING PILLARS ══════ -->
 <p align="center">
   <img
-    src="./assets/about-life.svg"
+    src="./assets/about-life.svg?v=1794939529"
     alt="The Man Behind the Straw Hat — Captain's Logbook &amp; What I Build: AI &amp; Machine Learning, Autonomous AI Agents, and Full-Stack Systems."
     width="100%"
   />
@@ -45,7 +45,7 @@
 <!-- ══════ PIRATE CREW ARSENAL & TECH STACK ══════ -->
 <p align="center">
   <img
-    src="./assets/stack.svg"
+    src="./assets/stack.svg?v=1794939529"
     alt="The Pirate Crew Arsenal — Inventory of the Thousand Sunny: Core Programming, AI-Assisted Copilots, Web Frameworks, Infrastructure, and Development Utilities."
     width="100%"
   />
@@ -54,7 +54,7 @@
 <!-- ══════ GRAND LINE ADVENTURES: CONQUERED ISLANDS ══════ -->
 <p align="center">
   <img
-    src="./assets/projects.svg"
+    src="./assets/projects.svg?v=1794939529"
     alt="Grand Line Adventures — Conquered Islands &amp; Production Builds: NASA's Forgotten Legacy, ExploitReplay, and ResQAI."
     width="100%"
   />
@@ -78,7 +78,7 @@
 <!-- ══════ BUILDER IDENTITY & CREDENTIAL DASHBOARD ══════ -->
 <p align="center">
   <img
-    src="./assets/id-dashboard.svg"
+    src="./assets/id-dashboard.svg?v=1794939529"
     alt="Builder Identity &amp; Telemetry Dashboard — Credential Snapshot, Public Metrics, and Technical Direction."
     width="100%"
   />
@@ -87,7 +87,7 @@
 <!-- ══════ GITHUB ACTIVITY TELEMETRY & THOUSAND SUNNY CONTRIBUTION VOYAGE ══════ -->
 <p align="center">
   <img
-    src="./assets/sunny-voyage-snake.svg"
+    src="./assets/sunny-voyage-snake.svg?v=1794939529"
     alt="The Thousand Sunny's Voyage — 352+ GitHub Contributions Across the Grand Line of Code."
     width="100%"
   />
@@ -96,7 +96,7 @@
 <!-- ══════ WORK-FOCUSED ENGINEERING ROADMAP ══════ -->
 <p align="center">
   <img
-    src="./assets/grand-line-map.svg"
+    src="./assets/grand-line-map.svg?v=1794939529"
     alt="The Next Island — Grand Line Engineering Roadmap: AI &amp; Machine Learning, Data Science, AI Agents, Full-Stack, Cybersecurity, and Open Source."
     width="100%"
   />
@@ -105,7 +105,7 @@
 <!-- ══════ JOIN THE CREW: RECRUITMENT & CONTACT ══════ -->
 <p align="center">
   <img
-    src="./assets/connect.svg"
+    src="./assets/connect.svg?v=1794939529"
     alt="Join My Crew — Straw Hat Alliance Recruitment &amp; Collaboration with Partha Sarathi Sarkar."
     width="100%"
   />
@@ -129,7 +129,7 @@
 <!-- ══════ FINAL TRANSMISSION ANIMATED CLOSING BANNER ══════ -->
 <p align="center">
   <img
-    src="./assets/final-transmission.gif"
+    src="./assets/final-transmission.gif?v=1794939529"
     alt="The Final Transmission — The Adventure Never Ends. The Build Never Stops."
     width="100%"
   />
