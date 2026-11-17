@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="proj-title proj-desc">
+  <title id="proj-title">Partha Sarathi Sarkar — Grand Line Conquered Islands &amp; Selected Work</title>
+  <desc id="proj-desc">Featured projects: The Tale of NASA's Forgotten Legacy, ExploitReplay, and ResQAI Disaster Triage.</desc>
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      .impact { font-family: 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
+      .mono { font-family: 'JetBrains Mono', 'Consolas', 'Fira Code', monospace; font-weight: 700; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      /* ]]> */
+    </style>
+  </defs>
+
+  <!-- Hard Offset Drop Shadow -->
+  <rect x="16" y="16" width="1168" height="608" rx="16" fill="#171717"/>
+
+  <!-- Main Canvas: Old Parchment with solid outline -->
+  <rect x="0" y="0" width="1168" height="608" rx="16" fill="#F4EBDD" stroke="#171717" stroke-width="4.5"/>
+
+  <!-- TOP HEADER RIBBON -->
+  <g transform="translate(32, 28)">
+    <rect x="6" y="6" width="1104" height="48" rx="8" fill="#171717"/>
+    <rect x="0" y="0" width="1104" height="48" rx="8" fill="#8BCB88" stroke="#171717" stroke-width="3"/>
+    
+    <text x="24" y="31" fill="#171717" font-size="14.5" class="impact" letter-spacing="1">
+      03 // GRAND LINE ADVENTURES — CONQUERED ISLANDS &amp; PRODUCTION BUILDS
+    </text>
+    <text x="1080" y="30" text-anchor="end" fill="#171717" font-size="12" class="mono">
+      ISLANDS EXPLORED: 03 LIVE
+    </text>
+  </g>
+
+  <!-- 3 CONQUERED ISLANDS -->
+  
+    <!-- ISLAND 01 Card -->
+    <g transform="translate(32, 110)">
+      <rect x="6" y="6" width="348" height="460" rx="12" fill="#171717"/>
+      <rect x="0" y="0" width="348" height="460" rx="12" fill="#FFFDF9" stroke="#171717" stroke-width="3.5"/>
+      <rect x="0" y="0" width="348" height="54" rx="8" fill="#FF654F" stroke="#171717" stroke-width="3"/>
+
+      <!-- Island Tag & Number -->
+      <text x="24" y="24" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="900" letter-spacing="1">ISLAND 01 // LOG POSE LOCKED</text>
+      <text x="24" y="42" fill="#171717" font-size="14" font-family="'Impact', sans-serif" font-weight="900" letter-spacing="1">SPACE EXPLORATION ARCHIVE</text>
+
+      <!-- Project Name -->
+      <g transform="translate(24, 76)">
+        <text x="0" y="22" fill="#171717" font-size="17" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.5">THE TALE OF NASA'S FORGOTTEN LEGACY</text>
+        
+        <!-- Description -->
+        <foreignObject x="0" y="38" width="300" height="150">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.5; color: #444444; font-weight: 600;">
+            An interactive digital archive dedicated to the unheralded engineers, forgotten lunar science telemetry, and historical Apollo-era payloads.
+          </div>
+        </foreignObject>
+      </g>
+
+      <!-- Tech stack header -->
+      <text x="24" y="268" fill="#171717" font-size="10.5" font-family="'JetBrains Mono', monospace" font-weight="900">STACK &amp; INFRASTRUCTURE:</text>
+      
+        <g transform="translate(24, 280)">
+          <rect x="2" y="2" width="83" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="83" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="41.5" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Next.js</text>
+        </g>
+        <g transform="translate(117, 280)">
+          <rect x="2" y="2" width="146" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="146" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="73.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">NASA Open APIs</text>
+        </g>
+        <g transform="translate(24, 312)">
+          <rect x="2" y="2" width="128" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="128" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="64.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Tailwind CSS</text>
+        </g>
+        <g transform="translate(162, 312)">
+          <rect x="2" y="2" width="74" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="74" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="37.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Vercel</text>
+        </g>
+
+      <!-- Explore Island Button (Styled Anchor Frame) -->
+      <g transform="translate(24, 396)">
+        <a href="https://the-tale-of-nasa-s-forgotten-legacy.vercel.app" target="_blank">
+          <rect x="3" y="3" width="300" height="42" rx="6" fill="#171717"/>
+          <rect x="0" y="0" width="300" height="42" rx="6" fill="#FF654F" stroke="#171717" stroke-width="2.5"/>
+          <text x="150.0" y="26" text-anchor="middle" fill="#FFFFFF" font-size="13" font-family="'Impact', sans-serif" letter-spacing="1.5">
+            EXPLORE ISLAND EXPEDITION ↗
+          </text>
+        </a>
+      </g>
+    </g>
+    <!-- ISLAND 02 Card -->
+    <g transform="translate(410, 110)">
+      <rect x="6" y="6" width="348" height="460" rx="12" fill="#171717"/>
+      <rect x="0" y="0" width="348" height="460" rx="12" fill="#FFFDF9" stroke="#171717" stroke-width="3.5"/>
+      <rect x="0" y="0" width="348" height="54" rx="8" fill="#55C8E8" stroke="#171717" stroke-width="3"/>
+
+      <!-- Island Tag & Number -->
+      <text x="24" y="24" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="900" letter-spacing="1">ISLAND 02 // LOG POSE LOCKED</text>
+      <text x="24" y="42" fill="#171717" font-size="14" font-family="'Impact', sans-serif" font-weight="900" letter-spacing="1">CYBERSECURITY SANDBOX</text>
+
+      <!-- Project Name -->
+      <g transform="translate(24, 76)">
+        <text x="0" y="22" fill="#171717" font-size="17" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.5">EXPLOITREPLAY SANDBOX</text>
+        
+        <!-- Description -->
+        <foreignObject x="0" y="38" width="300" height="150">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.5; color: #444444; font-weight: 600;">
+            An automated vulnerability reproduction and verification framework that safely replays known CVE security proof-of-concepts in sandboxed runtime containers.
+          </div>
+        </foreignObject>
+      </g>
+
+      <!-- Tech stack header -->
+      <text x="24" y="268" fill="#171717" font-size="10.5" font-family="'JetBrains Mono', monospace" font-weight="900">STACK &amp; INFRASTRUCTURE:</text>
+      
+        <g transform="translate(24, 280)">
+          <rect x="2" y="2" width="92" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="92" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="46.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Python 3</text>
+        </g>
+        <g transform="translate(126, 280)">
+          <rect x="2" y="2" width="173" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="173" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="86.5" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Security Research</text>
+        </g>
+        <g transform="translate(24, 312)">
+          <rect x="2" y="2" width="110" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="110" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="55.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Automation</text>
+        </g>
+        <g transform="translate(144, 312)">
+          <rect x="2" y="2" width="101" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="101" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="50.5" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Linux CLI</text>
+        </g>
+
+      <!-- Explore Island Button (Styled Anchor Frame) -->
+      <g transform="translate(24, 396)">
+        <a href="https://exploitreplay.vercel.app" target="_blank">
+          <rect x="3" y="3" width="300" height="42" rx="6" fill="#171717"/>
+          <rect x="0" y="0" width="300" height="42" rx="6" fill="#55C8E8" stroke="#171717" stroke-width="2.5"/>
+          <text x="150.0" y="26" text-anchor="middle" fill="#FFFFFF" font-size="13" font-family="'Impact', sans-serif" letter-spacing="1.5">
+            EXPLORE ISLAND EXPEDITION ↗
+          </text>
+        </a>
+      </g>
+    </g>
+    <!-- ISLAND 03 Card -->
+    <g transform="translate(788, 110)">
+      <rect x="6" y="6" width="348" height="460" rx="12" fill="#171717"/>
+      <rect x="0" y="0" width="348" height="460" rx="12" fill="#FFFDF9" stroke="#171717" stroke-width="3.5"/>
+      <rect x="0" y="0" width="348" height="54" rx="8" fill="#8BCB88" stroke="#171717" stroke-width="3"/>
+
+      <!-- Island Tag & Number -->
+      <text x="24" y="24" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="900" letter-spacing="1">ISLAND 03 // LOG POSE LOCKED</text>
+      <text x="24" y="42" fill="#171717" font-size="14" font-family="'Impact', sans-serif" font-weight="900" letter-spacing="1">CRISIS INTELLIGENCE SYSTEM</text>
+
+      <!-- Project Name -->
+      <g transform="translate(24, 76)">
+        <text x="0" y="22" fill="#171717" font-size="17" font-family="'Impact', 'Arial Black', sans-serif" letter-spacing="0.5">RESQAI DISASTER TRIAGE</text>
+        
+        <!-- Description -->
+        <foreignObject x="0" y="38" width="300" height="150">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.5; color: #444444; font-weight: 600;">
+            An AI-powered emergency orchestration platform designed for real-time disaster triage, route optimization, and coordinated resource distribution.
+          </div>
+        </foreignObject>
+      </g>
+
+      <!-- Tech stack header -->
+      <text x="24" y="268" fill="#171717" font-size="10.5" font-family="'JetBrains Mono', monospace" font-weight="900">STACK &amp; INFRASTRUCTURE:</text>
+      
+        <g transform="translate(24, 280)">
+          <rect x="2" y="2" width="119" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="119" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="59.5" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">AI Copilots</text>
+        </g>
+        <g transform="translate(153, 280)">
+          <rect x="2" y="2" width="92" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="92" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="46.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Supabase</text>
+        </g>
+        <g transform="translate(24, 312)">
+          <rect x="2" y="2" width="110" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="110" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="55.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">PostgreSQL</text>
+        </g>
+        <g transform="translate(144, 312)">
+          <rect x="2" y="2" width="128" height="26" rx="4" fill="#171717"/>
+          <rect x="0" y="0" width="128" height="26" rx="4" fill="#FFFFFF" stroke="#171717" stroke-width="1.8"/>
+          <text x="64.0" y="17" text-anchor="middle" fill="#171717" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="800">Render Cloud</text>
+        </g>
+
+      <!-- Explore Island Button (Styled Anchor Frame) -->
+      <g transform="translate(24, 396)">
+        <a href="https://resqai-mdo4.onrender.com" target="_blank">
+          <rect x="3" y="3" width="300" height="42" rx="6" fill="#171717"/>
+          <rect x="0" y="0" width="300" height="42" rx="6" fill="#8BCB88" stroke="#171717" stroke-width="2.5"/>
+          <text x="150.0" y="26" text-anchor="middle" fill="#FFFFFF" font-size="13" font-family="'Impact', sans-serif" letter-spacing="1.5">
+            EXPLORE ISLAND EXPEDITION ↗
+          </text>
+        </a>
+      </g>
+    </g>
+
+</svg>
