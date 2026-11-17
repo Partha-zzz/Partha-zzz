@@ -27,6 +27,17 @@
   />
 </p>
 
+<!-- ══════ INTERACTIVE ANCHOR LOG POSE NAVIGATION ══════ -->
+<p align="center">
+  <a href="#the-captains-wanted-poster"><b>[ 📜 WANTED POSTER ]</b></a> &bull;
+  <a href="#the-captains-logbook"><b>[ 🧭 CAPTAIN'S LOG ]</b></a> &bull;
+  <a href="#devil-fruit-powers"><b>[ 🍈 DEVIL FRUIT ]</b></a> &bull;
+  <a href="#thousand-sunny-arsenal"><b>[ ⚓ ARSENAL ]</b></a> &bull;
+  <a href="#grand-line-expeditions"><b>[ 🏝️ EXPEDITIONS ]</b></a> &bull;
+  <a href="#thousand-sunny-voyage"><b>[ ⛵ SUNNY VOYAGE ]</b></a> &bull;
+  <a href="#join-the-crew"><b>[ 🤝 ALLIANCE ]</b></a>
+</p>
+
 <!-- ══════ TYPING ANIMATION (ONE PIECE LOG POSE ANNOTATIONS) ══════ -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=20&duration=2800&pause=900&color=171717&background=F4EBDD&center=true&vCenter=true&width=860&lines=%5BLOG+POSE%5D+Captain%3A+Partha+Sarathi+Sarkar;%5BTITLE%5D+The+Architect+of+Possibilities+%7C+CSE+(AI+%26+ML);%5BDEVIL+FRUIT%5D+The+Data-Data+Fruit%3A+Python+3+%2B+Pandas;%5BWORKFLOW%5D+AI-Assisted+Shipbuilding+with+Antigravity+%26+Claude;%5BNAVIGATION%5D+Multilingual+%7C+Japanese+JLPT+N5+%E2%86%92+N4+Prep;%5BCOMMAND%5D+The+next+island+is+always+waiting!+Set+Sail!" alt="Typing SVG" />
@@ -34,26 +45,45 @@
 
 <br/>
 
-<!-- ══════ SECTION 01 — THE CAPTAIN'S INTRODUCTION (WANTED POSTER) ══════ -->
+<!-- ══════ SECTION 01 — THE HERO SPLIT (LUFFY GEAR 5 × WANTED POSTER) ══════ -->
+<a id="the-captains-wanted-poster"></a>
 ## 🏴‍☠️ `[ SECTION 01 // THE CAPTAIN'S INTRODUCTION — WANTED POSTER ]`
 
-<p align="center">
-  <i>"THE NEXT ISLAND IS ALWAYS WAITING."</i>
-</p>
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/wanted-poster.svg"
-    alt="WANTED: Partha Sarathi Sarkar — The Architect of Possibilities"
-    width="460"
-  />
-</p>
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="12" style="border-collapse: collapse; margin: 0 auto; text-align: center;">
+  <tr valign="middle">
+    <td width="45%" align="center" style="background-color: #F4EBDD; border: 3.5px solid #171717; box-shadow: 8px 8px 0px #171717; padding: 18px;">
+      <div style="background-color: #FF654F; color: #FFFFFF; font-weight: 900; font-family: monospace; padding: 6px; border: 2.5px solid #171717; margin-bottom: 12px; font-size: 14px;">
+        ⚡ AWAKENED GEAR 5 — FREEDOM TO BUILD ⚡
+      </div>
+      <img
+        src="https://media.tenor.com/6Rk6Z96eMIoAAAAM/gear-5-one-piece.gif"
+        alt="Luffy Gear 5 Awakening"
+        width="340"
+        style="border: 3px solid #171717; display: block; margin: 0 auto;"
+      />
+      <div style="margin-top: 12px; background-color: #F5D547; color: #171717; font-weight: 800; font-family: sans-serif; padding: 8px; border: 2px solid #171717; font-size: 12px; line-height: 1.4;">
+        <i>"I've never felt so free! Let's turn every impossible idea into working software!"</i><br/>
+        <b>— CAPTAIN PARTHA SARATHI SARKAR</b>
+      </div>
+    </td>
+    <td width="55%" align="center" style="padding-left: 20px;">
+      <img
+        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/wanted-poster.svg"
+        alt="WANTED: Partha Sarathi Sarkar — The Architect of Possibilities"
+        width="430"
+      />
+    </td>
+  </tr>
+</table>
+</div>
 
 <br/>
 
 ---
 
-<!-- ══════ SECTION 02 — THE MAN BEHIND THE STRAW HAT ══════ -->
+<!-- ══════ SECTION 02 — THE CAPTAIN'S LOGBOOK & STRAW HAT DIMENSIONS ══════ -->
+<a id="the-captains-logbook"></a>
 ## 🧭 `[ SECTION 02 // THE MAN BEHIND THE STRAW HAT — CAPTAIN'S LOGBOOK ]`
 
 <p align="center">
@@ -64,11 +94,50 @@
   />
 </p>
 
+<!-- 3-Column Character Passions Showcase (Luffy, Chopper, Brook) -->
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%; max-width: 880px; margin: 15px auto;">
+  <tr valign="top">
+    <td width="33%" align="center" style="background-color: #F4EBDD; border: 3px solid #171717; box-shadow: 6px 6px 0px #171717; padding: 12px;">
+      <div style="background-color: #FF654F; color: #FFF; font-weight: 900; font-size: 11px; padding: 4px; border: 2px solid #171717; margin-bottom: 8px;">
+        PASSION 01 // CREATION
+      </div>
+      <img src="https://media.tenor.com/JhRx2xIhapcAAAAM/one-piece-elbaph.gif" alt="Luffy Adventure" width="100%" style="border: 2px solid #171717;" />
+      <h4 style="margin: 8px 0 4px; color: #171717; font-family: monospace;">BUILDING & PROTOTYPING</h4>
+      <p style="font-size: 11px; color: #333; margin: 0; line-height: 1.35;">
+        Turning wild ideas into tangible applications using autonomous AI copilots and full-stack velocity.
+      </p>
+    </td>
+    <td width="33%" align="center" style="background-color: #F4EBDD; border: 3px solid #171717; box-shadow: 6px 6px 0px #171717; padding: 12px;">
+      <div style="background-color: #55C8E8; color: #171717; font-weight: 900; font-size: 11px; padding: 4px; border: 2px solid #171717; margin-bottom: 8px;">
+        PASSION 02 // CULTURES
+      </div>
+      <img src="https://media.tenor.com/h5VyJy3Ph_wAAAAM/chopper-one-piece-chopper.gif" alt="Chopper Discovery" width="100%" style="border: 2px solid #171717;" />
+      <h4 style="margin: 8px 0 4px; color: #171717; font-family: monospace;">JAPANESE & GLOBAL LORE</h4>
+      <p style="font-size: 11px; color: #333; margin: 0; line-height: 1.35;">
+        <b>JLPT N5 Cleared 🏆</b> &bull; Now conquering <b>JLPT N4</b>. Fascinated by Kanji, linguistics, and cultural horizons.
+      </p>
+    </td>
+    <td width="33%" align="center" style="background-color: #F4EBDD; border: 3px solid #171717; box-shadow: 6px 6px 0px #171717; padding: 12px;">
+      <div style="background-color: #F5D547; color: #171717; font-weight: 900; font-size: 11px; padding: 4px; border: 2px solid #171717; margin-bottom: 8px;">
+        PASSION 03 // VIBES
+      </div>
+      <img src="https://media.tenor.com/2DHgMq-gk1EAAAAM/one-piece-brook.gif" alt="Brook Soul King" width="100%" style="border: 2px solid #171717;" />
+      <h4 style="margin: 8px 0 4px; color: #171717; font-family: monospace;">MUSIC & SOUL DISCOVERY</h4>
+      <p style="font-size: 11px; color: #333; margin: 0; line-height: 1.35;">
+        Bink's Sake on loop. Exploring eclectic musical genres, anime OSTs, and acoustic soundscapes while coding.
+      </p>
+    </td>
+  </tr>
+</table>
+</div>
+
 <br/>
 
 ---
 
 <!-- ══════ SECTION 03 — THE DEVIL FRUIT POWERS ══════ -->
+<a id="devil-fruit-powers"></a>
 ## 🍈 `[ SECTION 03 // DEVIL FRUIT POWERS — THE DATA-DATA FRUIT ]`
 
 <p align="center">
@@ -83,22 +152,45 @@
 
 ---
 
-<!-- ══════ SECTION 04 — THE PIRATE CREW ARSENAL ══════ -->
+<!-- ══════ SECTION 04 — THE PIRATE CREW ARSENAL (FEAT. THREE-SWORD STYLE ZORO) ══════ -->
+<a id="thousand-sunny-arsenal"></a>
 ## ⚓ `[ SECTION 04 // THE PIRATE CREW ARSENAL — THOUSAND SUNNY INVENTORY ]`
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/pirate-arsenal.svg"
-    alt="The Pirate Crew Arsenal"
-    width="100%"
-  />
-</p>
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse; width: 100%; max-width: 880px; margin: 0 auto;">
+  <tr valign="middle">
+    <td width="30%" align="center" style="background-color: #8BCB88; border: 3.5px solid #171717; box-shadow: 7px 7px 0px #171717; padding: 12px;">
+      <div style="background-color: #171717; color: #8BCB88; font-weight: 900; font-family: monospace; font-size: 12px; padding: 4px; margin-bottom: 8px;">
+        ⚔️ SANTORYU CORE
+      </div>
+      <img
+        src="https://media.tenor.com/-GSYz-91tkMAAAAM/one-piece-one-piece-zoro.gif"
+        alt="Zoro Three Swords"
+        width="220"
+        style="border: 2px solid #171717; display: block; margin: 0 auto;"
+      />
+      <div style="margin-top: 8px; font-size: 11px; font-weight: 800; color: #171717; line-height: 1.3;">
+        <b>PYTHON 3 &bull; AI AGENTS &bull; DATA SCI</b><br/>
+        <i>Razor-sharp algorithms cut through messy data.</i>
+      </div>
+    </td>
+    <td width="70%" align="center" style="padding-left: 15px;">
+      <img
+        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/pirate-arsenal.svg"
+        alt="The Pirate Crew Arsenal"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+</div>
 
 <br/>
 
 ---
 
 <!-- ══════ SECTION 05 — HAKI & ABILITIES ══════ -->
+<a id="haki-abilities"></a>
 ## ⚡ `[ SECTION 05 // HAKI & ABILITIES — THE ARCHITECT'S PROGRESSION ]`
 
 <p align="center">
@@ -113,8 +205,18 @@
 
 ---
 
-<!-- ══════ SECTION 06 — GRAND LINE ADVENTURES (PROJECT SHOWCASE) ══════ -->
+<!-- ══════ SECTION 06 — GRAND LINE ADVENTURES (ILLUSTRATED MAP & CARDS) ══════ -->
+<a id="grand-line-expeditions"></a>
 ## 🏝️ `[ SECTION 06 // GRAND LINE ADVENTURES — CONQUERED ISLANDS ]`
+
+<!-- Illustrated Interactive Grand Line Route Map -->
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/grand-line-project-map.svg"
+    alt="Grand Line Conquered Islands Map"
+    width="100%"
+  />
+</p>
 
 <!-- Island 01: NASA Space Apps -->
 <p align="center">
@@ -154,8 +256,6 @@
 ---
 
 <!-- ══════ SECTION 07 — THE CAPTAIN'S LOGBOOK (GITHUB STATISTICS) ══════ -->
-## 📜 `[ SECTION 07 // THE CAPTAIN'S LOGBOOK — NAVIGATION TELEMETRY ]`
-
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/captains-logbook.svg"
@@ -169,15 +269,33 @@
 ---
 
 <!-- ══════ SECTION 08 — THE THOUSAND SUNNY'S VOYAGE (SNAKE CONTRIBUTION) ══════ -->
+<a id="thousand-sunny-voyage"></a>
 ## ⛵ `[ SECTION 08 // THE THOUSAND SUNNY'S VOYAGE — DEVOURING CONTRIBUTIONS ]`
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/sunny-voyage-snake.svg"
-    alt="The Thousand Sunny's Voyage Contribution Grid"
-    width="100%"
-  />
-</p>
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%; max-width: 880px; margin: 0 auto;">
+  <tr valign="middle">
+    <td width="24%" align="center" style="background-color: #55C8E8; border: 3.5px solid #171717; box-shadow: 6px 6px 0px #171717; padding: 10px;">
+      <img
+        src="https://media.tenor.com/xzfenmEBja4AAAAM/sunny-sunny-one-piece.gif"
+        alt="Thousand Sunny Sailing"
+        width="180"
+        style="border: 2px solid #171717; display: block; margin: 0 auto;"
+      />
+      <div style="margin-top: 6px; font-family: monospace; font-size: 11px; font-weight: 900; color: #171717;">
+        SAIL FORWARD!
+      </div>
+    </td>
+    <td width="76%" align="center" style="padding-left: 12px;">
+      <img
+        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/sunny-voyage-snake.svg"
+        alt="The Thousand Sunny's Voyage Contribution Grid"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+</div>
 
 <p align="center">
   <sub>🏴‍☠️ <i>Tracking every contribution conquered on GitHub — sailing across the Grand Line of Code.</i></sub>
@@ -188,6 +306,7 @@
 ---
 
 <!-- ══════ SECTION 09 — THE NEXT ISLAND (GRAND LINE ROADMAP) ══════ -->
+<a id="the-next-island"></a>
 ## 🗺️ `[ SECTION 09 // THE NEXT ISLAND — GRAND LINE ROADMAP ]`
 
 <p align="center">
@@ -203,15 +322,33 @@
 ---
 
 <!-- ══════ SECTION 10 — JOIN MY CREW (CONTACT & RECRUITMENT) ══════ -->
+<a id="join-the-crew"></a>
 ## 🤝 `[ SECTION 10 // JOIN MY CREW — ALLIANCE & EXPEDITIONS ]`
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/join-my-crew.svg"
-    alt="Every Great Adventure Starts With A Crew"
-    width="100%"
-  />
-</p>
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse; width: 100%; max-width: 880px; margin: 0 auto 15px;">
+  <tr valign="middle">
+    <td width="32%" align="center" style="background-color: #F5D547; border: 3.5px solid #171717; box-shadow: 6px 6px 0px #171717; padding: 12px;">
+      <img
+        src="https://media.tenor.com/WzE8xewelacAAAAM/one-piece-wano.gif"
+        alt="Straw Hat Alliance"
+        width="220"
+        style="border: 2px solid #171717; display: block; margin: 0 auto;"
+      />
+      <div style="margin-top: 6px; font-family: monospace; font-size: 11px; font-weight: 900; color: #171717;">
+        ALLIANCE RECRUITMENT
+      </div>
+    </td>
+    <td width="68%" align="center" style="padding-left: 12px;">
+      <img
+        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/join-my-crew.svg"
+        alt="Every Great Adventure Starts With A Crew"
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+</div>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/partha-sarathi-sarkar-7385a8367" target="_blank">

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grand Line of Technology — Partha Sarathi Sarkar</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: '#F4EBDD',
+            ink: '#171717',
+            strawHat: '#F5D547',
+            adventureRed: '#FF654F',
+            oceanBlue: '#55C8E8',
+            islandGreen: '#8BCB88',
+            cardBg: '#FFFDF9'
+          },
+          boxShadow: {
+            'brutal': '6px 6px 0px #171717',
+            'brutal-lg': '10px 10px 0px #171717',
+            'brutal-sm': '3px 3px 0px #171717'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap');
+    body {
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #F4EBDD;
+      color: #171717;
+      background-image: radial-gradient(#171717 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .brutal-border {
+      border: 3.5px solid #171717;
+    }
+    .brutal-border-sm {
+      border: 2px solid #171717;
+    }
+    .brutal-btn {
+      transition: all 0.1s ease;
+    }
+    .brutal-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 8px 8px 0px #171717;
+    }
+    .brutal-btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #171717;
+    }
+    /* Animated wave */
+    @keyframes waveMotion {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-25%); }
+      100% { transform: translateX(0); }
+    }
+    .animate-wave {
+      animation: waveMotion 12s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-20 selection:bg-strawHat selection:text-ink">
+
+  <!-- TOP MARQUEE BANNER -->
+  <div class="bg-strawHat brutal-border-sm border-x-0 border-t-0 py-2 overflow-hidden whitespace-nowrap mono text-xs font-black tracking-wider uppercase flex items-center">
+    <div class="inline-block animate-marquee">
+      ☠️ THE GRAND LINE OF TECHNOLOGY &bull; CAPTAIN PARTHA SARATHI SARKAR &bull; THE ARCHITECT OF POSSIBILITIES &bull; SŪJI SŪJI NO MI (DATA-DATA FRUIT) &bull; JLPT N5 COMPLETED &bull; JLPT N4 IN PROGRESS &bull; 352+ COMMITS CONQUERED &bull; SET SAIL FOR THE NEXT ISLAND! ☠️
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="max-w-6xl mx-auto px-4 mt-6">
+    <nav class="bg-cardBg brutal-border shadow-brutal p-4 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl">☠️</span>
+        <div>
+          <h1 class="text-xl font-black tracking-tight leading-none">PARTHA-ZZZ</h1>
+          <p class="mono text-xs font-bold text-gray-600">THE GRAND LINE &bull; AI & ML CAPTAIN</p>
+        </div>
+      </div>
+      
+      <!-- NAV LINKS -->
+      <div class="flex items-center flex-wrap gap-2 text-xs mono font-black">
+        <a href="#wanted" class="px-3 py-1.5 bg-strawHat brutal-border-sm hover:bg-yellow-300">WANTED</a>
+        <a href="#fruit" class="px-3 py-1.5 bg-oceanBlue brutal-border-sm hover:bg-cyan-300">DEVIL FRUIT</a>
+        <a href="#map" class="px-3 py-1.5 bg-adventureRed text-white brutal-border-sm hover:bg-red-600">GRAND LINE MAP</a>
+        <a href="#crew" class="px-3 py-1.5 bg-islandGreen brutal-border-sm hover:bg-green-300">CREW</a>
+        
+        <!-- AUDIO SOUND TOGGLE (OFF BY DEFAULT) -->
+        <button id="soundToggle" onclick="toggleAudio()" class="px-3 py-1.5 bg-ink text-white brutal-border-sm flex items-center gap-1.5 ml-2">
+          <span id="soundIcon">🔇</span>
+          <span id="soundText">SOUND: OFF</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION: WANTED POSTER & GEAR 5 -->
+  <section id="wanted" class="max-w-6xl mx-auto px-4 mt-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- LEFT: GEAR 5 ANIME ACTION BOX -->
+      <div class="lg:col-span-5 bg-cardBg brutal-border shadow-brutal-lg p-6">
+        <div class="bg-adventureRed text-white mono font-black text-sm px-3 py-1.5 brutal-border-sm inline-block mb-4">
+          ⚡ GEAR 5 // AWAKENED DEVELOPER
+        </div>
+        <div class="relative bg-black brutal-border overflow-hidden">
+          <img src="https://media.tenor.com/6Rk6Z96eMIoAAAAM/gear-5-one-piece.gif" alt="Luffy Gear 5 Awakening" class="w-full object-cover">
+          <div class="absolute bottom-2 left-2 right-2 bg-strawHat/95 brutal-border-sm p-2 text-center text-xs mono font-black">
+            "THIS IS MY PEAK! FREEDOM TO BUILD!"
+          </div>
+        </div>
+        <div class="mt-4 p-3 bg-strawHat/30 brutal-border-sm text-xs mono leading-relaxed font-semibold">
+          <b>CAPTAIN'S PITCH:</b> "An aspiring AI and ML enthusiast who loves creating things, exploring different cultures, and turning ideas into meaningful projects through technology."
+        </div>
+      </div>
+
+      <!-- RIGHT: WANTED POSTER CARD -->
+      <div class="lg:col-span-7 bg-strawHat brutal-border shadow-brutal-lg p-6 flex flex-col md:flex-row gap-6 items-center">
+        <div class="w-full md:w-1/2 brutal-border bg-parchment p-2 shadow-brutal">
+          <div class="text-center font-black tracking-widest text-2xl border-b-2 border-ink pb-1">WANTED</div>
+          <div class="my-2 bg-ink brutal-border overflow-hidden">
+            <img src="../assets/id.png" alt="Partha Sarathi Sarkar" class="w-full h-56 object-cover object-top" onerror="this.src='https://avatars.githubusercontent.com/u/163273398?v=4'">
+          </div>
+          <div class="text-center text-xs font-black mono tracking-wider bg-adventureRed text-white py-0.5">DEAD OR ALIVE</div>
+          <div class="text-center font-black text-base mt-1 leading-tight">PARTHA SARATHI SARKAR</div>
+          <div class="text-center font-black text-xs text-adventureRed tracking-tight">THE ARCHITECT OF POSSIBILITIES</div>
+          <div class="text-center text-xs font-black mono mt-1 bg-ink text-strawHat py-1">
+            BOUNTY: IDEAS UNLIMITED ฿
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 flex flex-col gap-3 text-sm">
+          <div class="bg-cardBg p-3 brutal-border-sm shadow-brutal-sm">
+            <div class="mono text-[11px] font-black text-adventureRed uppercase">ACADEMIC BASE</div>
+            <div class="font-bold text-xs mt-0.5">CSE (AI & ML) Undergrad</div>
+            <div class="text-xs text-gray-700">Haldia Institute of Tech, WB, India</div>
+          </div>
+          <div class="bg-cardBg p-3 brutal-border-sm shadow-brutal-sm">
+            <div class="mono text-[11px] font-black text-oceanBlue uppercase">PRIMARY CALLING</div>
+            <div class="font-bold text-xs mt-0.5">Aspiring Data Scientist & ML Engineer</div>
+            <div class="text-xs text-gray-700">Autonomous AI Agent Orchestration</div>
+          </div>
+          <div class="bg-cardBg p-3 brutal-border-sm shadow-brutal-sm">
+            <div class="mono text-[11px] font-black text-islandGreen uppercase">NAVIGATION LORE</div>
+            <div class="font-bold text-xs mt-0.5">JLPT N5 Cleared 🏆 &bull; N4 In Progress</div>
+            <div class="text-xs text-gray-700">English &bull; Bengali &bull; Hindi &bull; Japanese</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE DEVIL FRUIT POWER SELECTOR -->
+  <section id="fruit" class="max-w-6xl mx-auto px-4 mt-14">
+    <div class="bg-cardBg brutal-border shadow-brutal-lg p-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b-4 border-ink pb-4">
+        <div>
+          <span class="bg-oceanBlue px-3 py-1 mono text-xs font-black brutal-border-sm">PARTHENIAN ARTIFACT</span>
+          <h2 class="text-2xl font-black tracking-tight mt-1">THE DEVIL FRUIT POWERS // SŪJI SŪJI NO MI</h2>
+          <p class="mono text-xs text-gray-600 font-bold">THE DATA-DATA FRUIT &bull; CLICK ANY ABILITY TO ACTIVATE TELEMETRY</p>
+        </div>
+        <div class="text-3xl">🍈</div>
+      </div>
+
+      <!-- INTERACTIVE CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        
+        <!-- POWER 1 -->
+        <button onclick="selectPower('python')" class="power-card text-left p-4 bg-strawHat brutal-border shadow-brutal-sm brutal-btn transition-all cursor-pointer">
+          <div class="text-2xl mb-1">🐍</div>
+          <div class="mono text-xs font-black text-adventureRed">PRIMARY POWER</div>
+          <div class="font-black text-base">Pythonic Logic</div>
+          <div class="text-xs mt-1 text-gray-800">Clean functional scripts, data munging, NumPy & Pandas vectorized compute.</div>
+        </button>
+
+        <!-- POWER 2 -->
+        <button onclick="selectPower('agents')" class="power-card text-left p-4 bg-oceanBlue brutal-border shadow-brutal-sm brutal-btn transition-all cursor-pointer">
+          <div class="text-2xl mb-1">🤖</div>
+          <div class="mono text-xs font-black text-ink">FORCE MULTIPLIER</div>
+          <div class="font-black text-base">AI Copilot Fleet</div>
+          <div class="text-xs mt-1 text-gray-800">Pairing domain curiosity with Claude, Antigravity, and Gemini for rapid shipping.</div>
+        </button>
+
+        <!-- POWER 3 -->
+        <button onclick="selectPower('analytics')" class="power-card text-left p-4 bg-adventureRed text-white brutal-border shadow-brutal-sm brutal-btn transition-all cursor-pointer">
+          <div class="text-2xl mb-1">📊</div>
+          <div class="mono text-xs font-black text-strawHat">OBSERVABILITY</div>
+          <div class="font-black text-base">Neural Telemetry</div>
+          <div class="text-xs mt-1 text-red-100">Matplotlib statistical visuals, Jupyter experiments, and metric benchmarking.</div>
+        </button>
+
+        <!-- POWER 4 -->
+        <button onclick="selectPower('fullstack')" class="power-card text-left p-4 bg-islandGreen brutal-border shadow-brutal-sm brutal-btn transition-all cursor-pointer">
+          <div class="text-2xl mb-1">🚀</div>
+          <div class="mono text-xs font-black text-ink">SHIPBUILDING</div>
+          <div class="font-black text-base">Full-Stack Vessels</div>
+          <div class="text-xs mt-1 text-gray-800">Next.js, Tailwind CSS, Supabase backend orchestration ready for production.</div>
+        </button>
+
+      </div>
+
+      <!-- POWER DETAIL DRAWER -->
+      <div id="powerDrawer" class="mt-6 p-4 bg-parchment brutal-border font-mono text-xs">
+        <div class="flex items-center gap-2 font-black text-adventureRed text-sm">
+          <span>⚡</span> <span id="powerTitle">SŪJI SŪJI NO MI // ACTIVE ABILITY: PYTHONIC LOGIC</span>
+        </div>
+        <p id="powerDesc" class="mt-2 text-gray-800 leading-relaxed font-semibold">
+          The core foundation of all analytical voyages. Python 3 provides the declarative syntax and computational depth needed to parse data lakes, construct machine learning models, and prototype production systems.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE GRAND LINE CONQUERED ISLANDS MAP -->
+  <section id="map" class="max-w-6xl mx-auto px-4 mt-14">
+    <div class="bg-cardBg brutal-border shadow-brutal-lg p-6">
+      
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b-4 border-ink pb-4">
+        <div>
+          <span class="bg-adventureRed text-white px-3 py-1 mono text-xs font-black brutal-border-sm">EXPEDITION LOG</span>
+          <h2 class="text-2xl font-black tracking-tight mt-1">THE GRAND LINE MAP // CONQUERED ISLANDS</h2>
+          <p class="mono text-xs text-gray-600 font-bold">CLICK AN ISLAND TO INSPECT ITS CODEBASE & LIVE DEPLOYMENT</p>
+        </div>
+        <div class="text-3xl">🗺️</div>
+      </div>
+
+      <!-- MAP CONTAINER -->
+      <div class="mt-6 bg-[#D8E6F0] brutal-border p-6 relative overflow-hidden">
+        
+        <!-- WAVES DECORATION -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-around text-4xl font-mono text-oceanBlue select-none">
+          <span>~ ~ ~</span><span>~ ~ ~</span><span>~ ~ ~</span>
+        </div>
+
+        <!-- ISLANDS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+          
+          <!-- ISLAND 01 -->
+          <div class="bg-parchment brutal-border shadow-brutal p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start">
+                <span class="bg-strawHat px-2 py-0.5 mono text-[11px] font-black brutal-border-sm">ISLAND 01</span>
+                <span class="text-xl">🌌</span>
+              </div>
+              <h3 class="font-black text-lg mt-2 leading-tight">NASA Space Apps Legacy</h3>
+              <p class="text-xs text-gray-700 mt-1 font-mono">
+                Interactive web archive honoring forgotten Apollo & Artemis space science telemetry.
+              </p>
+              <div class="flex flex-wrap gap-1 mt-3">
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Next.js</span>
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">NASA APIs</span>
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Tailwind</span>
+              </div>
+            </div>
+            <a href="https://the-tale-of-nasa-s-forgotten-legacy.vercel.app" target="_blank" class="mt-4 inline-block text-center bg-adventureRed text-white mono font-black text-xs py-2 brutal-border-sm brutal-btn hover:bg-red-600">
+              EXPLORE ISLAND ↗
+            </a>
+          </div>
+
+          <!-- ISLAND 02 -->
+          <div class="bg-parchment brutal-border shadow-brutal p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start">
+                <span class="bg-oceanBlue px-2 py-0.5 mono text-[11px] font-black brutal-border-sm">ISLAND 02</span>
+                <span class="text-xl">🛡️</span>
+              </div>
+              <h3 class="font-black text-lg mt-2 leading-tight">ExploitReplay Sandbox</h3>
+              <p class="text-xs text-gray-700 mt-1 font-mono">
+                Cybersecurity reproduction framework executing sandboxed CVE exploit verification safely.
+              </p>
+              <div class="flex flex-wrap gap-1 mt-3">
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Python</span>
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Security</span>
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Automation</span>
+              </div>
+            </div>
+            <a href="https://exploitreplay.vercel.app" target="_blank" class="mt-4 inline-block text-center bg-strawHat text-ink mono font-black text-xs py-2 brutal-border-sm brutal-btn hover:bg-yellow-300">
+              EXPLORE ISLAND ↗
+            </a>
+          </div>
+
+          <!-- ISLAND 03 -->
+          <div class="bg-parchment brutal-border shadow-brutal p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start">
+                <span class="bg-islandGreen px-2 py-0.5 mono text-[11px] font-black brutal-border-sm">ISLAND 03</span>
+                <span class="text-xl">🚨</span>
+              </div>
+              <h3 class="font-black text-lg mt-2 leading-tight">ResQAI Disaster Triage</h3>
+              <p class="text-xs text-gray-700 mt-1 font-mono">
+                AI-driven emergency response orchestration system for automated triage coordination & routing.
+              </p>
+              <div class="flex flex-wrap gap-1 mt-3">
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">AI Agents</span>
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Supabase</span>
+                <span class="bg-white px-1.5 py-0.5 text-[10px] mono font-bold brutal-border-sm">Render</span>
+              </div>
+            </div>
+            <a href="https://resqai-mdo4.onrender.com" target="_blank" class="mt-4 inline-block text-center bg-oceanBlue text-ink mono font-black text-xs py-2 brutal-border-sm brutal-btn hover:bg-cyan-300">
+              EXPLORE ISLAND ↗
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STRAW HAT CREW & PASSIONS SECTION -->
+  <section id="crew" class="max-w-6xl mx-auto px-4 mt-14">
+    <div class="bg-cardBg brutal-border shadow-brutal-lg p-6">
+      
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b-4 border-ink pb-4">
+        <div>
+          <span class="bg-strawHat px-3 py-1 mono text-xs font-black brutal-border-sm">ALLIANCE SPIRIT</span>
+          <h2 class="text-2xl font-black tracking-tight mt-1">THE STRAW HAT ALLIANCE // CREW ROSTER</h2>
+          <p class="mono text-xs text-gray-600 font-bold">MEET THE PASSIONS THAT POWER EVERY EXPEDITION</p>
+        </div>
+        <div class="text-3xl">⚓</div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        
+        <!-- ZORO -->
+        <div class="bg-parchment brutal-border shadow-brutal p-3">
+          <div class="bg-islandGreen font-black text-xs mono p-1 text-center brutal-border-sm mb-2">
+            COMBAT // ZORO
+          </div>
+          <img src="https://media.tenor.com/-GSYz-91tkMAAAAM/one-piece-one-piece-zoro.gif" alt="Zoro" class="w-full h-40 object-cover brutal-border-sm">
+          <h4 class="font-black text-sm mt-2">SANTORYU ALGORITHMS</h4>
+          <p class="mono text-[11px] text-gray-700 mt-1">Cutting through unstructured datasets with sharp Python logic and discipline.</p>
+        </div>
+
+        <!-- CHOPPER -->
+        <div class="bg-parchment brutal-border shadow-brutal p-3">
+          <div class="bg-oceanBlue font-black text-xs mono p-1 text-center brutal-border-sm mb-2">
+            DISCOVERY // CHOPPER
+          </div>
+          <img src="https://media.tenor.com/h5VyJy3Ph_wAAAAM/chopper-one-piece-chopper.gif" alt="Chopper" class="w-full h-40 object-cover brutal-border-sm">
+          <h4 class="font-black text-sm mt-2">JAPANESE LORE (JLPT)</h4>
+          <p class="mono text-[11px] text-gray-700 mt-1">JLPT N5 Cleared. Continuously studying Kanji, linguistics, and global cultures.</p>
+        </div>
+
+        <!-- BROOK -->
+        <div class="bg-parchment brutal-border shadow-brutal p-3">
+          <div class="bg-strawHat font-black text-xs mono p-1 text-center brutal-border-sm mb-2">
+            MUSIC // BROOK
+          </div>
+          <img src="https://media.tenor.com/2DHgMq-gk1EAAAAM/one-piece-brook.gif" alt="Brook" class="w-full h-40 object-cover brutal-border-sm">
+          <h4 class="font-black text-sm mt-2">SOUL MUSIC FREEDOM</h4>
+          <p class="mono text-[11px] text-gray-700 mt-1">Coding to anime soundtracks, classical melodies, and eclectic musical rhythms.</p>
+        </div>
+
+        <!-- SUNNY -->
+        <div class="bg-parchment brutal-border shadow-brutal p-3">
+          <div class="bg-adventureRed text-white font-black text-xs mono p-1 text-center brutal-border-sm mb-2">
+            VESSEL // SUNNY
+          </div>
+          <img src="https://media.tenor.com/xzfenmEBja4AAAAM/sunny-sunny-one-piece.gif" alt="Sunny" class="w-full h-40 object-cover brutal-border-sm">
+          <h4 class="font-black text-sm mt-2">352+ COMMITS VOYAGE</h4>
+          <p class="mono text-[11px] text-gray-200 mt-1">Sailing forward across the GitHub contribution ocean every single day.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER & RECRUITMENT -->
+  <footer class="max-w-6xl mx-auto px-4 mt-14">
+    <div class="bg-strawHat brutal-border shadow-brutal-lg p-6 text-center">
+      <h3 class="text-2xl font-black tracking-tight">READY TO JOIN THE ALLIANCE?</h3>
+      <p class="mono text-xs font-bold text-gray-800 mt-1">
+        LET'S COLLABORATE ON AI, MACHINE LEARNING, OR FULL-STACK EXPEDITIONS!
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4 mt-6">
+        <a href="https://www.linkedin.com/in/partha-sarathi-sarkar-7385a8367" target="_blank" class="px-5 py-2.5 bg-[#0077B5] text-white mono font-black text-xs brutal-border brutal-btn shadow-brutal-sm">
+          LINKEDIN ALLIANCE ↗
+        </a>
+        <a href="https://www.instagram.com/uza_bhaiya/" target="_blank" class="px-5 py-2.5 bg-[#E4405F] text-white mono font-black text-xs brutal-border brutal-btn shadow-brutal-sm">
+          INSTAGRAM TRANSMITTER ↗
+        </a>
+        <a href="https://github.com/Partha-zzz" target="_blank" class="px-5 py-2.5 bg-ink text-strawHat mono font-black text-xs brutal-border brutal-btn shadow-brutal-sm">
+          GITHUB HEADQUARTERS ↗
+        </a>
+      </div>
+
+      <div class="mt-8 pt-4 border-t-2 border-ink text-xs mono font-black text-gray-700">
+        CRAFTED WITH STRAW HAT SPIRIT BY PARTHA SARATHI SARKAR &bull; "THE NEXT ISLAND IS ALWAYS WAITING."
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE AUDIO & UI SCRIPT -->
+  <script>
+    // Audio synthesizer for One Piece maritime sea chimes (Web Audio API)
+    let audioCtx = null;
+    let isPlaying = false;
+    let intervalId = null;
+
+    function playSeaNote() {
+      if (!audioCtx) return;
+      const notes = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25]; // Pentatonic seafaring scale
+      const freq = notes[Math.floor(Math.random() * notes.length)];
+      
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+      
+      gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.05, audioCtx.currentTime + 0.1);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.8);
+      
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      
+      osc.start();
+      osc.stop(audioCtx.currentTime + 2.0);
+    }
+
+    function toggleAudio() {
+      const icon = document.getElementById('soundIcon');
+      const text = document.getElementById('soundText');
+      
+      if (!isPlaying) {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        audioCtx.resume();
+        isPlaying = true;
+        icon.textContent = '🔊';
+        text.textContent = 'SOUND: ON';
+        playSeaNote();
+        intervalId = setInterval(playSeaNote, 2200);
+      } else {
+        isPlaying = false;
+        icon.textContent = '🔇';
+        text.textContent = 'SOUND: OFF';
+        if (intervalId) clearInterval(intervalId);
+      }
+    }
+
+    // Devil Fruit interactive selector
+    const powerData = {
+      python: {
+        title: "SŪJI SŪJI NO MI // ACTIVE ABILITY: PYTHONIC LOGIC",
+        desc: "The core foundation of all analytical voyages. Python 3 provides the declarative syntax and computational depth needed to parse data lakes, construct machine learning models, and prototype production systems."
+      },
+      agents: {
+        title: "SŪJI SŪJI NO MI // ACTIVE ABILITY: AI COPILOT FLEET",
+        desc: "Harnessing autonomous agentic frameworks (Antigravity, Claude, Stitch, Gemini) as active code co-authors to move from architecture to deployed prototype at 10x velocity."
+      },
+      analytics: {
+        title: "SŪJI SŪJI NO MI // ACTIVE ABILITY: NEURAL TELEMETRY",
+        desc: "Observing metrics, loss curves, and multivariate correlations with Matplotlib and Jupyter notebooks. Transforming ambiguous data into crystal-clear actionable insights."
+      },
+      fullstack: {
+        title: "SŪJI SŪJI NO MI // ACTIVE ABILITY: FULL-STACK VESSELS",
+        desc: "Constructing responsive, high-performance web applications with Next.js, React, Tailwind CSS, Supabase, and cloud microservices designed for real users."
+      }
+    };
+
+    function selectPower(key) {
+      const data = powerData[key];
+      if (data) {
+        document.getElementById('powerTitle').textContent = data.title;
+        document.getElementById('powerDesc').textContent = data.desc;
+        if (isPlaying) playSeaNote();
+      }
+    }
+  </script>
+</body>
+</html>
