@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 180" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      .impact-font { font-family: 'Impact', 'Arial Black', sans-serif; }
+      .mono-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      .sans-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      /* ]]> */
+    </style>
+  </defs>
+
+  <!-- Hard Offset Shadow -->
+  <rect x="8" y="8" width="864" height="164" rx="8" fill="#171717"/>
+
+  <!-- Main Canvas -->
+  <rect x="0" y="0" width="864" height="164" rx="8" fill="#F4EBDD" stroke="#171717" stroke-width="3.5"/>
+
+  <!-- Top Ribbon -->
+  <g transform="translate(24, 18)">
+    <rect x="3" y="3" width="816" height="32" rx="4" fill="#171717"/>
+    <rect x="0" y="0" width="816" height="32" rx="4" fill="#FF654F" stroke="#171717" stroke-width="2"/>
+    <text x="14" y="21" fill="#FFFFFF" font-size="12" font-weight="900" letter-spacing="1" class="impact-font">
+      SECTION 10 // JOIN MY CREW — ALLIANCE &amp; EXPEDITIONS
+    </text>
+    <text x="802" y="21" text-anchor="end" fill="#F5D547" font-size="9.5" font-weight="800" class="mono-font">
+      GRAND LINE HARBOR
+    </text>
+  </g>
+
+  <!-- Central Invitation -->
+  <g transform="translate(440, 84)">
+    <text x="0" y="0" text-anchor="middle" fill="#171717" font-size="22" font-weight="900" letter-spacing="0.5" class="impact-font">
+      "EVERY GREAT ADVENTURE STARTS WITH A CREW."
+    </text>
+    <text x="0" y="22" text-anchor="middle" fill="#555555" font-size="11.5" font-weight="600" class="sans-font">
+      Ready to form a party, collaborate on bold AI/data engineering challenges, or explore new technology horizons?
+    </text>
+  </g>
+
+  <!-- Bottom Tagline Pill -->
+  <g transform="translate(440, 138)">
+    <rect x="-190" y="-14" width="380" height="28" rx="4" fill="#F5D547" stroke="#171717" stroke-width="2"/>
+    <text x="0" y="4" text-anchor="middle" fill="#171717" font-size="12" font-weight="900" letter-spacing="1" class="impact-font">
+      ⚓ SET SAIL. BUILD SOMETHING EXTRAORDINARY. ⚓
+    </text>
+  </g>
+</svg>

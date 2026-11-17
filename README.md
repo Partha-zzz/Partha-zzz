@@ -1,141 +1,65 @@
 <!--
   ╔══════════════════════════════════════════════════════════════════════════════╗
-  ║         ⚔️  THE ARCHITECT OF POSSIBILITIES — PARTHA-ZZZ  ⚔️                 ║
-  ║                 나 혼자만 레벨업 — I ALONE LEVEL UP                          ║
+  ║         ☠️  THE GRAND LINE OF TECHNOLOGY — PARTHA-ZZZ  ☠️                   ║
+  ║       THE ARCHITECT OF POSSIBILITIES // ONE PIECE × NEO-BRUTALISM            ║
   ╚══════════════════════════════════════════════════════════════════════════════╝
 -->
 
-<!-- ══════ TOP STATUS BAR ══════ -->
+<!-- ══════ TOP STATUS BAR (NEO-BRUTALIST VIBRANT RIBBON) ══════ -->
 <p align="center">
-  <img src="https://img.shields.io/badge/HUNTER%20STATUS-AWAKENED%20S--RANK-7c3aed?style=for-the-badge&labelColor=06000f" alt="Status" />
+  <img src="https://img.shields.io/badge/PIRATE%20CREW-STRAW%20HAT%20ALLIANCE-F5D547?style=for-the-badge&labelColor=171717&color=F5D547" alt="Crew" />
   &nbsp;
-  <img src="https://img.shields.io/badge/CLASS-THE%20ARCHITECT-a855f7?style=for-the-badge&labelColor=06000f" alt="Class" />
+  <img src="https://img.shields.io/badge/CLASS-THE%20ARCHITECT-FF654F?style=for-the-badge&labelColor=171717&color=FF654F" alt="Class" />
   &nbsp;
-  <img src="https://img.shields.io/badge/PRIMARY%20CORE-PYTHON%20%26%20AI-38bdf8?style=for-the-badge&logo=python&logoColor=white&labelColor=06000f" alt="Python Core" />
+  <img src="https://img.shields.io/badge/DEVIL%20FRUIT-PYTHON%203%20%26%20AI-55C8E8?style=for-the-badge&logo=python&logoColor=171717&labelColor=171717&color=55C8E8" alt="Devil Fruit" />
   &nbsp;
-  <img src="https://img.shields.io/badge/CULTURE-JLPT%20N5%20COMPLETED-f59e0b?style=for-the-badge&logo=duolingo&logoColor=white&labelColor=06000f" alt="Japanese" />
+  <img src="https://img.shields.io/badge/LOG%20POSE-JLPT%20N5%20COMPLETED-8BCB88?style=for-the-badge&logo=duolingo&logoColor=171717&labelColor=171717&color=8BCB88" alt="Japanese" />
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=Partha-zzz&style=for-the-badge&color=7c3aed&label=SHADOW+VISITORS&labelColor=06000f" alt="Views" />
+  <img src="https://komarev.com/ghpvc/?username=Partha-zzz&style=for-the-badge&color=F5D547&label=ISLAND+VISITORS&labelColor=171717" alt="Views" />
 </p>
 
-<!-- ══════ CINEMATIC HEADER BANNER (Animated SVG with Moon & Dungeon Gate) ══════ -->
+<!-- ══════ CINEMATIC HEADER BANNER (THE GRAND LINE OF TECHNOLOGY) ══════ -->
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/solo-leveling-banner.svg"
-    alt="The Architect — ARISE"
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/onepiece-banner.svg"
+    alt="The Grand Line of Technology — Partha Sarathi Sarkar"
     width="100%"
   />
 </p>
 
-<!-- ══════ TYPING ANIMATION (Solo Leveling & Architect Lore) ══════ -->
+<!-- ══════ TYPING ANIMATION (ONE PIECE LOG POSE ANNOTATIONS) ══════ -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=21&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&width=860&lines=%5BSYSTEM%5D+Awakened+S-Rank+Hunter%3A+Partha+Sarathi+Sarkar;%5BTITLE%5D+The+Architect+of+Possibilities+%7C+CSE+(AI+%26+ML);%5BWEAPON%5D+Python+3+%2B+Pandas+%2B+Data+Science+Reactor;%5BWORKFLOW%5D+AI-Assisted+Development+with+Antigravity+%26+Claude;%5BCULTURE%5D+Multilingual+%7C+Japanese+JLPT+N5+%E2%86%92+N4+Journey;%5BSPELL%5D+ARISE...+(%EC%9D%BC%EC%96%B4%EB%82%98%EB%9D%BC)+%7C+I+Alone+Level+Up" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=20&duration=2800&pause=900&color=171717&background=F4EBDD&center=true&vCenter=true&width=860&lines=%5BLOG+POSE%5D+Captain%3A+Partha+Sarathi+Sarkar;%5BTITLE%5D+The+Architect+of+Possibilities+%7C+CSE+(AI+%26+ML);%5BDEVIL+FRUIT%5D+The+Data-Data+Fruit%3A+Python+3+%2B+Pandas;%5BWORKFLOW%5D+AI-Assisted+Shipbuilding+with+Antigravity+%26+Claude;%5BNAVIGATION%5D+Multilingual+%7C+Japanese+JLPT+N5+%E2%86%92+N4+Prep;%5BCOMMAND%5D+The+next+island+is+always+waiting!+Set+Sail!" alt="Typing SVG" />
 </p>
 
 <br/>
 
-<!-- ══════ THE AWAKENING: ARCHITECT HERO SHOWCASE ══════ -->
-## ⚔️ `[ THE ARCHITECT'S AWAKENING ]`
-
-<table align="center" width="100%">
-  <tr>
-    <td width="38%" align="center" valign="middle">
-      <img
-        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/id.png"
-        width="100%"
-        alt="Partha Sarathi Sarkar - The Architect"
-        style="border-radius: 12px; box-shadow: 0 0 20px #7c3aed;"
-      />
-      <br/><br/>
-      <sub><b>Partha Sarathi Sarkar (파르타) — The Architect</b></sub>
-    </td>
-    <td width="62%" align="center" valign="middle">
-      <img
-        src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/system-card.svg"
-        width="100%"
-        alt="System Profile Card"
-      />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
----
-
-<!-- ══════ CINEMATIC GALLERY: ARCHITECT VISUAL ARCHIVES ══════ -->
-## 🔮 `[ THE SHADOW DOMAIN — VISUAL ARCHIVES ]`
-
-<p align="center"><i>"A curious technology enthusiast exploring cultures, designing systems, and unlocking limitless possibilities through technology."</i></p>
-
-<table align="center" width="100%">
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <h4>⚡ Perception (감각)</h4>
-      <img
-        src="https://media1.tenor.com/m/VwtWc3UwQhAAAAAC/solo-leveling-jin-woo-shine-eyes-aura-solo-leveling.gif"
-        width="100%"
-        alt="The Architect's Vision"
-        style="border-radius: 8px;"
-      />
-      <br/><br/>
-      <sub><b>Architect's Vision:</b> Detecting underlying data patterns, mathematical distributions & neural representations.</sub>
-    </td>
-    <td width="34%" align="center" valign="top">
-      <h4>👑 Shadow Extraction (그림자 추출)</h4>
-      <img
-        src="https://media1.tenor.com/m/P1FCBPRVj1YAAAAC/solo-leveling-arise.gif"
-        width="100%"
-        alt="AI-Assisted Co-Pilot"
-        style="border-radius: 8px;"
-      />
-      <br/><br/>
-      <sub><b>The Arise Command:</b> Summoning advanced AI coding agents (Antigravity, Claude, Stitch) as co-pilots to rapidly architect software.</sub>
-    </td>
-    <td width="33%" align="center" valign="top">
-      <h4>🗡️ System Architecture (건축술)</h4>
-      <img
-        src="https://media.tenor.com/2i8UBG5aOS0AAAAe/solo-leveling-sung-jin-woo.gif"
-        width="100%"
-        alt="Engineering Execution"
-        style="border-radius: 8px;"
-      />
-      <br/><br/>
-      <sub><b>Precision Execution:</b> Crafting clean pipelines, data-driven backends, and responsive interactive web experiences.</sub>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- Cultural & Linguistic Horizon -->
-<div align="center">
-
-| Language Discipline | Fluency Tier | Cultural Horizon | Mastery Status |
-|:--------------------|:------------:|:-----------------|:--------------:|
-| 🇬🇧 **English** | Professional / Academic | Technical documentation, global engineering discourse | **ACTIVE** |
-| 🇮🇳 **Bengali (বাংলা)** | Native Heritage | Cultural philosophy, literature, native fluency | **NATIVE** |
-| 🇮🇳 **Hindi (हिन्दी)** | Multilingual Fluent | National collaboration, media, versatile conversation | **FLUENT** |
-| 🇯🇵 **Japanese (日本語)** | JLPT N5 Certified 🏆 | Kanji, grammatical subtleties, cultural exploration | **PREPARING N4 ⚡** |
-
-</div>
-
-<br/>
-
----
-
-<!-- ══════ PRIMARY SOUL WEAPON: PYTHON & DATA SCIENCE ══════ -->
-## 🐍 `[ PRIMARY SOUL WEAPON — PYTHON & DATA SCIENCE REACTOR ]`
+<!-- ══════ SECTION 01 — THE CAPTAIN'S INTRODUCTION (WANTED POSTER) ══════ -->
+## 🏴‍☠️ `[ SECTION 01 // THE CAPTAIN'S INTRODUCTION — WANTED POSTER ]`
 
 <p align="center">
-  <i>"In a world where algorithms govern complexity, Python is the foundation of every model."</i>
+  <i>"THE NEXT ISLAND IS ALWAYS WAITING."</i>
 </p>
 
-<!-- Custom Animated Python Core Sci-Fi HUD -->
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/python-core.svg"
-    alt="Python & Data Science Core Reactor"
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/wanted-poster.svg"
+    alt="WANTED: Partha Sarathi Sarkar — The Architect of Possibilities"
+    width="460"
+  />
+</p>
+
+<br/>
+
+---
+
+<!-- ══════ SECTION 02 — THE MAN BEHIND THE STRAW HAT ══════ -->
+## 🧭 `[ SECTION 02 // THE MAN BEHIND THE STRAW HAT — CAPTAIN'S LOGBOOK ]`
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/captain-logbook.svg"
+    alt="The Man Behind the Straw Hat — Captain's Logbook"
     width="100%"
   />
 </p>
@@ -144,14 +68,13 @@
 
 ---
 
-<!-- ══════ HUNTER ATTRIBUTE MATRIX ══════ -->
-## 📜 `[ HUNTER ATTRIBUTE MATRIX — S-RANK ARCHITECT ]`
+<!-- ══════ SECTION 03 — THE DEVIL FRUIT POWERS ══════ -->
+## 🍈 `[ SECTION 03 // DEVIL FRUIT POWERS — THE DATA-DATA FRUIT ]`
 
-<!-- Custom Holographic Attribute Dashboard -->
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/hunter-attributes.svg"
-    alt="Hunter Attribute Matrix"
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/devil-fruit-powers.svg"
+    alt="Devil Fruit Powers — The Data-Data Fruit"
     width="100%"
   />
 </p>
@@ -160,57 +83,67 @@
 
 ---
 
-<!-- ══════ SCI-FI TECH STACK: THE SHADOW ARSENAL ══════ -->
-## 💀 `[ THE SHADOW ARMY ARSENAL — RUNES & SKILLS ]`
+<!-- ══════ SECTION 04 — THE PIRATE CREW ARSENAL ══════ -->
+## ⚓ `[ SECTION 04 // THE PIRATE CREW ARSENAL — THOUSAND SUNNY INVENTORY ]`
 
-<p align="center"><i>Each technology is an awakened soldier bound to my engineering command</i></p>
-
-<!-- Custom Themed Technology Armory Container -->
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/tech-arsenal.svg"
-    alt="The Shadow Army Arsenal"
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/pirate-arsenal.svg"
+    alt="The Pirate Crew Arsenal"
     width="100%"
   />
 </p>
-
-> ℹ️ **Transparency Note**: AI-assisted development is leveraged as an engineering workflow to co-author, prototype, and build comprehensive web applications and tools. Core independent technical proficiency centers on Python, Data Science analytics, and Machine Learning.
 
 <br/>
 
 ---
 
-<!-- ══════ THE MONARCH'S PROJECT ARCHIVES ══════ -->
-## 🏆 `[ THE MONARCH'S CONQUERED DUNGEONS — PROJECT ARCHIVES ]`
+<!-- ══════ SECTION 05 — HAKI & ABILITIES ══════ -->
+## ⚡ `[ SECTION 05 // HAKI & ABILITIES — THE ARCHITECT'S PROGRESSION ]`
 
-<!-- Project 01: NASA Space Apps -->
 <p align="center">
-  <a href="https://nasa-forgotten-legacy.vercel.app/" target="_blank">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/haki-abilities.svg"
+    alt="Haki and Abilities"
+    width="100%"
+  />
+</p>
+
+<br/>
+
+---
+
+<!-- ══════ SECTION 06 — GRAND LINE ADVENTURES (PROJECT SHOWCASE) ══════ -->
+## 🏝️ `[ SECTION 06 // GRAND LINE ADVENTURES — CONQUERED ISLANDS ]`
+
+<!-- Island 01: NASA Space Apps -->
+<p align="center">
+  <a href="https://the-tale-of-nasa-s-forgotten-legacy.vercel.app" target="_blank">
     <img
-      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/project-card-1.svg"
-      alt="NASA Space Apps: Forgotten Legacy"
+      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/island-nasa.svg"
+      alt="Island 01: The Tale of NASA's Forgotten Legacy"
       width="100%"
     />
   </a>
 </p>
 
-<!-- Project 02: ExploitReplay -->
+<!-- Island 02: ExploitReplay -->
 <p align="center">
-  <a href="https://github.com/Partha-zzz/ExploitReplay" target="_blank">
+  <a href="https://exploitreplay.vercel.app" target="_blank">
     <img
-      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/project-card-2.svg"
-      alt="ExploitReplay"
+      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/island-exploit.svg"
+      alt="Island 02: ExploitReplay"
       width="100%"
     />
   </a>
 </p>
 
-<!-- Project 03: ResQAI -->
+<!-- Island 03: ResQAI -->
 <p align="center">
-  <a href="https://res-q-ai-blond.vercel.app/" target="_blank">
+  <a href="https://resqai-mdo4.onrender.com" target="_blank">
     <img
-      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/project-card-3.svg"
-      alt="ResQAI"
+      src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/island-resqai.svg"
+      alt="Island 03: ResQAI"
       width="100%"
     />
   </a>
@@ -220,58 +153,13 @@
 
 ---
 
-<!-- ══════ MONARCH POWER LEVEL & COMBAT RECORDS ══════ -->
-## 📊 `[ MONARCH POWER LEVEL & COMBAT RECORDS ]`
-
-<!-- Verified Custom GitHub Telemetry HUD -->
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/github-stats.svg"
-    alt="GitHub Stats Telemetry"
-    width="100%"
-  />
-</p>
-
-<!-- Verified Live Streak Stats -->
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com/?user=Partha-zzz&theme=tokyonight&hide_border=true&background=06000f&ring=9333ea&fire=c084fc&currStreakLabel=a855f7&sideLabels=e9d5ff&sideNums=c084fc&currStreakNum=e9d5ff&dates=6d28d9&stroke=3b0764"
-    alt="Streak Stats"
-    width="640"
-  />
-</p>
-
-<br/>
-
----
-
-<!-- ══════ SHADOW SERPENT (SNAKE CONTRIBUTION ANIMATION) ══════ -->
-## 🐍 `[ SHADOW SERPENT DEVOURING COMMITS ]`
+<!-- ══════ SECTION 07 — THE CAPTAIN'S LOGBOOK (GITHUB STATISTICS) ══════ -->
+## 📜 `[ SECTION 07 // THE CAPTAIN'S LOGBOOK — NAVIGATION TELEMETRY ]`
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/github-snake-dark.svg"
-    alt="Shadow Serpent eating contributions"
-    width="100%"
-  />
-</p>
-
-<p align="center">
-  <sub>⚔️ <i>Powered by automated contribution tracking — devouring every conquered node on GitHub.</i></sub>
-</p>
-
-<br/>
-
----
-
-<!-- ══════ ACTIVE DUNGEON QUESTS ══════ -->
-## 🗡️ `[ ACTIVE DUNGEON QUEST LOG ]`
-
-<!-- Custom Holographic Quest Registry Dashboard -->
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/active-quests.svg"
-    alt="Active Dungeon Quest Log"
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/captains-logbook.svg"
+    alt="The Captain's Logbook — Real-Time GitHub Navigation Stats"
     width="100%"
   />
 </p>
@@ -280,36 +168,67 @@
 
 ---
 
-<!-- ══════ GUILD SUMMONING PORTAL (CONNECT) ══════ -->
-## 🌐 `[ OPEN A DUNGEON GATE — SUMMON THE ARCHITECT ]`
+<!-- ══════ SECTION 08 — THE THOUSAND SUNNY'S VOYAGE (SNAKE CONTRIBUTION) ══════ -->
+## ⛵ `[ SECTION 08 // THE THOUSAND SUNNY'S VOYAGE — DEVOURING CONTRIBUTIONS ]`
 
-<p align="center"><i>Ready to form a party, collaborate on innovative projects, or discuss AI and data science?</i></p>
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/sunny-voyage-snake.svg"
+    alt="The Thousand Sunny's Voyage Contribution Grid"
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <sub>🏴‍☠️ <i>Tracking every contribution conquered on GitHub — sailing across the Grand Line of Code.</i></sub>
+</p>
+
+<br/>
+
+---
+
+<!-- ══════ SECTION 09 — THE NEXT ISLAND (GRAND LINE ROADMAP) ══════ -->
+## 🗺️ `[ SECTION 09 // THE NEXT ISLAND — GRAND LINE ROADMAP ]`
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/grand-line-map.svg"
+    alt="The Next Island — Grand Line Roadmap"
+    width="100%"
+  />
+</p>
+
+<br/>
+
+---
+
+<!-- ══════ SECTION 10 — JOIN MY CREW (CONTACT & RECRUITMENT) ══════ -->
+## 🤝 `[ SECTION 10 // JOIN MY CREW — ALLIANCE & EXPEDITIONS ]`
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/join-my-crew.svg"
+    alt="Every Great Adventure Starts With A Crew"
+    width="100%"
+  />
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/partha-sarathi-sarkar-7385a8367" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=06000f" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LINKEDIN-JOIN%20PARTY-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=171717" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://www.instagram.com/uza_bhaiya/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=06000f" alt="Instagram" />
+    <img src="https://img.shields.io/badge/INSTAGRAM-TRANSPONDER%20SNAIL-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=171717" alt="Instagram" />
   </a>
   &nbsp;
   <a href="https://github.com/Partha-zzz" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=06000f" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GITHUB-ALLIANCE%20FLEET-171717?style=for-the-badge&logo=github&logoColor=white&labelColor=171717" alt="GitHub" />
   </a>
 </p>
 
 <br/>
 
-<!-- ══════ FOOTER — MARCHING SHADOW ARMY ══════ -->
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Partha-zzz/Partha-zzz/main/assets/solo-leveling-footer.svg"
-    alt="Shadow Army Footer"
-    width="100%"
-  />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=7C3AED&center=true&vCenter=true&width=680&lines=Crafted+with+dark+mana+by+Partha+Sarathi+Sarkar;%22I+am+the+Architect+of+Possibilities.+I+Alone+Level+Up.%22;ARISE." alt="Footer typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=1000&color=171717&background=F4EBDD&center=true&vCenter=true&width=700&lines=Crafted+with+Straw+Hat+spirit+by+Partha+Sarathi+Sarkar;%22Set+sail.+Build+something+extraordinary.%22;The+next+island+is+always+waiting." alt="Footer typing" />
 </p>

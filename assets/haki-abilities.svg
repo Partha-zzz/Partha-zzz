@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      .impact-font { font-family: 'Impact', 'Arial Black', sans-serif; }
+      .mono-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      /* ]]> */
+    </style>
+  </defs>
+
+  <!-- Hard Offset Shadow -->
+  <rect x="8" y="8" width="864" height="304" rx="8" fill="#171717"/>
+
+  <!-- Main Canvas -->
+  <rect x="0" y="0" width="864" height="304" rx="8" fill="#F4EBDD" stroke="#171717" stroke-width="3.5"/>
+
+  <!-- Top Header Ribbon -->
+  <g transform="translate(24, 20)">
+    <rect x="4" y="4" width="816" height="36" rx="4" fill="#171717"/>
+    <rect x="0" y="0" width="816" height="36" rx="4" fill="#8BCB88" stroke="#171717" stroke-width="2.5"/>
+    <circle cx="20" cy="18" r="6" fill="#171717" stroke="#171717" stroke-width="1.5"/>
+    <text x="36" y="23" fill="#171717" font-size="13" font-weight="900" letter-spacing="1" class="impact-font">
+      SECTION 05 // HAKI &amp; ABILITIES — THE ARCHITECT'S MASTERY &amp; PROGRESSION
+    </text>
+    <text x="800" y="23" text-anchor="end" fill="#171717" font-size="10.5" font-weight="800" class="mono-font">
+      PROGRESS: CONTINUOUS
+    </text>
+  </g>
+
+  <!-- 6 Haki Cards -->
+  
+    <!-- Card 1 -->
+    <g transform="translate(24, 68)">
+      <!-- Shadow -->
+      <rect x="4" y="4" width="264" height="105" rx="6" fill="#171717"/>
+      <!-- Main Card -->
+      <rect x="0" y="0" width="264" height="105" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="2.5"/>
+      <rect x="0" y="0" width="8" height="105" rx="2" fill="#55C8E8"/>
+
+      <!-- Badge / Code -->
+      <text x="16" y="20" fill="#55C8E8" font-size="9" font-weight="900" font-family="'Fira Code', monospace">KENBUNSHOKU</text>
+      <!-- Status Pill -->
+      <rect x="174" y="10" width="80" height="18" rx="3" fill="#F4EBDD" stroke="#171717" stroke-width="1.2"/>
+      <text x="214" y="22.5" text-anchor="middle" fill="#171717" font-size="8.5" font-weight="900" font-family="'Fira Code', monospace">DEVELOPING</text>
+
+      <!-- Ability Name -->
+      <text x="16" y="38" fill="#171717" font-size="12" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">OBSERVATION HAKI</text>
+      <text x="16" y="52" fill="#555555" font-size="9.5" font-weight="700" font-family="'Fira Code', monospace">// Analytical Thinking</text>
+
+      <line x1="16" y1="60" x2="250" y2="60" stroke="#171717" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Description -->
+      <text x="16" y="76" fill="#171717" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Dissecting algorithmic logic,</text>
+      <text x="16" y="90" fill="#171717" font-size="9.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">neural models &amp; problem spaces.</text>
+    </g>
+    <!-- Card 2 -->
+    <g transform="translate(302, 68)">
+      <!-- Shadow -->
+      <rect x="4" y="4" width="264" height="105" rx="6" fill="#171717"/>
+      <!-- Main Card -->
+      <rect x="0" y="0" width="264" height="105" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="2.5"/>
+      <rect x="0" y="0" width="8" height="105" rx="2" fill="#FF654F"/>
+
+      <!-- Badge / Code -->
+      <text x="16" y="20" fill="#FF654F" font-size="9" font-weight="900" font-family="'Fira Code', monospace">BUSOSHOKU</text>
+      <!-- Status Pill -->
+      <rect x="174" y="10" width="80" height="18" rx="3" fill="#F4EBDD" stroke="#171717" stroke-width="1.2"/>
+      <text x="214" y="22.5" text-anchor="middle" fill="#171717" font-size="8.5" font-weight="900" font-family="'Fira Code', monospace">BUILDING</text>
+
+      <!-- Ability Name -->
+      <text x="16" y="38" fill="#171717" font-size="12" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">ARMAMENT HAKI</text>
+      <text x="16" y="52" fill="#555555" font-size="9.5" font-weight="700" font-family="'Fira Code', monospace">// Technical Foundations</text>
+
+      <line x1="16" y1="60" x2="250" y2="60" stroke="#171717" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Description -->
+      <text x="16" y="76" fill="#171717" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Hardening core Python syntax,</text>
+      <text x="16" y="90" fill="#171717" font-size="9.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">data structures &amp; engineering rigor.</text>
+    </g>
+    <!-- Card 3 -->
+    <g transform="translate(580, 68)">
+      <!-- Shadow -->
+      <rect x="4" y="4" width="264" height="105" rx="6" fill="#171717"/>
+      <!-- Main Card -->
+      <rect x="0" y="0" width="264" height="105" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="2.5"/>
+      <rect x="0" y="0" width="8" height="105" rx="2" fill="#F5D547"/>
+
+      <!-- Badge / Code -->
+      <text x="16" y="20" fill="#F5D547" font-size="9" font-weight="900" font-family="'Fira Code', monospace">HAOSHOKU SPIRIT</text>
+      <!-- Status Pill -->
+      <rect x="174" y="10" width="80" height="18" rx="3" fill="#F4EBDD" stroke="#171717" stroke-width="1.2"/>
+      <text x="214" y="22.5" text-anchor="middle" fill="#171717" font-size="8.5" font-weight="900" font-family="'Fira Code', monospace">BUILDING</text>
+
+      <!-- Ability Name -->
+      <text x="16" y="38" fill="#171717" font-size="12" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">CREATIVITY &amp; VISION</text>
+      <text x="16" y="52" fill="#555555" font-size="9.5" font-weight="700" font-family="'Fira Code', monospace">// Building New Things</text>
+
+      <line x1="16" y1="60" x2="250" y2="60" stroke="#171717" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Description -->
+      <text x="16" y="76" fill="#171717" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Turning raw ideas into tangible,</text>
+      <text x="16" y="90" fill="#171717" font-size="9.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">polished applications and tools.</text>
+    </g>
+    <!-- Card 4 -->
+    <g transform="translate(24, 187)">
+      <!-- Shadow -->
+      <rect x="4" y="4" width="264" height="105" rx="6" fill="#171717"/>
+      <!-- Main Card -->
+      <rect x="0" y="0" width="264" height="105" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="2.5"/>
+      <rect x="0" y="0" width="8" height="105" rx="2" fill="#8BCB88"/>
+
+      <!-- Badge / Code -->
+      <text x="16" y="20" fill="#8BCB88" font-size="9" font-weight="900" font-family="'Fira Code', monospace">GRAND LINE LOG</text>
+      <!-- Status Pill -->
+      <rect x="174" y="10" width="80" height="18" rx="3" fill="#F4EBDD" stroke="#171717" stroke-width="1.2"/>
+      <text x="214" y="22.5" text-anchor="middle" fill="#171717" font-size="8.5" font-weight="900" font-family="'Fira Code', monospace">LEARNING</text>
+
+      <!-- Ability Name -->
+      <text x="16" y="38" fill="#171717" font-size="12" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">NAVIGATION SENSE</text>
+      <text x="16" y="52" fill="#555555" font-size="9.5" font-weight="700" font-family="'Fira Code', monospace">// Cultures &amp; Languages</text>
+
+      <line x1="16" y1="60" x2="250" y2="60" stroke="#171717" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Description -->
+      <text x="16" y="76" fill="#171717" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">JLPT N5 Completed 🏆</text>
+      <text x="16" y="90" fill="#171717" font-size="9.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Active Japanese N4 immersion.</text>
+    </g>
+    <!-- Card 5 -->
+    <g transform="translate(302, 187)">
+      <!-- Shadow -->
+      <rect x="4" y="4" width="264" height="105" rx="6" fill="#171717"/>
+      <!-- Main Card -->
+      <rect x="0" y="0" width="264" height="105" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="2.5"/>
+      <rect x="0" y="0" width="8" height="105" rx="2" fill="#55C8E8"/>
+
+      <!-- Badge / Code -->
+      <text x="16" y="20" fill="#55C8E8" font-size="9" font-weight="900" font-family="'Fira Code', monospace">SUNNY SHIPWRIGHT</text>
+      <!-- Status Pill -->
+      <rect x="174" y="10" width="80" height="18" rx="3" fill="#F4EBDD" stroke="#171717" stroke-width="1.2"/>
+      <text x="214" y="22.5" text-anchor="middle" fill="#171717" font-size="8.5" font-weight="900" font-family="'Fira Code', monospace">BUILDING</text>
+
+      <!-- Ability Name -->
+      <text x="16" y="38" fill="#171717" font-size="12" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">AI-ASSISTED DEV</text>
+      <text x="16" y="52" fill="#555555" font-size="9.5" font-weight="700" font-family="'Fira Code', monospace">// Shipbuilding Workflows</text>
+
+      <line x1="16" y1="60" x2="250" y2="60" stroke="#171717" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Description -->
+      <text x="16" y="76" fill="#171717" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Pairing curiosity with AI agents</text>
+      <text x="16" y="90" fill="#171717" font-size="9.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">to architect full-stack software.</text>
+    </g>
+    <!-- Card 6 -->
+    <g transform="translate(580, 187)">
+      <!-- Shadow -->
+      <rect x="4" y="4" width="264" height="105" rx="6" fill="#171717"/>
+      <!-- Main Card -->
+      <rect x="0" y="0" width="264" height="105" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="2.5"/>
+      <rect x="0" y="0" width="8" height="105" rx="2" fill="#FF654F"/>
+
+      <!-- Badge / Code -->
+      <text x="16" y="20" fill="#FF654F" font-size="9" font-weight="900" font-family="'Fira Code', monospace">OCEAN TIDE</text>
+      <!-- Status Pill -->
+      <rect x="174" y="10" width="80" height="18" rx="3" fill="#F4EBDD" stroke="#171717" stroke-width="1.2"/>
+      <text x="214" y="22.5" text-anchor="middle" fill="#171717" font-size="8.5" font-weight="900" font-family="'Fira Code', monospace">EXPLORING</text>
+
+      <!-- Ability Name -->
+      <text x="16" y="38" fill="#171717" font-size="12" font-weight="900" font-family="'Impact', 'Arial Black', sans-serif">DATA PERCEPTION</text>
+      <text x="16" y="52" fill="#555555" font-size="9.5" font-weight="700" font-family="'Fira Code', monospace">// Data Science Exploration</text>
+
+      <line x1="16" y1="60" x2="250" y2="60" stroke="#171717" stroke-width="1" stroke-dasharray="3 3"/>
+
+      <!-- Description -->
+      <text x="16" y="76" fill="#171717" font-size="10" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Exploring high-dimensional datasets</text>
+      <text x="16" y="90" fill="#171717" font-size="9.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">via Pandas, Matplotlib &amp; analytics.</text>
+    </g>
+</svg>
