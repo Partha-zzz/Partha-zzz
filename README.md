@@ -1,18 +1,150 @@
-# 💫 About Me:
-🔭 I’m currently working on<br>Building my skills in AI, machine learning, and software development through practical coding and experimentation.<br><br>👯 I’m looking to collaborate on<br>AI/ML projects, open-source tools, and innovative student startup ideas.<br><br>🤝 I’m looking for help with<br>Scaling AI applications, beginner machine learning concepts, and building production-ready full-stack apps.<br><br>🌱 I’m currently learning<br>Machine Learning, Java, Data structures, and full-stack development with modern AI tools.<br><br>💬 Ask me about<br>Python, C, Java, beginner ML, building student projects, and learning languages.<br><br>⚡ Fun fact<br>My code doesn’t have bugs. It just develops random features.<br>
+<div align="center">
 
+# PARTHA SARATHI SARKAR
+### CSE (AI & ML) Scholar • Aspiring Data Scientist & Machine Learning Engineer
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/partha-sarathi-sarkar-7385a8367/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:atomic.here007@gmail.com) 
+![Intro](./assets/hero.svg?v=1)
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Partha-zzz&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Partha-zzz&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Partha-zzz&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+</div>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<br/>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+---
+
+<br/>
+
+<div align="center">
+
+![About](./assets/about-life.svg?v=1)
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+![Stack](./assets/stack.svg?v=1)
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+![ID](./assets/id-dashboard.svg?v=1)
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+## 🛸 Featured Engineering Projects
+
+A curated selection of technical explorations, planetary visual computing, and AI-assisted crisis control systems.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3 align="center">🌌 Project 01</h3>
+      <h4 align="center">The Tale of NASA's Forgotten Legacy</h4>
+      <p align="center">
+        <sub><b>IMMERSIVE 3D SPACE EXPLORATION</b></sub>
+      </p>
+      <p>
+        An immersive educational storytelling experience exploring NASA's forgotten and abandoned equipment on the Moon and Mars. Uses cinematic storytelling, 3D planetary environments, and interactive visual experiences to make space exploration history engaging and accessible for younger audiences.
+      </p>
+      <p>
+        <b>Tech Stack:</b><br/>
+        <code>Next.js</code> • <code>Three.js</code> • <code>Tailwind CSS</code> • <code>Vercel</code>
+      </p>
+      <p align="center">
+        <a href="https://the-tale-of-nasa-s-forgotten-legacy.vercel.app" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Live_Site-Visit_Project_→-247bff?style=for-the-badge&logoColor=white" alt="Visit Project" />
+        </a>
+      </p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">🛡️ Project 02</h3>
+      <h4 align="center">ExploitReplay</h4>
+      <p align="center">
+        <sub><b>CYBERSECURITY INVESTIGATION PLATFORM</b></sub>
+      </p>
+      <p>
+        A cybersecurity-focused project centred around exploit replay and security analysis. The project explores methods to make security investigation, incident post-mortems, and exploit analysis more accessible and structured through a dedicated technical platform.
+      </p>
+      <p>
+        <b>Tech Stack:</b><br/>
+        <code>Next.js</code> • <code>Tailwind CSS</code> • <code>Vercel</code> • <code>Security Analysis</code>
+      </p>
+      <p align="center">
+        <a href="https://exploitreplay.vercel.app" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Live_Site-Visit_Project_→-ff354f?style=for-the-badge&logoColor=white" alt="Visit Project" />
+        </a>
+      </p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">🚨 Project 03</h3>
+      <h4 align="center">ResQAI</h4>
+      <p align="center">
+        <sub><b>CRISIS CONTROL & EMERGENCY RESPONSE</b></sub>
+      </p>
+      <p>
+        An AI-assisted rapid crisis control and emergency response project. Explores technology-driven crisis management workflows, intelligent assistance for rapid incident routing, and coordination support for time-critical emergency scenarios.
+      </p>
+      <p>
+        <b>Tech Stack:</b><br/>
+        <code>AI Assistance</code> • <code>Emergency Coordination</code> • <code>Full-Stack</code> • <code>Render</code>
+      </p>
+      <p align="center">
+        <a href="https://resqai-mdo4.onrender.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.shields.io/badge/Live_Site-Visit_Project_→-22c55e?style=for-the-badge&logoColor=white" alt="Visit Project" />
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+![Connect](./assets/connect.svg?v=1)
+
+<br/>
+
+### 🌐 Direct Social & Professional Channels
+
+Click the links below to connect directly across platforms:
+
+<p align="center">
+  <a href="https://github.com/Partha-zzz" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/GitHub-Partha--zzz-247bff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/partha-sarathi-sarkar-7385a8367" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-Partha_Sarathi_Sarkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.instagram.com/uza_bhaiya/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Instagram-@uza__bhaiya-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Profile" />
+  </a>
+</p>
+
+<sub><i>Handcrafted with animated vector SVG assets, custom typography &amp; transparent character compositing.</i></sub>
+
+</div>

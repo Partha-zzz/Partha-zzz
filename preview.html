@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Preview — Partha Sarathi Sarkar</title>
+  <style>
+    :root {
+      --bg-canvas: #0d1117;
+      --bg-card: #161b22;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --text-heading: #f0f6fc;
+      --link-color: #58a6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 15px;
+      z-index: 1000;
+      background: #090d16cc;
+      backdrop-filter: blur(10px);
+      border: 1px solid #247bff66;
+      padding: 12px 24px;
+      border-radius: 40px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+
+    .toolbar span {
+      font-size: 13px;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    .toolbar button {
+      background: #1e293b;
+      color: #f5f5f5;
+      border: 1px solid #334155;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .toolbar button:hover {
+      background: #247bff;
+      border-color: #247bff;
+    }
+
+    .toolbar button.active {
+      background: #ff354f;
+      border-color: #ff354f;
+    }
+
+    .readme-container {
+      max-width: 890px;
+      width: 100%;
+      background: #0d1117;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 32px 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .readme-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      color: #8b949e;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .readme-header svg {
+      fill: #8b949e;
+    }
+
+    .readme-content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 12px auto;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #21262d;
+      margin: 32px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table td {
+      border: 1px solid #30363d;
+      padding: 20px 16px;
+      background: #161b22;
+      border-radius: 6px;
+    }
+
+    table h3 {
+      color: #f0f6fc;
+      margin-bottom: 4px;
+    }
+
+    table h4 {
+      color: #58a6ff;
+      margin-bottom: 8px;
+    }
+
+    table code {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      color: #79c0ff;
+    }
+
+    .reduced-motion-mode * {
+      animation: none !important;
+      transition: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Controls Toolbar -->
+  <div class="toolbar">
+    <span>TEST CONTROLS:</span>
+    <button onclick="toggleReducedMotion()" id="motionBtn">Toggle Reduced Motion</button>
+    <button onclick="refreshAssets()">Reload SVGs</button>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Scroll Top</button>
+  </div>
+
+  <div class="readme-container" id="readmeBox">
+    <div class="readme-header">
+      <svg height="16" viewBox="0 0 16 16" width="16"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l3.914 3.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 14.25 17h-10.5A1.75 1.75 0 0 1 2 15.25Zm1.75-.25a.25.25 0 0 0-.25.25v13.5c0 .069.027.135.073.182.047.046.113.073.182.073h10.5a.25.25 0 0 0 .25-.25V5.25H11.75A1.75 1.75 0 0 1 10 3.5V1.5Zm7.75.586V3.5c0 .138.112.25.25.25h1.914Z"></path></svg>
+      <span>Partha-zzz / <b>README.md</b></span>
+    </div>
+
+    <div class="readme-content">
+      <!-- 1. Hero -->
+      <div align="center">
+        <h1 style="color: #f0f6fc; font-size: 26px; margin-bottom: 4px;">PARTHA SARATHI SARKAR</h1>
+        <h3 style="color: #58a6ff; font-size: 14px; margin-bottom: 16px; font-weight: 500;">CSE (AI &amp; ML) Scholar • Aspiring Data Scientist &amp; Machine Learning Engineer</h3>
+        <img src="./assets/hero.svg?v=1" alt="Hero Header" />
+      </div>
+
+      <hr />
+
+      <!-- 2. About Me -->
+      <div align="center">
+        <img src="./assets/about-life.svg?v=1" alt="About Me" />
+      </div>
+
+      <hr />
+
+      <!-- 3. Tech Stack -->
+      <div align="center">
+        <img src="./assets/stack.svg?v=1" alt="Tech Stack" />
+      </div>
+
+      <hr />
+
+      <!-- 4. ID Dashboard -->
+      <div align="center">
+        <img src="./assets/id-dashboard.svg?v=1" alt="ID Dashboard" />
+      </div>
+
+      <hr />
+
+      <!-- 5. Featured Projects -->
+      <h2 style="color: #f0f6fc; font-size: 20px; margin-bottom: 6px;">🛸 Featured Engineering Projects</h2>
+      <p style="color: #8b949e; font-size: 14px; margin-bottom: 16px;">
+        A curated selection of technical explorations, planetary visual computing, and AI-assisted crisis control systems.
+      </p>
+
+      <table>
+        <tr>
+          <td width="33%" valign="top">
+            <h3 align="center">🌌 Project 01</h3>
+            <h4 align="center">The Tale of NASA's Forgotten Legacy</h4>
+            <p align="center" style="font-size: 11px; color: #8b949e; margin-bottom: 12px;"><b>IMMERSIVE 3D SPACE EXPLORATION</b></p>
+            <p style="font-size: 13px; color: #c9d1d9; margin-bottom: 12px;">
+              An immersive educational storytelling experience exploring NASA's forgotten and abandoned equipment on the Moon and Mars. Uses cinematic storytelling, 3D planetary environments, and interactive visual experiences to make space exploration history engaging and accessible for younger audiences.
+            </p>
+            <p style="font-size: 12px; margin-bottom: 16px;">
+              <b>Tech Stack:</b><br/>
+              <code>Next.js</code> • <code>Three.js</code> • <code>Tailwind CSS</code> • <code>Vercel</code>
+            </p>
+            <p align="center">
+              <a href="https://the-tale-of-nasa-s-forgotten-legacy.vercel.app" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.shields.io/badge/Live_Site-Visit_Project_→-247bff?style=for-the-badge&logoColor=white" alt="Visit Project" style="margin: 0 auto;" />
+              </a>
+            </p>
+          </td>
+
+          <td width="33%" valign="top">
+            <h3 align="center">🛡️ Project 02</h3>
+            <h4 align="center">ExploitReplay</h4>
+            <p align="center" style="font-size: 11px; color: #8b949e; margin-bottom: 12px;"><b>CYBERSECURITY INVESTIGATION PLATFORM</b></p>
+            <p style="font-size: 13px; color: #c9d1d9; margin-bottom: 12px;">
+              A cybersecurity-focused project centred around exploit replay and security analysis. The project explores methods to make security investigation, incident post-mortems, and exploit analysis more accessible and structured through a dedicated technical platform.
+            </p>
+            <p style="font-size: 12px; margin-bottom: 16px;">
+              <b>Tech Stack:</b><br/>
+              <code>Next.js</code> • <code>Tailwind CSS</code> • <code>Vercel</code> • <code>Security Analysis</code>
+            </p>
+            <p align="center">
+              <a href="https://exploitreplay.vercel.app" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.shields.io/badge/Live_Site-Visit_Project_→-ff354f?style=for-the-badge&logoColor=white" alt="Visit Project" style="margin: 0 auto;" />
+              </a>
+            </p>
+          </td>
+
+          <td width="33%" valign="top">
+            <h3 align="center">🚨 Project 03</h3>
+            <h4 align="center">ResQAI</h4>
+            <p align="center" style="font-size: 11px; color: #8b949e; margin-bottom: 12px;"><b>CRISIS CONTROL &amp; EMERGENCY RESPONSE</b></p>
+            <p style="font-size: 13px; color: #c9d1d9; margin-bottom: 12px;">
+              An AI-assisted rapid crisis control and emergency response project. Explores technology-driven crisis management workflows, intelligent assistance for rapid incident routing, and coordination support for time-critical emergency scenarios.
+            </p>
+            <p style="font-size: 12px; margin-bottom: 16px;">
+              <b>Tech Stack:</b><br/>
+              <code>AI Assistance</code> • <code>Emergency Coordination</code> • <code>Full-Stack</code> • <code>Render</code>
+            </p>
+            <p align="center">
+              <a href="https://resqai-mdo4.onrender.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.shields.io/badge/Live_Site-Visit_Project_→-22c55e?style=for-the-badge&logoColor=white" alt="Visit Project" style="margin: 0 auto;" />
+              </a>
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <!-- 6. Connect -->
+      <div align="center">
+        <img src="./assets/connect.svg?v=1" alt="Connect" />
+
+        <br/>
+        <h3 style="color: #f0f6fc; font-size: 18px; margin: 16px 0 8px 0;">🌐 Direct Social &amp; Professional Channels</h3>
+        <p style="color: #8b949e; font-size: 13px; margin-bottom: 16px;">Click the links below to connect directly across platforms:</p>
+
+        <p align="center">
+          <a href="https://github.com/Partha-zzz" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/GitHub-Partha--zzz-247bff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" style="display: inline-block; margin: 4px;" />
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/partha-sarathi-sarkar-7385a8367" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/LinkedIn-Partha_Sarathi_Sarkar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" style="display: inline-block; margin: 4px;" />
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://www.instagram.com/uza_bhaiya/" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/Instagram-@uza__bhaiya-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Profile" style="display: inline-block; margin: 4px;" />
+          </a>
+        </p>
+
+        <p style="color: #484f58; font-size: 12px; margin-top: 24px;">
+          <i>Handcrafted with animated vector SVG assets, custom typography &amp; transparent character compositing.</i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleReducedMotion() {
+      const box = document.getElementById('readmeBox');
+      const btn = document.getElementById('motionBtn');
+      box.classList.toggle('reduced-motion-mode');
+      if (box.classList.contains('reduced-motion-mode')) {
+        btn.classList.add('active');
+        btn.innerText = 'Reduced Motion: ON';
+      } else {
+        btn.classList.remove('active');
+        btn.innerText = 'Toggle Reduced Motion';
+      }
+    }
+
+    function refreshAssets() {
+      const imgs = document.querySelectorAll('.readme-content img');
+      const stamp = Date.now();
+      imgs.forEach(img => {
+        const baseSrc = img.src.split('?')[0];
+        if (baseSrc.endsWith('.svg')) {
+          img.src = baseSrc + '?t=' + stamp;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
