@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @keyframes walk {
+        0%   { transform: translateX(-920px); }
+        100% { transform: translateX(900px); }
+      }
+      @keyframes walk2 {
+        0%   { transform: translateX(-920px); }
+        100% { transform: translateX(900px); }
+      }
+      @keyframes groundPulse {
+        0%, 100% { opacity: 0.4; }
+        50%      { opacity: 0.95; }
+      }
+      @keyframes footerTextGlow {
+        0%, 100% { filter: drop-shadow(0 0 8px #7c3aed); }
+        50%      { filter: drop-shadow(0 0 20px #a855f7) drop-shadow(0 0 40px #38bdf8); }
+      }
+      @keyframes runeFloat {
+        0%   { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+        50%  { transform: translateY(-8px) rotate(8deg); opacity: 0.7; }
+        100% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+      }
+      @keyframes borderShine {
+        0%, 100% { stroke-opacity: 0.4; stroke: #7c3aed; }
+        50%      { stroke-opacity: 0.9; stroke: #38bdf8; }
+      }
+      /* ]]> */
+    </style>
+    <radialGradient id="ftBg" cx="50%" cy="0%" r="80%">
+      <stop offset="0%"   stop-color="#1a0040" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#020008" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="groundLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#02000a" stop-opacity="1"/>
+      <stop offset="20%"  stop-color="#7c3aed" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#38bdf8" stop-opacity="1"/>
+      <stop offset="80%"  stop-color="#7c3aed" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#02000a" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="ftGlow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="ftClip">
+      <rect width="900" height="140"/>
+    </clipPath>
+    <!-- Soldier shape for marching army -->
+    <g id="ms">
+      <path d="M0,0 L2,-12 Q3,-16 5,-17 Q7,-16 8,-12 L10,0Z" fill="#150033"/>
+      <ellipse cx="5" cy="-19" rx="3" ry="3.5" fill="#150033"/>
+      <path d="M1,-10 L-2,-7 M9,-10 L12,-7" stroke="#150033" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+    <!-- Commander shape with cloak -->
+    <g id="mc">
+      <path d="M0,0 L2,-14 Q3,-19 6,-20 Q9,-19 10,-14 L12,0Z" fill="#1e004a"/>
+      <ellipse cx="6" cy="-23" rx="4" ry="4.5" fill="#1e004a"/>
+      <path d="M0,-12 Q-4,-5 -2,0 M12,-12 Q16,-5 14,0" stroke="#1e004a" stroke-width="1" stroke-linecap="round" fill="#1e004a"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="140" fill="url(#ftBg)"/>
+
+  <!-- Top Border with glow pulse -->
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#7c3aed" stroke-width="1.5"
+    style="animation:borderShine 2.5s ease-in-out infinite"/>
+
+  <!-- Glowing Ground Line -->
+  <rect x="0" y="95" width="900" height="2" fill="url(#groundLine)"
+    style="animation:groundPulse 3s ease-in-out infinite"/>
+  <rect x="0" y="97" width="900" height="43" fill="#020008"/>
+
+  <!-- Marching Shadows Row 1 -->
+  <g clip-path="url(#ftClip)" style="animation:walk 18s linear infinite">
+    <use href="#ms" transform="translate(10,95)   scale(2.2)"/>
+    <use href="#mc" transform="translate(55,90)   scale(2.5)"/>
+    <use href="#ms" transform="translate(108,95)  scale(2)"/>
+    <use href="#ms" transform="translate(152,93)  scale(2.3)"/>
+    <use href="#mc" transform="translate(202,90)  scale(2.5)"/>
+    <use href="#ms" transform="translate(260,95)  scale(2.1)"/>
+    <use href="#ms" transform="translate(308,93)  scale(2.2)"/>
+    <use href="#mc" transform="translate(356,90)  scale(2.5)"/>
+    <use href="#ms" transform="translate(412,95)  scale(2)"/>
+    <use href="#ms" transform="translate(460,93)  scale(2.3)"/>
+    <use href="#mc" transform="translate(510,90)  scale(2.5)"/>
+    <use href="#ms" transform="translate(565,95)  scale(2.1)"/>
+    <use href="#ms" transform="translate(612,93)  scale(2.2)"/>
+    <use href="#mc" transform="translate(660,90)  scale(2.5)"/>
+    <use href="#ms" transform="translate(716,95)  scale(2)"/>
+    <use href="#ms" transform="translate(762,93)  scale(2.3)"/>
+    <use href="#mc" transform="translate(812,90)  scale(2.5)"/>
+    <use href="#ms" transform="translate(860,95)  scale(2.1)"/>
+  </g>
+
+  <!-- Marching Shadows Row 2 (offset) -->
+  <g clip-path="url(#ftClip)" style="animation:walk2 13s linear 4s infinite">
+    <use href="#ms" transform="translate(35,95)   scale(1.6)"/>
+    <use href="#ms" transform="translate(95,95)   scale(1.7)"/>
+    <use href="#mc" transform="translate(170,92)  scale(1.9)"/>
+    <use href="#ms" transform="translate(245,95)  scale(1.6)"/>
+    <use href="#ms" transform="translate(330,95)  scale(1.7)"/>
+    <use href="#mc" transform="translate(435,92)  scale(1.9)"/>
+    <use href="#ms" transform="translate(535,95)  scale(1.6)"/>
+    <use href="#ms" transform="translate(635,95)  scale(1.7)"/>
+    <use href="#mc" transform="translate(735,92)  scale(1.9)"/>
+    <use href="#ms" transform="translate(825,95)  scale(1.6)"/>
+  </g>
+
+  <!-- Floating Runes in the Dark Sky -->
+  <text x="70"  y="38" fill="#7c3aed" font-size="12" font-family="serif" style="animation:runeFloat 4s ease-in-out 0s infinite">ᚱ</text>
+  <text x="210" y="28" fill="#38bdf8" font-size="10" font-family="serif" style="animation:runeFloat 5s ease-in-out 1s infinite">ᛉ</text>
+  <text x="360" y="34" fill="#a855f7" font-size="11" font-family="serif" style="animation:runeFloat 4.5s ease-in-out 2s infinite">ᚾ</text>
+  <text x="540" y="30" fill="#38bdf8" font-size="10" font-family="serif" style="animation:runeFloat 4.2s ease-in-out 0.5s infinite">ᛟ</text>
+  <text x="690" y="36" fill="#7c3aed" font-size="12" font-family="serif" style="animation:runeFloat 4.8s ease-in-out 1.5s infinite">ᚦ</text>
+  <text x="830" y="28" fill="#a855f7" font-size="11" font-family="serif" style="animation:runeFloat 3.8s ease-in-out 2.5s infinite">ᚨ</text>
+
+  <!-- Central Title -->
+  <text x="450" y="46"
+    text-anchor="middle"
+    font-family="'Courier New',Courier,monospace"
+    font-size="16"
+    font-weight="bold"
+    fill="#e9d5ff"
+    letter-spacing="0.22em"
+    filter="url(#ftGlow)"
+    style="animation:footerTextGlow 3s ease-in-out infinite">
+    ✦ THE ARCHITECT NEVER STOPS LEVELING UP ✦
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="68"
+    text-anchor="middle"
+    font-family="'Courier New',Courier,monospace"
+    font-size="10"
+    fill="#38bdf8"
+    letter-spacing="0.28em"
+    opacity="0.9">
+    PARTHA SARATHI SARKAR // HALDIA, INDIA // 가능성의 건축가
+  </text>
+</svg>

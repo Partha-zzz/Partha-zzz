@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Orbitron:wght@600;800;900&family=Cinzel:wght@700;900&display=swap');
+
+      @keyframes arisePulse {
+        0%, 100% {
+          filter: drop-shadow(0 0 10px #7c3aed) drop-shadow(0 0 25px #a855f7);
+          opacity: 0.95;
+        }
+        50% {
+          filter: drop-shadow(0 0 25px #c084fc) drop-shadow(0 0 55px #00f0ff);
+          opacity: 1;
+        }
+      }
+
+      @keyframes ringCW {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+
+      @keyframes ringCCW {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(-360deg); }
+      }
+
+      @keyframes particleFloatA {
+        0%   { transform: translate(0, 0); opacity: 0; }
+        20%  { opacity: 0.9; }
+        80%  { opacity: 0.7; }
+        100% { transform: translate(-20px, -140px); opacity: 0; }
+      }
+
+      @keyframes particleFloatB {
+        0%   { transform: translate(0, 0); opacity: 0; }
+        20%  { opacity: 0.9; }
+        80%  { opacity: 0.6; }
+        100% { transform: translate(25px, -160px); opacity: 0; }
+      }
+
+      @keyframes scanBeam {
+        0%   { transform: translateY(0); opacity: 0.5; }
+        100% { transform: translateY(360px); opacity: 0; }
+      }
+
+      @keyframes portalGlow {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50%      { transform: scale(1.08); opacity: 0.9; }
+      }
+
+      @keyframes borderBlink {
+        0%, 100% { stroke: #7c3aed; opacity: 0.5; }
+        50%      { stroke: #38bdf8; opacity: 0.9; }
+      }
+
+      @keyframes badgePulse {
+        0%, 100% { filter: drop-shadow(0 0 4px #7c3aed); }
+        50%      { filter: drop-shadow(0 0 12px #38bdf8); }
+      }
+
+      .cinzel-font { font-family: 'Cinzel', 'Times New Roman', serif; }
+      .orbitron-font { font-family: 'Orbitron', 'Trebuchet MS', sans-serif; }
+      .tech-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      /* ]]> */
+    </style>
+
+    <!-- Gradients -->
+    <radialGradient id="bannerBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%"   stop-color="#160233"/>
+      <stop offset="45%"  stop-color="#090017"/>
+      <stop offset="100%" stop-color="#020007"/>
+    </radialGradient>
+
+    <radialGradient id="portalCoreGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="35%"  stop-color="#a855f7" stop-opacity="0.4"/>
+      <stop offset="70%"  stop-color="#6d28d9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#090017" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="30%"  stop-color="#e0e7ff"/>
+      <stop offset="70%"  stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="subTextGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#a855f7"/>
+      <stop offset="50%"  stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="strongGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="360" rx="14" fill="url(#bannerBg)"/>
+
+  <!-- Starfield Points -->
+  <g opacity="0.4" fill="#ffffff">
+    <circle cx="85" cy="45" r="1"/>
+    <circle cx="160" cy="110" r="0.8"/>
+    <circle cx="240" cy="55" r="1.2"/>
+    <circle cx="310" cy="95" r="0.7"/>
+    <circle cx="580" cy="70" r="1"/>
+    <circle cx="680" cy="40" r="1.2"/>
+    <circle cx="750" cy="115" r="0.8"/>
+    <circle cx="820" cy="60" r="1.1"/>
+    <circle cx="110" cy="270" r="1"/>
+    <circle cx="190" cy="310" r="0.8"/>
+    <circle cx="720" cy="290" r="1.2"/>
+    <circle cx="810" cy="270" r="0.7"/>
+    <circle cx="840" cy="320" r="1"/>
+  </g>
+
+  <!-- Sci-Fi Grid Lines (Subtle) -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="0.8">
+    <line x1="0" y1="60" x2="900" y2="60"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="0" y1="300" x2="900" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="360"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="450" y1="0" x2="450" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="750" y1="0" x2="750" y2="360"/>
+  </g>
+
+  <!-- Central Portal Aura -->
+  <circle cx="450" cy="180" r="160" fill="url(#portalCoreGrad)" style="animation: portalGlow 6s ease-in-out infinite;"/>
+
+  <!-- Rotating Runic Rings -->
+  <g transform="translate(450, 180)">
+    <!-- Ring 1 Outer Clockwise -->
+    <g style="transform-origin: 0 0; animation: ringCW 36s linear infinite;">
+      <circle cx="0" cy="0" r="145" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="14 10 32 10" opacity="0.5"/>
+      <text x="0" y="-140" fill="#c084fc" font-size="10" opacity="0.7" text-anchor="middle">ᚱ</text>
+      <text x="140" y="5" fill="#c084fc" font-size="10" opacity="0.7" text-anchor="middle">ᛉ</text>
+      <text x="0" y="145" fill="#c084fc" font-size="10" opacity="0.7" text-anchor="middle">ᚾ</text>
+      <text x="-140" y="5" fill="#c084fc" font-size="10" opacity="0.7" text-anchor="middle">ᛟ</text>
+    </g>
+
+    <!-- Ring 2 Inner Counter-Clockwise -->
+    <g style="transform-origin: 0 0; animation: ringCCW 24s linear infinite;">
+      <circle cx="0" cy="0" r="120" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="8 6 20 6" opacity="0.4"/>
+      <text x="85" y="-85" fill="#38bdf8" font-size="9" opacity="0.6" text-anchor="middle">ᚦ</text>
+      <text x="-85" y="-85" fill="#38bdf8" font-size="9" opacity="0.6" text-anchor="middle">ᚨ</text>
+      <text x="85" y="85" fill="#38bdf8" font-size="9" opacity="0.6" text-anchor="middle">ᛋ</text>
+      <text x="-85" y="85" fill="#38bdf8" font-size="9" opacity="0.6" text-anchor="middle">ᛏ</text>
+    </g>
+  </g>
+
+  <!-- Mana Sparks / Floating Particles -->
+  <g transform="translate(450, 240)">
+    <circle cx="-60" cy="10" r="2" fill="#38bdf8" style="animation: particleFloatA 4s ease-out infinite;"/>
+    <circle cx="70" cy="20" r="2.5" fill="#c084fc" style="animation: particleFloatB 4.5s ease-out 1s infinite;"/>
+    <circle cx="-130" cy="-10" r="1.8" fill="#a855f7" style="animation: particleFloatA 5s ease-out 2s infinite;"/>
+    <circle cx="120" cy="0" r="2" fill="#00f0ff" style="animation: particleFloatB 4.8s ease-out 2.5s infinite;"/>
+  </g>
+
+  <!-- Horizontal Scan Line -->
+  <line x1="4" y1="0" x2="896" y2="0" stroke="#38bdf8" stroke-width="1.2" opacity="0.3" style="animation: scanBeam 4.5s linear infinite;"/>
+
+  <!-- Outer Animated Border -->
+  <rect x="2" y="2" width="896" height="356" rx="12" fill="none" stroke-width="1.8" style="animation: borderBlink 4s ease-in-out infinite;"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 16 36 L 16 16 L 36 16" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M 884 36 L 884 16 L 864 16" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M 16 324 L 16 344 L 36 344" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M 884 324 L 884 344 L 864 344" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+
+  <!-- ── TOP HUD HEADER ── -->
+  <g transform="translate(40, 32)">
+    <circle cx="6" cy="6" r="3.5" fill="#38bdf8"/>
+    <circle cx="6" cy="6" r="7" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.6"/>
+    <text x="22" y="10" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="1.2" class="tech-font">
+      [ SYSTEM ALERT : ARCHITECT AWAKENING DETECTED ]
+    </text>
+    <text x="820" y="10" text-anchor="end" fill="#a855f7" font-size="10.5" font-weight="600" letter-spacing="1" class="tech-font">
+      SYS_ID: PARTHA_AIML // HALDIA, IN
+    </text>
+    <line x1="0" y1="18" x2="820" y2="18" stroke="#7c3aed" stroke-width="0.8" opacity="0.4"/>
+  </g>
+
+  <!-- ── CENTRAL TYPOGRAPHY ── -->
+  <g transform="translate(450, 155)">
+    <!-- Main Name -->
+    <text x="0" y="0" text-anchor="middle"
+          fill="url(#textGrad)"
+          font-size="36"
+          font-weight="900"
+          letter-spacing="4"
+          class="orbitron-font"
+          style="animation: arisePulse 3s ease-in-out infinite;">
+      PARTHA SARATHI SARKAR
+    </text>
+
+    <!-- Subtitle: The Architect of Possibilities -->
+    <text x="0" y="38" text-anchor="middle"
+          fill="url(#subTextGrad)"
+          font-size="16"
+          font-weight="800"
+          letter-spacing="6"
+          class="tech-font"
+          filter="url(#softGlow)">
+      THE ARCHITECT OF POSSIBILITIES
+    </text>
+
+    <!-- Korean / Lore Subtitle -->
+    <text x="0" y="65" text-anchor="middle"
+          fill="#a78bfa"
+          font-size="12"
+          font-weight="500"
+          letter-spacing="4"
+          opacity="0.8"
+          class="tech-font">
+      가능성의 건축가 ✦ SYSTEM AWAKENED ✦ I ALONE LEVEL UP
+    </text>
+  </g>
+
+  <!-- ── THREE STATUS BADGES AT BOTTOM ── -->
+  <g transform="translate(450, 290)">
+    <!-- Badge 1: Class -->
+    <g transform="translate(-250, 0)" style="animation: badgePulse 3s ease-in-out infinite;">
+      <rect x="-110" y="-16" width="220" height="32" rx="6" fill="#13012b" stroke="#7c3aed" stroke-width="1.2"/>
+      <text x="0" y="5" text-anchor="middle" fill="#e9d5ff" font-size="11" font-weight="700" letter-spacing="1" class="tech-font">
+        ⚔️ CLASS: THE ARCHITECT
+      </text>
+    </g>
+
+    <!-- Badge 2: Core Weapon -->
+    <g transform="translate(0, 0)" style="animation: badgePulse 3s ease-in-out 1s infinite;">
+      <rect x="-125" y="-16" width="250" height="32" rx="6" fill="#0c072e" stroke="#38bdf8" stroke-width="1.2"/>
+      <text x="0" y="5" text-anchor="middle" fill="#bae6fd" font-size="11" font-weight="700" letter-spacing="1" class="tech-font">
+        ⚡ CORE: PYTHON &amp; AI
+      </text>
+    </g>
+
+    <!-- Badge 3: Hunter Rank -->
+    <g transform="translate(250, 0)" style="animation: badgePulse 3s ease-in-out 2s infinite;">
+      <rect x="-110" y="-16" width="220" height="32" rx="6" fill="#180424" stroke="#c084fc" stroke-width="1.2"/>
+      <text x="0" y="5" text-anchor="middle" fill="#f5d0fe" font-size="11" font-weight="700" letter-spacing="1" class="tech-font">
+        🌌 RANK: AWAKENED S-CLASS
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Divider Line -->
+  <line x1="60" y1="335" x2="840" y2="335" stroke="#4c1d95" stroke-width="0.8" opacity="0.6"/>
+  <text x="450" y="348" text-anchor="middle" fill="#6d28d9" font-size="9" letter-spacing="3" class="tech-font">
+    ᚱ ᛉ ᚾ ᛟ ᚦ ✦ SHADOW DOMAIN // MONARCH PROTOCOL ENGAGED ✦ ᚦ ᛟ ᚾ ᛉ ᚱ
+  </text>
+</svg>

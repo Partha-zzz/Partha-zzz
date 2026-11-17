@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Orbitron:wght@600;800;900&display=swap');
+
+      @keyframes borderGlow {
+        0%, 100% { stroke: #7c3aed; filter: drop-shadow(0 0 6px #7c3aed); }
+        50%      { stroke: #00f0ff; filter: drop-shadow(0 0 16px #00f0ff) drop-shadow(0 0 30px #a855f7); }
+      }
+      @keyframes scanline {
+        0%   { transform: translateY(0); opacity: 0.6; }
+        100% { transform: translateY(340px); opacity: 0; }
+      }
+      @keyframes ringSpinCW {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+      @keyframes ringSpinCCW {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(-360deg); }
+      }
+      @keyframes textGlowGold {
+        0%, 100% { filter: drop-shadow(0 0 4px #eab308); }
+        50%      { filter: drop-shadow(0 0 14px #facc15); }
+      }
+      @keyframes textGlowCyan {
+        0%, 100% { filter: drop-shadow(0 0 4px #06b6d4); }
+        50%      { filter: drop-shadow(0 0 14px #22d3ee); }
+      }
+      @keyframes pulseDot {
+        0%, 100% { r: 3; opacity: 0.4; }
+        50%      { r: 4.5; opacity: 1; }
+      }
+      @keyframes particleFloatA {
+        0%   { transform: translate(0, 0); opacity: 0; }
+        20%  { opacity: 0.8; }
+        80%  { opacity: 0.6; }
+        100% { transform: translate(-8px, -110px); opacity: 0; }
+      }
+      @keyframes particleFloatB {
+        0%   { transform: translate(0, 0); opacity: 0; }
+        20%  { opacity: 0.9; }
+        80%  { opacity: 0.4; }
+        100% { transform: translate(12px, -130px); opacity: 0; }
+      }
+
+      .tech-font { font-family: 'Fira Code', 'Courier New', monospace; }
+      .scifi-font { font-family: 'Orbitron', 'Trebuchet MS', sans-serif; }
+      /* ]]> */
+    </style>
+
+    <!-- Gradients -->
+    <radialGradient id="cyberBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="#0e0026"/>
+      <stop offset="50%"  stop-color="#060012"/>
+      <stop offset="100%" stop-color="#020006"/>
+    </radialGradient>
+
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fef08a"/>
+      <stop offset="50%"  stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#d8b4fe"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fda4af"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+
+    <linearGradient id="pyBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+
+    <linearGradient id="pyYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="880" height="340" rx="16" fill="url(#cyberBg)"/>
+
+  <!-- Sci-Fi Grid Pattern -->
+  <g opacity="0.06" stroke="#00f0ff" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="340"/>
+    <line x1="160" y1="0" x2="160" y2="340"/>
+    <line x1="240" y1="0" x2="240" y2="340"/>
+    <line x1="320" y1="0" x2="320" y2="340"/>
+    <line x1="400" y1="0" x2="400" y2="340"/>
+    <line x1="480" y1="0" x2="480" y2="340"/>
+    <line x1="560" y1="0" x2="560" y2="340"/>
+    <line x1="640" y1="0" x2="640" y2="340"/>
+    <line x1="720" y1="0" x2="720" y2="340"/>
+    <line x1="800" y1="0" x2="800" y2="340"/>
+    <line x1="0" y1="60" x2="880" y2="60"/>
+    <line x1="0" y1="120" x2="880" y2="120"/>
+    <line x1="0" y1="180" x2="880" y2="180"/>
+    <line x1="0" y1="240" x2="880" y2="240"/>
+    <line x1="0" y1="300" x2="880" y2="300"/>
+  </g>
+
+  <!-- Scanline Sweep -->
+  <line x1="2" y1="0" x2="878" y2="0" stroke="#00f0ff" stroke-width="1.5" opacity="0.3" style="animation: scanline 4s linear infinite;"/>
+
+  <!-- Animated Outer Border -->
+  <rect x="2" y="2" width="876" height="336" rx="14" fill="none" stroke-width="2" style="animation: borderGlow 5s ease-in-out infinite;"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 12 30 L 12 12 L 30 12" fill="none" stroke="#00f0ff" stroke-width="2.5"/>
+  <path d="M 850 12 L 868 12 L 868 30" fill="none" stroke="#00f0ff" stroke-width="2.5"/>
+  <path d="M 12 310 L 12 328 L 30 328" fill="none" stroke="#00f0ff" stroke-width="2.5"/>
+  <path d="M 868 310 L 868 328 L 850 328" fill="none" stroke="#00f0ff" stroke-width="2.5"/>
+
+  <!-- ── HEADER BAR ── -->
+  <g transform="translate(30, 28)">
+    <circle cx="6" cy="6" r="4" fill="#00f0ff" style="animation: pulseDot 2s infinite;"/>
+    <circle cx="6" cy="6" r="8" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+
+    <text x="24" y="10" fill="#00f0ff" font-size="11" font-weight="700" letter-spacing="1.5" class="scifi-font" style="animation: textGlowCyan 4s infinite;">
+      [ SYSTEM CORE : PRIMARY SOUL WEAPON // DATA SCIENCE ]
+    </text>
+
+    <text x="820" y="10" text-anchor="end" fill="#a855f7" font-size="10.5" font-weight="600" letter-spacing="1" class="tech-font">
+      ARCHITECT_CORE // v4.2
+    </text>
+
+    <line x1="0" y1="20" x2="820" y2="20" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- LEFT COLUMN : PYTHON MONARCH CORE REACTOR                          -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(130, 185)">
+    <!-- Rotating Runic Rings -->
+    <g style="transform-origin: 0 0; animation: ringSpinCW 20s linear infinite;">
+      <circle cx="0" cy="0" r="78" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="8 6 18 6 4 10" opacity="0.6"/>
+      <circle cx="0" cy="0" r="86" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="12 12" opacity="0.4"/>
+    </g>
+    <g style="transform-origin: 0 0; animation: ringSpinCCW 14s linear infinite;">
+      <circle cx="0" cy="0" r="68" fill="none" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="24 8 6 8" opacity="0.5"/>
+    </g>
+
+    <!-- Mana Particles -->
+    <circle cx="-25" cy="40" r="2" fill="#00f0ff" style="animation: particleFloatA 3s ease-out infinite;"/>
+    <circle cx="35" cy="50" r="2.5" fill="#c084fc" style="animation: particleFloatB 3.5s ease-out 1s infinite;"/>
+    <circle cx="10" cy="60" r="1.8" fill="#38bdf8" style="animation: particleFloatA 2.7s ease-out 0.5s infinite;"/>
+
+    <!-- Central Glowing Core -->
+    <circle cx="0" cy="0" r="48" fill="#1e0048" opacity="0.8" filter="url(#glowPurple)"/>
+
+    <!-- Python Vector Emblem -->
+    <g transform="translate(-32, -32) scale(0.64)">
+      <path d="M49.99 0C25.4 0 25.96 10.61 25.96 10.61L26 21.61H50.55V25.13H16.14C3.89 25.13 0 32.22 0 49.33C0 66.45 10.74 66.36 10.74 66.36H18.79V54.99C18.79 41.52 30.65 41.6 30.65 41.6H55.13C66.86 41.6 68.31 30.08 68.31 30.08V11.23C68.31 11.23 68.86 0 49.99 0ZM37.33 7.64C39.88 7.64 41.95 9.71 41.95 12.26C41.95 14.81 39.88 16.88 37.33 16.88C34.78 16.88 32.71 14.81 32.71 12.26C32.71 9.71 34.78 7.64 37.33 7.64Z"
+            fill="url(#pyBlue)" filter="url(#glowCyan)"/>
+      <path d="M50.01 100C74.6 100 74.04 89.39 74.04 89.39L74 78.39H49.45V74.87H83.86C96.11 74.87 100 67.78 100 50.67C100 33.55 89.26 33.64 89.26 33.64H81.21V45.01C81.21 58.48 69.35 58.4 69.35 58.4H44.87C33.14 58.4 31.69 69.92 31.69 69.92V88.77C31.69 88.77 31.14 100 50.01 100ZM62.67 92.36C60.12 92.36 58.05 90.29 58.05 87.74C58.05 85.19 60.12 83.12 62.67 83.12C65.22 83.12 67.29 85.19 67.29 87.74C67.29 90.29 65.22 92.36 62.67 92.36Z"
+            fill="url(#pyYellow)" filter="url(#glowCyan)"/>
+    </g>
+
+    <text x="0" y="98" text-anchor="middle" fill="#facc15" font-size="12" font-weight="800" letter-spacing="2" class="scifi-font">
+      PYTHON 3
+    </text>
+    <text x="0" y="114" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="600" class="tech-font">
+      PRIMARY SOUL WEAPON // ARCHITECT CORE
+    </text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="265" y1="65" x2="265" y2="305" stroke="#7c3aed" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="265" cy="185" r="3" fill="#00f0ff" opacity="0.8"/>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- RIGHT COLUMN : DATA SCIENCE & NEURAL PILLARS MATRIX                -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <g transform="translate(290, 70)">
+    <!-- Top Badge Row -->
+    <g>
+      <rect x="0" y="0" width="115" height="26" rx="6" fill="#1e1138" stroke="#a855f7" stroke-width="1.2"/>
+      <circle cx="12" cy="13" r="3.5" fill="#c084fc" style="animation: pulseDot 2s infinite;"/>
+      <text x="22" y="17" fill="#f5d0fe" font-size="10" font-weight="800" letter-spacing="1" class="scifi-font">
+        DATA &amp; AI
+      </text>
+
+      <text x="132" y="19" fill="url(#goldGrad)" font-size="17" font-weight="900" class="scifi-font" style="animation: textGlowGold 3s infinite;">
+        S-TIER
+      </text>
+
+      <rect x="200" y="0" width="185" height="26" rx="6" fill="#082f49" stroke="#00f0ff" stroke-width="1"/>
+      <text x="292" y="17" text-anchor="middle" fill="#38bdf8" font-size="9.5" font-weight="700" letter-spacing="0.8" class="tech-font">
+        AI &amp; ML SPECIALIZATION
+      </text>
+
+      <text x="555" y="17" text-anchor="end" fill="#a78bfa" font-size="10.5" font-weight="600" class="tech-font">
+        ROLE: <tspan fill="#ffffff" font-weight="700">THE ARCHITECT</tspan>
+      </text>
+    </g>
+
+    <!-- 4 Progress Bars of Core Data Science Weapons -->
+    <!-- 1. Python Engine -->
+    <g transform="translate(0, 48)">
+      <text x="0" y="11" fill="#38bdf8" font-size="11" font-weight="700" class="tech-font">01 // Python 3 Engine</text>
+      <text x="220" y="11" fill="#94a3b8" font-size="9.5" class="tech-font">OOP, Algorithms, Automation</text>
+      <text x="555" y="11" text-anchor="end" fill="#38bdf8" font-size="11" font-weight="700" class="tech-font">ACTIVE CORE (95%)</text>
+      <rect x="0" y="18" width="555" height="7" rx="3.5" fill="#0c1830"/>
+      <rect x="0" y="18" width="527" height="7" rx="3.5" fill="url(#cyanGrad)"/>
+    </g>
+
+    <!-- 2. Pandas Vector Engine -->
+    <g transform="translate(0, 88)">
+      <text x="0" y="11" fill="#c084fc" font-size="11" font-weight="700" class="tech-font">02 // Pandas Data Matrix</text>
+      <text x="220" y="11" fill="#94a3b8" font-size="9.5" class="tech-font">Vectorized Manipulation, Aggregation</text>
+      <text x="555" y="11" text-anchor="end" fill="#c084fc" font-size="11" font-weight="700" class="tech-font">OPTIMIZED (90%)</text>
+      <rect x="0" y="18" width="555" height="7" rx="3.5" fill="#1b0e2b"/>
+      <rect x="0" y="18" width="500" height="7" rx="3.5" fill="url(#purpleGrad)"/>
+    </g>
+
+    <!-- 3. Matplotlib Optics -->
+    <g transform="translate(0, 128)">
+      <text x="0" y="11" fill="#facc15" font-size="11" font-weight="700" class="tech-font">03 // Matplotlib Optics</text>
+      <text x="220" y="11" fill="#94a3b8" font-size="9.5" class="tech-font">Quantitative Distribution Analytics</text>
+      <text x="555" y="11" text-anchor="end" fill="#facc15" font-size="11" font-weight="700" class="tech-font">RESONANT (88%)</text>
+      <rect x="0" y="18" width="555" height="7" rx="3.5" fill="#2b1a0e"/>
+      <rect x="0" y="18" width="488" height="7" rx="3.5" fill="url(#goldGrad)"/>
+    </g>
+
+    <!-- 4. Jupyter Interactive Lab -->
+    <g transform="translate(0, 168)">
+      <text x="0" y="11" fill="#fda4af" font-size="11" font-weight="700" class="tech-font">04 // Jupyter Interactive Lab</text>
+      <text x="220" y="11" fill="#94a3b8" font-size="9.5" class="tech-font">EDA &amp; Neural Architecture Sandbox</text>
+      <text x="555" y="11" text-anchor="end" fill="#fda4af" font-size="11" font-weight="700" class="tech-font">EXPLORATORY (92%)</text>
+      <rect x="0" y="18" width="555" height="7" rx="3.5" fill="#2b0e1a"/>
+      <rect x="0" y="18" width="510" height="7" rx="3.5" fill="url(#roseGrad)"/>
+    </g>
+
+    <!-- Bottom Telemetry Metric Cards -->
+    <g transform="translate(0, 212)">
+      <rect x="0" y="0" width="128" height="38" rx="6" fill="#080214" stroke="#4c1d95" stroke-width="0.8"/>
+      <text x="64" y="15" text-anchor="middle" fill="#94a3b8" font-size="8.5" class="tech-font">CORE ENGINE</text>
+      <text x="64" y="29" text-anchor="middle" fill="#38bdf8" font-size="10.5" font-weight="700" class="scifi-font">PYTHON 3</text>
+
+      <rect x="142" y="0" width="128" height="38" rx="6" fill="#080214" stroke="#4c1d95" stroke-width="0.8"/>
+      <text x="206" y="15" text-anchor="middle" fill="#94a3b8" font-size="8.5" class="tech-font">CO-PILOT</text>
+      <text x="206" y="29" text-anchor="middle" fill="#c084fc" font-size="10.5" font-weight="700" class="scifi-font">AI AGENTS</text>
+
+      <rect x="284" y="0" width="128" height="38" rx="6" fill="#080214" stroke="#4c1d95" stroke-width="0.8"/>
+      <text x="348" y="15" text-anchor="middle" fill="#94a3b8" font-size="8.5" class="tech-font">CULTURE &amp; LANG</text>
+      <text x="348" y="29" text-anchor="middle" fill="#facc15" font-size="10" font-weight="700" class="scifi-font">JLPT N5 / N4</text>
+
+      <rect x="426" y="0" width="129" height="38" rx="6" fill="#080214" stroke="#4c1d95" stroke-width="0.8"/>
+      <text x="490" y="15" text-anchor="middle" fill="#94a3b8" font-size="8.5" class="tech-font">EVOLUTION</text>
+      <text x="490" y="29" text-anchor="middle" fill="#4ade80" font-size="10" font-weight="700" class="scifi-font">CONTINUOUS</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" width="100%">
+  <defs>
+    <style>
+      /* <![CDATA[ */
+      @keyframes outerBorder {
+        0%   { stroke-dashoffset: 1600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes borderPulse {
+        0%, 100% { stroke-opacity: 0.5; filter: drop-shadow(0 0 4px #7c3aed); }
+        50%      { stroke-opacity: 1;   filter: drop-shadow(0 0 14px #a855f7); }
+      }
+      @keyframes cornerGlow {
+        0%, 100% { opacity: 0.5; }
+        50%      { opacity: 1; }
+      }
+      @keyframes titleAnim {
+        0%, 100% { filter: drop-shadow(0 0 4px #a855f7); }
+        50%      { filter: drop-shadow(0 0 14px #c084fc) drop-shadow(0 0 28px #7c3aed); }
+      }
+      @keyframes scanH {
+        0%   { transform: translateY(0px); opacity: 0.6; }
+        100% { transform: translateY(130px); opacity: 0; }
+      }
+      @keyframes rankGlow {
+        0%, 100% { fill: #c084fc; filter: drop-shadow(0 0 5px #7c3aed); }
+        50%      { fill: #38bdf8; filter: drop-shadow(0 0 14px #38bdf8); }
+      }
+      @keyframes dotPulse {
+        0%, 100% { r: 3.5; opacity: 0.7; }
+        50%      { r: 4.8; opacity: 1; }
+      }
+      /* ]]> */
+    </style>
+    <radialGradient id="sysBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="#190338"/>
+      <stop offset="100%" stop-color="#06000f"/>
+    </radialGradient>
+    <filter id="sysGlow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="130" rx="10" ry="10" fill="url(#sysBg)"/>
+
+  <!-- Outer Animated Border -->
+  <rect x="1.5" y="1.5" width="557" height="127" rx="9" ry="9"
+    fill="none" stroke="#9333ea" stroke-width="2"
+    stroke-dasharray="1600" stroke-dashoffset="1600"
+    style="animation:outerBorder 2s ease forwards,borderPulse 3s ease 2s infinite"/>
+
+  <!-- Inner Accent Border -->
+  <rect x="6" y="6" width="548" height="118" rx="7" ry="7"
+    fill="none" stroke="#4c1d95" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Scanline Sweep -->
+  <rect x="6" y="0" width="548" height="1.5" fill="#a855f7" opacity="0.3"
+    style="animation:scanH 4s linear infinite"/>
+
+  <!-- Corner Runes -->
+  <!-- Top-left -->
+  <g style="animation:cornerGlow 2s ease-in-out 0s infinite">
+    <line x1="6" y1="18" x2="6" y2="6"  stroke="#a855f7" stroke-width="2"/>
+    <line x1="6" y1="6"  x2="22" y2="6" stroke="#a855f7" stroke-width="2"/>
+    <polygon points="6,6 12,6 6,12" fill="#7c3aed"/>
+    <text x="12" y="19" font-size="8" fill="#c084fc" font-family="serif" opacity="0.8">ᚱ</text>
+  </g>
+  <!-- Top-right -->
+  <g style="animation:cornerGlow 2s ease-in-out 0.5s infinite">
+    <line x1="554" y1="18" x2="554" y2="6"  stroke="#a855f7" stroke-width="2"/>
+    <line x1="554" y1="6"  x2="538" y2="6"  stroke="#a855f7" stroke-width="2"/>
+    <polygon points="554,6 548,6 554,12" fill="#7c3aed"/>
+    <text x="534" y="19" font-size="8" fill="#c084fc" font-family="serif" opacity="0.8">ᛉ</text>
+  </g>
+  <!-- Bottom-left -->
+  <g style="animation:cornerGlow 2s ease-in-out 1s infinite">
+    <line x1="6" y1="112" x2="6" y2="124"  stroke="#a855f7" stroke-width="2"/>
+    <line x1="6" y1="124" x2="22" y2="124" stroke="#a855f7" stroke-width="2"/>
+    <polygon points="6,124 12,124 6,118" fill="#7c3aed"/>
+    <text x="12" y="122" font-size="8" fill="#c084fc" font-family="serif" opacity="0.8">ᚾ</text>
+  </g>
+  <!-- Bottom-right -->
+  <g style="animation:cornerGlow 2s ease-in-out 1.5s infinite">
+    <line x1="554" y1="112" x2="554" y2="124"  stroke="#a855f7" stroke-width="2"/>
+    <line x1="554" y1="124" x2="538" y2="124"  stroke="#a855f7" stroke-width="2"/>
+    <polygon points="554,124 548,124 554,118" fill="#7c3aed"/>
+    <text x="534" y="122" font-size="8" fill="#c084fc" font-family="serif" opacity="0.8">ᛟ</text>
+  </g>
+
+  <!-- Title -->
+  <text x="280" y="30"
+    text-anchor="middle"
+    font-family="'Courier New',Courier,monospace"
+    font-size="11.5"
+    fill="#c084fc"
+    letter-spacing="0.32em"
+    filter="url(#sysGlow)"
+    style="animation:titleAnim 2.5s ease-in-out infinite">[ SYSTEM STATUS // HUNTER IDENTIFICATION ]</text>
+
+  <!-- Divider with diamond -->
+  <line x1="28" y1="38" x2="254" y2="38" stroke="#4c1d95" stroke-width="0.8"/>
+  <polygon points="280,34 285,38 280,42 275,38" fill="#38bdf8" filter="url(#sysGlow)"/>
+  <line x1="306" y1="38" x2="532" y2="38" stroke="#4c1d95" stroke-width="0.8"/>
+
+  <!-- Data Rows -->
+  <!-- Class -->
+  <text x="32" y="58" font-family="'Courier New',Courier,monospace" font-size="11" fill="#a78bfa">CLASS</text>
+  <text x="96" y="58" font-family="'Courier New',Courier,monospace" font-size="11" fill="#4c1d95">:</text>
+  <text x="112" y="58" font-family="'Courier New',Courier,monospace" font-size="11" fill="#e9d5ff">The Architect (AI &amp; ML Undergrad)</text>
+
+  <!-- Rank -->
+  <text x="32" y="77" font-family="'Courier New',Courier,monospace" font-size="11" fill="#a78bfa">RANK</text>
+  <text x="96" y="77" font-family="'Courier New',Courier,monospace" font-size="11" fill="#4c1d95">:</text>
+  <rect x="110" y="65" width="46" height="16" rx="3" fill="#3b0764"/>
+  <text x="133" y="77" text-anchor="middle"
+    font-family="'Courier New',Courier,monospace" font-size="10.5" font-weight="bold"
+    filter="url(#sysGlow)"
+    style="animation:rankGlow 2s ease-in-out infinite">S-Class</text>
+  <text x="162" y="77" font-family="'Courier New',Courier,monospace" font-size="11" fill="#6d28d9">  |  Haldia, WB, IN</text>
+
+  <!-- Hunter Handle / ID -->
+  <text x="32" y="96" font-family="'Courier New',Courier,monospace" font-size="11" fill="#a78bfa">HUNTER</text>
+  <text x="96" y="96" font-family="'Courier New',Courier,monospace" font-size="11" fill="#4c1d95">:</text>
+  <text x="112" y="96" font-family="'Courier New',Courier,monospace" font-size="11" fill="#38bdf8">Partha-zzz</text>
+  <text x="210" y="96" font-family="'Courier New',Courier,monospace" font-size="10.5" fill="#c084fc">(Partha Sarathi Sarkar)</text>
+
+  <!-- Telemetry / Status Dots on Right -->
+  <!-- ONLINE -->
+  <circle cx="430" cy="56" r="3.5" fill="#4ade80" style="animation:dotPulse 2s ease-in-out infinite"/>
+  <circle cx="430" cy="56" r="7"   fill="#4ade80" opacity="0.15" style="animation:dotPulse 2s ease-in-out infinite"/>
+  <text x="444" y="60" font-family="'Courier New',Courier,monospace" font-size="10" fill="#4ade80">ONLINE</text>
+
+  <!-- ACTIVE -->
+  <circle cx="430" cy="75" r="3.5" fill="#a855f7" style="animation:dotPulse 2.5s ease-in-out 0.5s infinite"/>
+  <circle cx="430" cy="75" r="7"   fill="#a855f7" opacity="0.15" style="animation:dotPulse 2.5s ease-in-out 0.5s infinite"/>
+  <text x="444" y="79" font-family="'Courier New',Courier,monospace" font-size="10" fill="#a855f7">ACTIVE</text>
+
+  <!-- LEVELING UP -->
+  <circle cx="430" cy="94" r="3.5" fill="#38bdf8" style="animation:dotPulse 3s ease-in-out 1s infinite"/>
+  <circle cx="430" cy="94" r="7"   fill="#38bdf8" opacity="0.15" style="animation:dotPulse 3s ease-in-out 1s infinite"/>
+  <text x="444" y="98" font-family="'Courier New',Courier,monospace" font-size="10" fill="#38bdf8">LEVELING UP</text>
+
+  <!-- Bottom Bar -->
+  <line x1="30" y1="110" x2="530" y2="110" stroke="#4c1d95" stroke-width="0.8" opacity="0.6"/>
+  <text x="280" y="122" text-anchor="middle"
+    font-family="'Courier New',Courier,monospace"
+    font-size="8.5" fill="#6d28d9" letter-spacing="0.2em" opacity="0.8">
+    가능성의 건축가 ✦ ARCHITECT SYSTEM: UNLOCKED
+  </text>
+</svg>

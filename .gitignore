@@ -1,5 +1,7 @@
-# Build and packaging artifacts
+# Build, packaging and test artifacts
 upload-ready.zip
 scripts/
 assets/fonts.json
 test_renders/
+test_*
+ref_*
